@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<betorder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<order>
+		<betRange>一星</betRange>
+		<playType>复式</playType>
+		<betContent> 0 1 4 5 , 0 1 2 , 1 9 , 2 5 , 3 6 </betContent>
+		<mutiple>8</mutiple>
+		<amount>7</amount>
+		<spend>208</spend>
+		<drawnAmount>1097.6</drawnAmount>
+		<balance>5889.6</balance>
+	</order>
+	<order>
+		<betRange>前二</betRange>
+		<playType>直选复式</playType>
+		<betContent> 0 1 2 , 3 4 5 6 </betContent>
+		<mutiple>3</mutiple>
+		<amount>7</amount>
+		<spend>72</spend>
+		<drawnAmount>0</drawnAmount>
+		<balance>5817.6</balance>
+	</order>
+	<order>
+		<betRange>前二</betRange>
+		<playType>直选单式</playType>
+		<betContent> 23 98 47</betContent>
+		<mutiple>4</mutiple>
+		<amount>2</amount>
+		<spend>24</spend>
+		<drawnAmount>0</drawnAmount>
+		<balance>5793.6</balance>
+	</order>
+	<order>
+		<betRange>前二</betRange>
+		<playType>直选和值</playType>
+		<betContent> 1 5 8 14 15 18 </betContent>
+		<mutiple>8</mutiple>
+		<amount>4</amount>
+		<spend>432</spend>
+		<drawnAmount>0</drawnAmount>
+		<balance>5361.6</balance>
+	</order>
+	<order>
+		<betRange>前二</betRange>
+		<playType>跨度</playType>
+		<betContent> 0 1 2 7 8 9 </betContent>
+		<mutiple>6</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
+		<drawnAmount>1176</drawnAmount>
+		<balance>6537.6</balance>
+	</order>
+	<order>
+		<betRange>一星</betRange>
+		<playType>复式</playType>
+		<betContent>0 1 4 5 , 0 1 2 , 1 9 , 2 5 , 3 6</betContent>
+		<mutiple>8</mutiple>
+		<amount>7</amount>
+		<spend>208</spend>
+		<drawnAmount>1097.6</drawnAmount>
+		<balance>5889.6</balance>
+	</order>
+	<order>
+		<betRange>前二</betRange>
+		<playType>直选复式</playType>
+		<betContent>0 1 2 , 3 4 5 6</betContent>
+		<mutiple>3</mutiple>
+		<amount>7</amount>
+		<spend>72</spend>
+		<drawnAmount>0</drawnAmount>
+		<balance>5817.6</balance>
+	</order>
+	<order>
+		<betRange>前二</betRange>
+		<playType>直选单式</playType>
+		<betContent>23 98 47</betContent>
+		<mutiple>4</mutiple>
+		<amount>2</amount>
+		<spend>24</spend>
+		<drawnAmount>0</drawnAmount>
+		<balance>5793.6</balance>
+	</order>
+	<order>
+		<betRange>前二</betRange>
+		<playType>直选和值</playType>
+		<betContent>1 5 8 14 15 18</betContent>
+		<mutiple>8</mutiple>
+		<amount>4</amount>
+		<spend>432</spend>
+		<drawnAmount>0</drawnAmount>
+		<balance>5361.6</balance>
+	</order>
+	<order>
+		<betRange>前二</betRange>
+		<playType>跨度</playType>
+		<betContent>0 1 2 7 8 9</betContent>
+		<mutiple>6</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
+		<drawnAmount>1176</drawnAmount>
+		<balance>6537.6</balance>
+	</order>
+</betorder>

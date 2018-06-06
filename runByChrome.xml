@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/Git Repository/LotteryTest">
+        <classes>
+            <class name="com.jchy.lottery.testcase.betting.Betting_001_Bet_Success_Test">
+                <methods>
+                    <include name="orderBetting"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_001_UI_Test">
+                <methods>
+                    <include name="uiTest"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_002_Login_Success_Test">
+                <methods>
+                    <include name="loginSuccessTest"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_003_Fail_All_Empty_Test">
+                <methods>
+                    <include name="loginFailTest_All_Empty"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_004_Fail_Only_Username_Test">
+                <methods>
+                    <include name="loginFailTest_Username"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_005_Fail_Only_Password_Test">
+                <methods>
+                    <include name="loginFailTest_Password"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_006_Fail_Incorrect_Username_Test">
+                <methods>
+                    <include name="loginFailTest_incorrectUsername"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_007_Fail_Incorrect_Password_Test">
+                <methods>
+                    <include name="loginFailTest_incorrectPassword"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_008_EXIT_After_Login_Test">
+                <methods>
+                    <include name="exitLoginTest"/>
+                </methods>
+            </class>
+            <class name="com.jchy.lottery.testcase.login.LoginPage_009_Checkbox_Test">
+                <methods>
+                    <include name="uiTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

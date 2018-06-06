@@ -1,0 +1,7 @@
+[2018-06-06 18:06:16] [INFO] RetryCount=0
+[2018-06-06 18:06:16] [INFO] SourceDir=src/test/java/com/jchy/lottery/testcase/
+[2018-06-06 18:06:16] [INFO] SourceEncoding=UTF-8
+[2018-06-06 18:06:16] [INFO] orderBetting 测试用例开始执行！
+[2018-06-06 18:56:38] [WARN] orderBetting 测试用例执行失败！
+[2018-06-06 18:56:38] [ERROR] [2018_06_06_18_56_38_orderBetting] ,screenshot failed，the reason:null
+[2018-06-06 18:56:38] [INFO] 执行失败的用例 = orderBetting
