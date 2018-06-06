@@ -1,6 +1,5 @@
 package com.jchy.lottery.APIHelper;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.jchy.lottery.util.*;
@@ -8,7 +7,6 @@ import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 
 public class BetAPIHelper {
