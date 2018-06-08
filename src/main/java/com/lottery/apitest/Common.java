@@ -1,7 +1,7 @@
 package com.lottery.apitest;
 
-import org.codehaus.jettison.json.JSONException;
-import org.codehaus.jettison.json.JSONObject;
+import com.alibaba.fastjson.JSONException;
+import com.alibaba.fastjson.JSONObject;
 public class Common {
     /**
      * 解析Json内容
@@ -16,7 +16,7 @@ public class Common {
             return null;
         }
         try {
-            JSONObject obj1 = new JSONObject(JsonString);
+            JSONObject obj1 = new JSONObject();
             JsonValue = (String) obj1.getString(JsonId);
         } catch (JSONException e) {
             e.printStackTrace();
