@@ -47,12 +47,14 @@ public class BetAPIHelper {
                     //投注
                     bet(i);
                     str = getBetInfo(resultOfBet);
+                    //seleniumUtil.isTextCorrect(getUserInfo(resultOfUserInfo), betOrderList.get(betOrderList.size()-1).getBalance());
+                    //openLottery();
                     break;
             }
-            if(i==betOrderList.size()){
+            if(i==betOrderList.size()-1){
                 //开奖
-                openLottery();
-                seleniumUtil.isTextCorrect(getUserInfo(resultOfUserInfo), betOrderList.get(betOrderList.size()-1).getBalance());
+                //openLottery();
+                //seleniumUtil.isTextCorrect(getUserInfo(resultOfUserInfo), betOrderList.get(betOrderList.size()-1).getBalance());
             }else{
                 continue;
             }

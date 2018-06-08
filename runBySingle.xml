@@ -24,7 +24,7 @@
 
     <test verbose="2" preserve-order="true" name="Single Test">
         <classes>
-            <class name="com.jphy.lottery.testcase.betting.Betting_002_5Of11_Test" />
+            <class name="com.jphy.lottery.testcase.betting.Betting_003_K3_Test" />
         </classes>
     </test>
     <listeners>
