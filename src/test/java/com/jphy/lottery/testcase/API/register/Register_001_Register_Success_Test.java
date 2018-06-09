@@ -1,4 +1,4 @@
-package com.jphy.lottery.testcase.API.betting.register;
+package com.jphy.lottery.testcase.API.register;
 
 import com.jphy.lottery.util.HttpUtils;
 import com.jphy.lottery.util.PropertiesDataProvider;

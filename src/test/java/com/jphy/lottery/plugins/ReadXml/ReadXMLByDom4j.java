@@ -1,11 +1,10 @@
-package com.jphy.lottery.util;
+package com.jphy.lottery.plugins.ReadXml;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.jphy.lottery.APIHelper.Bet_API;
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -19,10 +18,10 @@ import org.dom4j.io.SAXReader;
  */
 public class ReadXMLByDom4j {
 
-	private List<Bet_API> betOrderList = null;
-	private Bet_API betOrder = null;
+	private List<BetField> betOrderList = null;
+	private BetField betOrder = null;
 
-	public List<Bet_API> getBetOrders(File file){
+	public List<BetField> getBetOrders(File file){
         // 解析TestDatas.xml文件
         //创建SAXReader的对象reader
         SAXReader reader = new SAXReader();
@@ -36,7 +35,7 @@ public class ReadXMLByDom4j {
               
             betOrderList = new ArrayList();
             while(storeIt.hasNext()){
-                betOrder = new Bet_API();
+                betOrder = new BetField();
                 Element betOrderElement = (Element)storeIt.next();
                 //遍历betOrderElement的属性名和属性值
                 List<Attribute> attributes = betOrderElement.attributes();
@@ -96,10 +95,10 @@ public class ReadXMLByDom4j {
 	//public static void main(String[] args) {
      //   // TODO Auto-generated method stub
      //   //File file = new File("./src/test/resources/res/BetDatas.xml");
-     //   List<Bet_API> betOrderList = new ReadXMLByDom4j().getBetOrders(new File("./src/test/resources/res/BetDatas.xml"));
+     //   List<BetField> betOrderList = new ReadXMLByDom4j().getBetOrders(new File("./src/test/resources/res/BetDatas.xml"));
     //
 	//	System.out.println(betOrderList.get(4).getBetRange());
-	//	//for (Bet_API betOrder : betOrderList) {
+	//	//for (BetField betOrder : betOrderList) {
 	//	//	System.out.println(betOrder);
 	//	//}
 	//}

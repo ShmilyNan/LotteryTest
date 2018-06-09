@@ -1,11 +1,10 @@
-package com.jphy.lottery.APIHelper;
+package com.jphy.lottery.plugins.ReadXml;
 
-public class Bet_API {
+public class BetField {
 	/**
 	 * @author Lance
 	 */
 	
-	private int orderId;
 	private String betRange;
 	private String playType;
 	private String betContent;
@@ -15,21 +14,6 @@ public class Bet_API {
 	private String resultNum;
 	private String drawnAmount;
 	private String balance;
-
-	/**
-	 * @return the orderId
-	 */
-	public int getOrderId() {
-		return orderId;
-	}
-
-	/**
-	 * @param orderId
-	 * 			th orderId to set
-	 */
-	public void setOrderId(int orderId) {
-		this.orderId = orderId;
-	}
 
 	/**
 	 * @return the betRange
@@ -170,6 +154,6 @@ public class Bet_API {
 
 	@Override
 	public String toString() {
-		return "Bet_API [betRange=" + betRange + ", playType=" + playType + ", betContent=" + betContent + ", mutiple=" + mutiple + ", amount=" + amount +", spend=" + spend +", drawnAmount=" + drawnAmount +", balance=" + balance + "]";
+		return "BetField [betRange=" + betRange + ", playType=" + playType + ", betContent=" + betContent + ", mutiple=" + mutiple + ", amount=" + amount +", spend=" + spend +", drawnAmount=" + drawnAmount +", balance=" + balance + "]";
 	}
 }

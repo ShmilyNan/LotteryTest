@@ -2,9 +2,10 @@ package com.jphy.lottery.APIHelper;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.jphy.lottery.plugins.ReadXml.BetField;
 import com.jphy.lottery.util.HttpUtils;
 import com.jphy.lottery.util.PropertiesDataProvider;
-import com.jphy.lottery.util.ReadXMLByDom4j;
+import com.jphy.lottery.plugins.ReadXml.ReadXMLByDom4j;
 import com.jphy.lottery.util.SeleniumUtil;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
@@ -14,16 +15,18 @@ import java.util.List;
 
 public class BetAPIHelper {
     public static Logger logger = Logger.getLogger(BetAPIHelper.class.getName());
-    public static SeleniumUtil seleniumUtil;
-    public static String interface_bet = "";
-    public static String filePath = "";
-    public static List<Bet_API> betOrderList;
-    public static String lotteryType = "";
-    public static String number = "";
-    public static String token = "";
-    public static String resultNum = "";
-    public static String resultOfBet = "";
-    public static String bet_url = "";
+    private static SeleniumUtil seleniumUtil;
+    private static String interface_bet = "";
+    private static String filePath = "";
+    private static List<BetField> betOrderList;
+    private static String lotteryType = "";
+    private static String number = "";
+    private static String token = "";
+    private static String resultNum = "";
+    private static String resultOfBet = "";
+    private static String bet_url = "";
+    private static String resultOfUserInfo ="" ;
+    private static String resultOfBetLog = "";
 
     public BetAPIHelper(ITestContext context,String filePath,String lotteryType,String number,String resultNum){
         this.filePath = filePath;
@@ -37,26 +40,13 @@ public class BetAPIHelper {
     }
 
     public static void betAndOpenLottery() {
-        String resultOfUserInfo ="" ;
-        String resultOfBetLog = "";
-
         String str = "投注成功";
         for (int i = 0; i < betOrderList.size(); i++) {
             switch (str){
                 case "投注成功":
-                    //投注
                     bet(i);
                     str = getBetInfo(resultOfBet);
-                    //openLottery();
-                    //seleniumUtil.isTextCorrect(getUserInfo(resultOfUserInfo), betOrderList.get(betOrderList.size()-1).getBalance());
                     break;
-            }
-            if(i==betOrderList.size()-1){
-                //开奖
-                //openLottery();
-                //seleniumUtil.isTextCorrect(getUserInfo(resultOfUserInfo), betOrderList.get(betOrderList.size()-1).getBalance());
-            }else{
-                continue;
             }
             //break;
         }
@@ -65,7 +55,7 @@ public class BetAPIHelper {
     /**
      * 请求投注接口，获取返回信息
      */
-    public static void bet(int i){
+    private static void bet(int i){
         JSONArray array = new JSONArray();
         JSONObject t = new JSONObject();
         t.put("betRange",betOrderList.get(i).getBetRange());
@@ -92,15 +82,17 @@ public class BetAPIHelper {
         String openLottery_url = PropertiesDataProvider.getTestData(interface_bet, "openLottery_url");
         String params_openLottery = "&lotteryType=" + Integer.parseInt(lotteryType) + "&number=" + number + "&resultNum=" + resultNum;
         HttpUtils.doPost(openLottery_url, params_openLottery);
+        logger.info("==========Open Lottery Successed!============");
+        seleniumUtil.isTextCorrect(getUserInfo(resultOfUserInfo), betOrderList.get(betOrderList.size()-1).getBalance());
     }
 
 
-    public static String getBetInfo(String resultOfBet) {
+    private static String getBetInfo(String resultOfBet) {
         JSONObject json = JSONObject.parseObject(resultOfBet);
         return json.getString("msg");
     }
 
-    public static String getUserInfo(String resultOfUserInfo) {
+    private static String getUserInfo(String resultOfUserInfo) {
         String userInfo_url = PropertiesDataProvider.getTestData(interface_bet, "userInfo_url");
         String params_userInfo = "token=" + token;
         resultOfUserInfo = HttpUtils.doPost(userInfo_url, params_userInfo);
@@ -110,7 +102,7 @@ public class BetAPIHelper {
         return json2.getString("balance");
     }
 
-    public static String getBetLogInfo(String resultOfBetLog, String key) {
+    private static String getBetLogInfo(String resultOfBetLog, String key) {
         String betLog_url = PropertiesDataProvider.getTestData(interface_bet, "betLog_url");
         String params_betLog = "token=" + token + "&lotteryType=" + lotteryType + "&number=" + number;
         resultOfBetLog = HttpUtils.doPost(betLog_url, params_betLog);
@@ -121,6 +113,4 @@ public class BetAPIHelper {
         JSONObject json4 = json3.getJSONObject(0);
         return json4.getString(key);
     }
-
-
 }

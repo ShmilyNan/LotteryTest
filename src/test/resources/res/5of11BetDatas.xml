@@ -73,7 +73,7 @@
 	<order>
 		<betRange>二码</betRange>
 		<playType>前二组选复式</playType>
-		<betContent>01 02 03 04 05 05 04 08 09 10 11</betContent>
+		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
 		<mutiple>2</mutiple>
 		<spend>220</spend>
 		<resultNum>02,05,07,03,08</resultNum>
@@ -93,7 +93,7 @@
 	<order>
 		<betRange>二码</betRange>
 		<playType>前二组选胆拖</playType>
-		<betContent>7,01 02 03 04 05 06 08 09 10 11</betContent>
+		<betContent>07,01 02 03 04 05 06 08 09 10 11</betContent>
 		<mutiple>2</mutiple>
 		<spend>40</spend>
 		<resultNum>02,05,07,03,08</resultNum>
@@ -323,7 +323,7 @@
 	<order>
 		<betRange>任选胆拖</betRange>
 		<playType>四中四</playType>
-		<betContent>04 05 06,01 02 03 07 08 09 10 11</betContent>
+		<betContent>04,05 06 01 02 03 07 08 09 10 11</betContent>
 		<mutiple>2</mutiple>
 		<spend>32</spend>
 		<resultNum>02,05,07,03,08</resultNum>

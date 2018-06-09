@@ -17,7 +17,11 @@ public class Betting_002_5Of11_Test {
     public void orderBetting(ITestContext context) {
         String filePathXml = "./src/test/resources/res/5Of11BetDatas.xml";
         BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePathXml, "11", "0", "02,05,07,03,08");
+        //投注
         betAPIHelper.betAndOpenLottery();
+        //开奖
+        betAPIHelper.openLottery();
+
         //更新properties
         //String filePathPro = "./src/test/resources/config/interfaceinfo.properties";
         //PropertiesDataProvider.writeProperties(filePathPro,"number","2");
