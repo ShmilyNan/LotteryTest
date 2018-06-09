@@ -48,7 +48,6 @@ public class BetAPIHelper {
                     str = getBetInfo(resultOfBet);
                     break;
             }
-            //break;
         }
     }
 
