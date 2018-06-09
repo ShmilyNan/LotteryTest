@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="E:/Git Repository/LotteryTest">
         <classes>
-            <class name="com.jphy.lottery.testcase.betting.Betting_001_SSC_Test">
+            <class name="Betting_001_SSC_Test">
                 <methods>
                     <include name="orderBetting"/>
                 </methods>

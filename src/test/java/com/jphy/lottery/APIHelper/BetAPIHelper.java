@@ -25,18 +25,18 @@ public class BetAPIHelper {
     public static String resultOfBet = "";
     public static String bet_url = "";
 
-    public BetAPIHelper(ITestContext context,String filePath){
+    public BetAPIHelper(ITestContext context,String filePath,String lotteryType,String number,String resultNum){
+        this.filePath = filePath;
+        this.lotteryType = lotteryType;
+        this.number = number;
+        this.resultNum = resultNum;
         seleniumUtil = new SeleniumUtil();
         interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
-        this.filePath = filePath;
         betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
         token = PropertiesDataProvider.getTestData(interface_bet, "token");
-        lotteryType = PropertiesDataProvider.getTestData(interface_bet, "lotteryType");
-        number = PropertiesDataProvider.getTestData(interface_bet, "number");
-        resultNum = PropertiesDataProvider.getTestData(interface_bet, "resultNum");
     }
 
-    public static void checkReturnData() {
+    public static void betAndOpenLottery() {
         String resultOfUserInfo ="" ;
         String resultOfBetLog = "";
 
@@ -47,8 +47,8 @@ public class BetAPIHelper {
                     //投注
                     bet(i);
                     str = getBetInfo(resultOfBet);
-                    //seleniumUtil.isTextCorrect(getUserInfo(resultOfUserInfo), betOrderList.get(betOrderList.size()-1).getBalance());
                     //openLottery();
+                    //seleniumUtil.isTextCorrect(getUserInfo(resultOfUserInfo), betOrderList.get(betOrderList.size()-1).getBalance());
                     break;
             }
             if(i==betOrderList.size()-1){

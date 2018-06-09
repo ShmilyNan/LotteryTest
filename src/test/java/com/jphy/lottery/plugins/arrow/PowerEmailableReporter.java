@@ -608,7 +608,7 @@ public class PowerEmailableReporter implements IReporter {
 	 * 
 	 * @param result
 	 * @return
-	 * @author kevinkong
+	 * @author Lance
 	 */
 	private int getId(ITestResult result) {
 		int id = result.getTestClass().getName().hashCode();
@@ -622,7 +622,7 @@ public class PowerEmailableReporter implements IReporter {
 	 * 
 	 * @param context
 	 * @param suite
-	 * @author kevinkong
+	 * @author Lance
 	 */
 	private void getAllTestIds(ITestContext context, ISuite suite) {
 		IResultMap passTests = context.getPassedTests();

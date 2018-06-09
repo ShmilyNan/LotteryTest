@@ -34,10 +34,10 @@ public class PropertiesDataProvider {
 		return String.valueOf(config.getProperty(key));
 	}
 	
-	public static void writeProperties(String key,String value) {
-		Properties properties = new Properties();
+	public static void writeProperties(String filePath,String key,String value) {
+		SafeProperties sproperties = new SafeProperties();
 		try {
-			properties.load(new FileInputStream("./src/test/resources/config/interfaceinfo.properties"));
+			sproperties.load(new FileInputStream(filePath));
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (IOException e1) {
@@ -45,20 +45,20 @@ public class PropertiesDataProvider {
 		}
 		OutputStream output = null;
 		try {
-			output = new FileOutputStream("./src/test/resources/config/interfaceinfo.properties");
-	          for (Enumeration<?> e = properties.propertyNames(); e.hasMoreElements();) {
+			output = new FileOutputStream(filePath);
+	          for (Enumeration<?> e = sproperties.propertyNames(); e.hasMoreElements();) {
 	                String s = (String) e.nextElement(); // 遍历所有元素
 	                if (s.equals(key)) {
 	                    /**如果键相同则覆盖*/
-	                	properties.setProperty(s, value);
+	                	sproperties.setProperty(s, value);
 	                } else {
 	                	/**否则就原样写入*/
-	                	properties.setProperty(key, value);
+	                	sproperties.setProperty(key, value);
 	                }
 	            }
 			
 		//	properties.setProperty(key,value);//保存键值对到内存
-			properties.store(output, "Lance modify" + new Date().toString());// 保存键值对到文件中
+			sproperties.store(output, "Lance modify" + new Date().toString());// 保存键值对到文件中
 		} catch (IOException io) {
 			io.printStackTrace();
 		} finally {

@@ -457,13 +457,13 @@ public class SeleniumUtil {
 		Set<Cookie> cookies = driver.manage().getCookies();
 		for (Cookie c : cookies) {
 			System.out.println(c.getName() + "->" + c.getValue());
-			if (c.getName().equals("logisticSessionid")) {
+			if (c.getName().equals("Sessionid")) {
 				Cookie cook = new Cookie(c.getName(), c.getValue());
 				driver.manage().addCookie(cook);
 				System.out.println(c.getName() + "->" + c.getValue());
 				System.out.println("添加成功");
 			} else {
-				System.out.println("没有找到logisticSessionid");
+				System.out.println("没有找到Sessionid");
 			}
 
 		}

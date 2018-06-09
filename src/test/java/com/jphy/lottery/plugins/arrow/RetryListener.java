@@ -10,7 +10,7 @@ import org.testng.annotations.ITestAnnotation;
 /**
  * RetryListener for each test method.
  * 
- * @author kevinkong
+ * @author Lance
  * 
  */
 public class RetryListener implements IAnnotationTransformer {

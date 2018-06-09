@@ -67,7 +67,4 @@ public class HttpRequestUtil {
 		}
 		return result;
 	}
-	
-	
-
 }

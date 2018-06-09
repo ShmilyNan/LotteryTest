@@ -69,7 +69,7 @@
 	<order>
 		<betRange>前二</betRange>
 		<playType>组选单式</playType>
-		<betContent>01 02 03</betContent>
+		<betContent>01,02,03</betContent>
 		<mutiple>2</mutiple>
 		<amount>3</amount>
 		<spend>12</spend>
@@ -113,7 +113,7 @@
 	<order>
 		<betRange>后二</betRange>
 		<playType>直选单式</playType>
-		<betContent>12 12 13 21 31</betContent>
+		<betContent>12,12,13,21,31</betContent>
 		<mutiple>3</mutiple>
 		<amount>3</amount>
 		<spend>24</spend>
@@ -203,7 +203,7 @@
 	<order>
 		<betRange>前三</betRange>
 		<playType>单式</playType>
-		<betContent>123 123 321</betContent>
+		<betContent>123,123,321</betContent>
 		<mutiple>3</mutiple>
 		<amount>3</amount>
 		<spend>12</spend>

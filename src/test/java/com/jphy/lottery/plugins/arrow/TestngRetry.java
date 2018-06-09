@@ -10,7 +10,7 @@ import org.testng.Reporter;
 /**
  * TestNG retry Analyzer.
  * 
- * @author kevinkong
+ * @author Lance
  * 
  */
 public class TestngRetry implements IRetryAnalyzer {

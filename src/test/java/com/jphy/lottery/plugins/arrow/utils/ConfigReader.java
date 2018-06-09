@@ -11,7 +11,7 @@ import org.testng.log4testng.Logger;
 /**
  * Read config properties file.
  * 
- * @author kevinkong
+ * @author Lance
  * 
  */
 public class ConfigReader {
