@@ -7,8 +7,8 @@
 		<mutiple>2</mutiple>
 		<spend>180</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>3841.2</drawnAmount>
-		<balance>1003661.200</balance>
+		<drawnAmount>3841.00</drawnAmount>
+		<balance>1003661</balance>
 	</order>
 	<order>
 		<betRange>三码</betRange>
@@ -85,7 +85,7 @@
 		<playType>前二组选单式</playType>
 		<betContent>01 02,03 04,05 06,07 08,09 10</betContent>
 		<mutiple>2</mutiple>
-		<spend>16</spend>
+		<spend>20</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
 		<balance>1010897.000</balance>

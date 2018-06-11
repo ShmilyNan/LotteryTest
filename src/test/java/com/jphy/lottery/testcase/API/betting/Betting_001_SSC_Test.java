@@ -14,6 +14,6 @@ public class Betting_001_SSC_Test {
 	public void orderBetting(ITestContext context) {
 		String filePath = "./src/test/resources/res/SSCBetDatas.xml";
 		BetAPIHelper betAPIHelper = new BetAPIHelper(context,filePath,"0","1","8,1,1,5,8");
-		betAPIHelper.betAndOpenLottery();
+		betAPIHelper.betLottery();
 	}
 }

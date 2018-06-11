@@ -52,7 +52,6 @@ public class ReadXMLByDom4j {
                     Element child = (Element) betOrderIt.next();
                     String nodeName = child.getName();
                     if(nodeName.equals("betRange")){
-                        //System.out.println(child.getStringValue());
                         String name = child.getStringValue();
                         betOrder.setBetRange(name);
                     }else if(nodeName.equals("playType")){
@@ -70,9 +69,12 @@ public class ReadXMLByDom4j {
                     }else if(nodeName.equals("spend")){
                     	String spend = child.getStringValue();
                     	betOrder.setSpend(spend);
-                    }else if(nodeName.equals("spend")){
+                    }else if(nodeName.equals("drawnAmount")){
                     	String drawnAmount = child.getStringValue();
                     	betOrder.setDrawnAmount(drawnAmount);
+                    }else if(nodeName.equals("resultNum")){
+                    	String resultNum = child.getStringValue();
+                    	betOrder.setDrawnAmount(resultNum);
                     }else if(nodeName.equals("balance")){
                     	String balance = child.getStringValue();
                     	betOrder.setBalance(balance);

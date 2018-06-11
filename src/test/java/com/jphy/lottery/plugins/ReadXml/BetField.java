@@ -106,7 +106,7 @@ public class BetField {
 	}
 
 	/**
-	 * @return the drawnAmount
+	 * @return
 	 */
 	public String getDrawnAmount() {
 		return drawnAmount;
@@ -114,7 +114,6 @@ public class BetField {
 
 	/**
 	 * @param drawnAmount
-	 * 			the drawnAmount to set
 	 */
 	public void setDrawnAmount(String drawnAmount) {
 		this.drawnAmount = drawnAmount;
