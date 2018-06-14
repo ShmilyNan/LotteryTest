@@ -22,7 +22,7 @@ public class Betting_002_5Of11_Test {
         BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePathXml, "11", "0", "02,05,07,03,08");
         //投注
         betAPIHelper.betLottery();
-        //开奖
+        //指定开奖
         betAPIHelper.openLottery();
     }
 }

@@ -15,6 +15,9 @@ public class Betting_004_PK10_Test {
 		String filePath = "./src/test/resources/res/PK10BetDatas.xml";
 		BetAPIHelper betAPIHelper = new BetAPIHelper(
 				context,filePath,"1","3","08,09,01,02,03,05,06,10,07,04");
+		//投注
 		betAPIHelper.betLottery();
+		//指定开奖
+		betAPIHelper.openLottery();
 	}
 }

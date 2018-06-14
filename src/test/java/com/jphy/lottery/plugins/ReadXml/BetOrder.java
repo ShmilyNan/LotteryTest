@@ -1,6 +1,6 @@
 package com.jphy.lottery.plugins.ReadXml;
 
-public class BetField {
+public class BetOrder {
 	/**
 	 * @author Lance
 	 */
@@ -153,6 +153,6 @@ public class BetField {
 
 	@Override
 	public String toString() {
-		return "BetField [betRange=" + betRange + ", playType=" + playType + ", betContent=" + betContent + ", mutiple=" + mutiple + ", amount=" + amount +", spend=" + spend +", drawnAmount=" + drawnAmount +", balance=" + balance + "]";
+		return "BetOrder [betRange=" + betRange + ", playType=" + playType + ", betContent=" + betContent + ", mutiple=" + mutiple + ", amount=" + amount +", spend=" + spend +", drawnAmount=" + drawnAmount +", balance=" + balance + "]";
 	}
 }

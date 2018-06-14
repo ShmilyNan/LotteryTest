@@ -104,7 +104,9 @@ public class JdbcUtil {
 					String bet_Total_Amount = rs.getString("bet_Total_Amount");
 					map.put("bet_Total_Amount",bet_Total_Amount);
 					String win_Amount = rs.getString("win_Amount");
+					String rebate = rs.getString("UPPER_POINTS");
 					map.put("win_Amount",win_Amount);
+					map.put("UPPER_POINTS",rebate);
 				}else {
 					String balance = rs.getString("num");
 					map.put("balance",balance);

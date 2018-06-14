@@ -16,6 +16,9 @@ public class Betting_003_K3_Test {
 	public void orderBetting(ITestContext context) {
 		String filePath = "./src/test/resources/res/K3BetDatas.xml";
 		BetAPIHelper betAPIHelper = new BetAPIHelper(context,filePath,"8","2","2,6,5");
+		//投注
 		betAPIHelper.betLottery();
+		//指定开奖
+		betAPIHelper.openLottery();
 	}
 }

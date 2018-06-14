@@ -18,10 +18,10 @@ import org.dom4j.io.SAXReader;
  */
 public class ReadXMLByDom4j {
 
-	private List<BetField> betOrderList = null;
-	private BetField betOrder = null;
+	private List<BetOrder> betOrderList = null;
+	private BetOrder betOrder = null;
 
-	public List<BetField> getBetOrders(File file){
+	public List<BetOrder> getBetOrders(File file){
         // 解析TestDatas.xml文件
         //创建SAXReader的对象reader
         SAXReader reader = new SAXReader();
@@ -35,7 +35,7 @@ public class ReadXMLByDom4j {
               
             betOrderList = new ArrayList();
             while(storeIt.hasNext()){
-                betOrder = new BetField();
+                betOrder = new BetOrder();
                 Element betOrderElement = (Element)storeIt.next();
                 //遍历betOrderElement的属性名和属性值
                 List<Attribute> attributes = betOrderElement.attributes();
@@ -97,10 +97,10 @@ public class ReadXMLByDom4j {
 	//public static void main(String[] args) {
      //   // TODO Auto-generated method stub
      //   //File file = new File("./src/test/resources/res/BetDatas.xml");
-     //   List<BetField> betOrderList = new ReadXMLByDom4j().getBetOrders(new File("./src/test/resources/res/BetDatas.xml"));
+     //   List<BetOrder> betOrderList = new ReadXMLByDom4j().getBetOrders(new File("./src/test/resources/res/BetDatas.xml"));
     //
 	//	System.out.println(betOrderList.get(4).getBetRange());
-	//	//for (BetField betOrder : betOrderList) {
+	//	//for (BetOrder betOrder : betOrderList) {
 	//	//	System.out.println(betOrder);
 	//	//}
 	//}

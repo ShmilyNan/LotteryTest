@@ -2,7 +2,8 @@ package com.jphy.lottery.APIHelper;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.jphy.lottery.plugins.ReadXml.BetField;
+import com.jphy.lottery.plugins.ReadXml.BetOrder;
+import com.jphy.lottery.plugins.ReadXml.OrderRebate;
 import com.jphy.lottery.util.HttpUtils;
 import com.jphy.lottery.util.JdbcUtil;
 import com.jphy.lottery.util.PropertiesDataProvider;
@@ -12,7 +13,6 @@ import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 
 import java.io.File;
-import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -24,7 +24,8 @@ public class BetAPIHelper {
     private static SeleniumUtil seleniumUtil;
     private static String interface_bet;
     private static String filePath;
-    private static List<BetField> betOrderList;
+    private static List<BetOrder> betOrderList;
+    private static List<OrderRebate> orderRebate;
     private static String lotteryType;
     private static String number;
     private static String token;
@@ -33,6 +34,7 @@ public class BetAPIHelper {
     private static String bet_url;
     private static String bet_Total_Amount;
     private static String win_Amount;
+    private static String rebateAll;
     private static String balance;
 
     /**
@@ -63,13 +65,9 @@ public class BetAPIHelper {
                     str = getBetInfo(resultOfBet);
                     break;
                 case "投注成功1":
-                    String str3 = betOrderList.get(0).getPlayType();
-                    System.out.println(str3);
-                    String str2 = betOrderList.get(0).getDrawnAmount();
-                    System.out.println(str2);
+                    //调试
                     break;
             }
-            break;
         }
     }
 
@@ -118,7 +116,9 @@ public class BetAPIHelper {
         for (int i = 0 ;i<betOrderList.size() ;i++ ){
             logger.info("==========start check Win_Amount!=============");
             seleniumUtil.isTextCorrect(win_Amount,betOrderList.get(i).getDrawnAmount());
-            break;
+            logger.info("==========start check UPPER_POINTS!=============");
+            seleniumUtil.isTextCorrect(rebateAll,orderRebate.get(i).getRebateAll());
+            //break;
         }
         logger.info("==========start check balance!=============");
         seleniumUtil.isTextCorrect(balance,betOrderList.get(0).getBalance());
@@ -132,16 +132,17 @@ public class BetAPIHelper {
     public static void checkDatas(int i,boolean isOpen){
         Map<String,String> map1 = null;
         Map<String,String> map2 = null;
-        String betSql = String.format(
+        String lotteryOrder = String.format(
                 "SELECT * FROM lottery_order WHERE (USER_ID = 35 AND BET_RANGE = '%s' AND LOTTERY_TYPE = %s AND PLAY_TYPE = '%s')",
                 betOrderList.get(i).getBetRange(),lotteryType,betOrderList.get(i).getPlayType());
         String openSql = "SELECT * FROM lottery_user_account WHERE USER_ID = 35";
         if (!isOpen){
-            map1 = JdbcUtil.query(betSql,false);
+            map1 = JdbcUtil.query(lotteryOrder,false);
             bet_Total_Amount = map1.get("bet_Total_Amount");
         }else {
-            map1 = JdbcUtil.query(betSql,false);
+            map1 = JdbcUtil.query(lotteryOrder,false);
             win_Amount = map1.get("win_Amount");
+            rebateAll = map1.get("UPPER_POINTS");
             map2 = JdbcUtil.query(openSql,true);
             balance = map2.get("balance");
         }

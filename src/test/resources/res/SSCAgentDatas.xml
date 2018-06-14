@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<betorder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<orderrebate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<order>
 		<RebateOne>0.005</RebateOne>
 		<RebateTwo>0.012</RebateTwo>
@@ -1118,4 +1118,4 @@
 		<RebateTen>没有上级</RebateTen>
 		<RebateAll>0</RebateAll>
 	</order>
-</betorder>
+</orderrebate>
