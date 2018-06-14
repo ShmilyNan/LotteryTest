@@ -72,7 +72,6 @@ public class ExcelDataProvider implements Iterator<Object[]> {
 	public boolean hasNext() {
 
 		if (this.rowNum == 0 || this.currentRowNo >= this.rowNum) {
-
 			try {
 				book.close();
 			} catch (Exception e) {

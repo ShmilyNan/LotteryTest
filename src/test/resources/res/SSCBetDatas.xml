@@ -5,7 +5,7 @@
 		<playType>复式</playType>
 		<betContent>0 1 4 5,0 1 2,1 9,2 5,3 6</betContent>
 		<mutiple>2</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>52</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>117.6</drawnAmount>
@@ -14,940 +14,936 @@
 	<order>
 		<betRange>前二</betRange>
 		<playType>直选复式</playType>
-		<betContent>0 1 2 3 4 7 8,1 3 4 5 6 9</betContent>
-		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>168</spend>
+		<betContent>0 1 2 8,3 4 5 6 1</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>120</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>392</drawnAmount>
-		<balance>1000289.6</balance>
+		<drawnAmount>588</drawnAmount>
+		<balance>1000533.6</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
 		<playType>直选单式</playType>
-		<betContent>23 98 47</betContent>
-		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>12</spend>
+		<betContent>23 98 47 81</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>32</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1000277.6</balance>
+		<drawnAmount>784</drawnAmount>
+		<balance>1001285.6</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
 		<playType>直选和值</playType>
-		<betContent>1 5 8 14 15 18</betContent>
-		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>108</spend>
+		<betContent>1 5 8 9，14 15 18</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>44</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1000169.6</balance>
+		<drawnAmount>196</drawnAmount>
+		<balance>1001437.6</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
 		<playType>跨度</playType>
 		<betContent>0 1 2 7 8 9</betContent>
-		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>224</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>112</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>392</drawnAmount>
-		<balance>1000337.6</balance>
+		<drawnAmount>196</drawnAmount>
+		<balance>1001521.6</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
 		<playType>组选复式</playType>
 		<betContent>0 1 2 7 8 9</betContent>
 		<mutiple>2</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>60</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>38416</drawnAmount>
-		<balance>1038693.6</balance>
+		<drawnAmount>196</drawnAmount>
+		<balance>1001657.6</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
 		<playType>组选单式</playType>
-		<betContent>01,02,03</betContent>
+		<betContent>01 02 03 18</betContent>
 		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>12</spend>
+		<amount>1</amount>
+		<spend>16</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1038681.6</balance>
+		<drawnAmount>196</drawnAmount>
+		<balance>1001837.6</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
 		<playType>组选和值</playType>
-		<betContent>1 2 3 8 14 15</betContent>
-		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>48</spend>
+		<betContent>1 2 3 8 14 15 9</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>136</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1038633.6</balance>
+		<drawnAmount>392</drawnAmount>
+		<balance>1002093.6</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
 		<playType>组选包胆</playType>
-		<betContent>5</betContent>
-		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>20</spend>
+		<betContent>1</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>18</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>38416</drawnAmount>
-		<balance>1077029.6</balance>
+		<drawnAmount>98</drawnAmount>
+		<balance>1002173.6</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
 		<playType>直选复式</playType>
-		<betContent>1 2 8 9,2 3 4</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>72</spend>
+		<betContent>1 2 8 9,2 3 4 1</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>64</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1076957.6</balance>
+		<drawnAmount>392</drawnAmount>
+		<balance>1002501.6</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
 		<playType>直选单式</playType>
-		<betContent>12,12,13,21,31</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>24</spend>
+		<betContent>12 12 13 21 81</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>16</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1076933.6</balance>
+		<drawnAmount>392</drawnAmount>
+		<balance>1002877.6</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
 		<playType>直选和值</playType>
-		<betContent>0 1 6 7 10 11 17</betContent>
+		<betContent>0 1 6 7 10 11 17 9</betContent>
 		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>222</spend>
+		<amount>1</amount>
+		<spend>282</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1076711.6</balance>
+		<drawnAmount>588</drawnAmount>
+		<balance>1003183.6</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
 		<playType>跨度</playType>
 		<betContent>0 2 3 5 6 7 9</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>396</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>132</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>230496</drawnAmount>
-		<balance>1306811.6</balance>
+		<drawnAmount>196</drawnAmount>
+		<balance>1003247.6</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
 		<playType>组选复式</playType>
 		<betContent>0 1 2 7 8 9</betContent>
 		<mutiple>3</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>90</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1306721.6</balance>
+		<drawnAmount>294</drawnAmount>
+		<balance>1003451.6</balance>
 	</order>
-    <!--
 	<order>
 		<betRange>后二</betRange>
 		<playType>组选单式</playType>
-		<betContent></betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>0</spend>
+		<betContent>15 58 68 96 18</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>40</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1306721.6</balance>
+		<drawnAmount>392</drawnAmount>
+		<balance>1003803.6</balance>
 	</order>
-	-->
 	<order>
 		<betRange>后二</betRange>
 		<playType>组选和值</playType>
 		<betContent>1 2 3 7 8 9 17</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>108</spend>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>72</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1306613.6</balance>
+		<drawnAmount>196</drawnAmount>
+		<balance>1003927.6</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
 		<playType>组选包胆</playType>
-		<betContent>1</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>270</spend>
+		<betContent>0 1 4 5 6</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>18</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>57624</drawnAmount>
-		<balance>1363967.6</balance>
+		<drawnAmount>98</drawnAmount>
+		<balance>1004007.6</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>复式</playType>
-		<betContent>0 3 4 7 8 9,5 6 7 8 9,1 2 3 4 7</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>900</spend>
+		<betContent>0 3 4 7 8 9,5 6 7 8 9 1,1 2 3 4 7</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>1440</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1363067.6</balance>
+		<drawnAmount>7840</drawnAmount>
+		<balance>1010407.6</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>单式</playType>
-		<betContent>123,123,321</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>12</spend>
+		<betContent>123 123 321 801 118 811</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>10</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1363055.6</balance>
+		<drawnAmount>1960</drawnAmount>
+		<balance>1012357.6</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>直选和值</playType>
 		<betContent>1 2 3 4 6 10 11 16 17 18</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>2286</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>3048</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>23049600</drawnAmount>
-		<balance>24410369.6</balance>
+		<drawnAmount>7840</drawnAmount>
+		<balance>1017149.6</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>跨度</playType>
-		<betContent>0 3 4 5 6 9</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>5024</spend>
+		<betContent>0 3 4 5 6 7 9</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>1508</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24405345.6</balance>
+		<drawnAmount>1960</drawnAmount>
+		<balance>1017601.6</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>组选和值</playType>
-		<betContent>1 3 4 6 15 16 24 25 26</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>368</spend>
+		<betContent>1 3 4 6 10 15 16 24 25 26</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>354</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24404977.6</balance>
+		<drawnAmount>1959.99</drawnAmount>
+		<balance>1019207.59</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>组三</playType>
-		<betContent>0 2 3 6 7 9</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>240</spend>
+		<betContent>0 1 2 3 6 7 8 9</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>112</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24404737.6</balance>
+		<drawnAmount>653.33</drawnAmount>
+		<balance>1019748.92</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>组六</playType>
 		<betContent>0 1 2 7 8 9</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>160</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>40</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>24404577.6</balance>
+		<balance>1019708.92</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>混合组选</playType>
-		<betContent>212 321 312 132 231</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>16</spend>
+		<betContent>218 181 312 132 231</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>20</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24404561.6</balance>
+		<drawnAmount>1306.66</drawnAmount>
+		<balance>1020995.58</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>组选包胆</playType>
-		<betContent>7</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>432</spend>
+		<betContent>8</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>216</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24404129.6</balance>
+		<drawnAmount>1306.66</drawnAmount>
+		<balance>1022086.24</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>组三单式</playType>
-		<betContent>122</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>8</spend>
+		<betContent>118</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>4</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24404121.6</balance>
+		<drawnAmount>1306.66</drawnAmount>
+		<balance>1023388.9</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>组六单式</playType>
-		<betContent>132</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>8</spend>
+		<betContent>811</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>2</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>24404113.6</balance>
+		<balance>1023386.9</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>一码不定位</playType>
-		<betContent>0 3 4 7 8 9</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>48</spend>
+		<betContent>0 1 3 4 7 8 9</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>14</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>418.1832</drawnAmount>
-		<balance>24404483.7832</balance>
+		<drawnAmount>14.46</drawnAmount>
+		<balance>1023387.36</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
 		<playType>二码不定位</playType>
 		<betContent>2 3 4 5 6 7 8</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>168</spend>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>84</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24404315.7832</balance>
+		<drawnAmount>72.58</drawnAmount>
+		<balance>1023375.94</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>复式</playType>
-		<betContent>0 3 4 8 9,0 1 2 5 6 7,2 3 7 8 9</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>1200</spend>
+		<betContent>0 1 3 4 8 9,0 1 2 5 6 7,2 3 5 7 8 9</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>1296</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24403115.7832</balance>
+		<drawnAmount>5880</drawnAmount>
+		<balance>1027959.94</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>单式</playType>
-		<betContent>456</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>8</spend>
+		<betContent>456 115</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>12</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24403107.7832</balance>
+		<drawnAmount>5880</drawnAmount>
+		<balance>1033827.94</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>直选和值</playType>
-		<betContent>0 1 4 6 11 12 13 14 17 18</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>3656</spend>
+		<betContent>0 1 4 6 7 11 12 17 18</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>1372</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24399451.7832</balance>
+		<drawnAmount>3920</drawnAmount>
+		<balance>1036375.94</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>跨度</playType>
-		<betContent>0 1 2 8 9</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>2480</spend>
+		<betContent>0 1 2 4 7 8 9</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>1160</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>24396971.7832</balance>
+		<drawnAmount>1960</drawnAmount>
+		<balance>1037175.94</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>组选和值</playType>
-		<betContent>1 7 8 13 14 16 18 20 25 26</betContent>
+		<betContent>1 7 8 13 18 20 26</betContent>
 		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>680</spend>
+		<amount>1</amount>
+		<spend>432</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>1707360.3556</drawnAmount>
-		<balance>26103652.1388</balance>
+		<drawnAmount>2613.32</drawnAmount>
+		<balance>1039357.26</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>组三</playType>
-		<betContent>0 1 5 6 7 8 9</betContent>
+		<betContent>0 1 6 7 5 9</betContent>
 		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>336</spend>
+		<amount>1</amount>
+		<spend>240</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>3414720.7112</drawnAmount>
-		<balance>29518036.85</balance>
+		<drawnAmount>2613.32</drawnAmount>
+		<balance>1041730.58</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>组六</playType>
 		<betContent>0 1 2 3 4 8 9</betContent>
 		<mutiple>4</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>280</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>29517756.85</balance>
+		<balance>1041450.58</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>混合组选</playType>
-		<betContent>122</betContent>
-		<mutiple>4</mutiple>
-		<amount>3</amount>
-		<spend>8</spend>
+		<betContent>151</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>6</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>29517748.85</balance>
+		<drawnAmount>1959.99</drawnAmount>
+		<balance>1043404.57</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>组选包胆</playType>
-		<betContent>6</betContent>
+		<betContent>5</betContent>
 		<mutiple>4</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>432</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>29517316.85</balance>
+		<drawnAmount>2613.32</drawnAmount>
+		<balance>1045585.89</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>组三单式</playType>
-		<betContent>121</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>2</spend>
+		<betContent>151</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>8</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>29517314.85</balance>
+		<drawnAmount>2613.32</drawnAmount>
+		<balance>1048191.21</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>组六单式</playType>
-		<betContent>214</betContent>
+		<betContent>115</betContent>
 		<mutiple>1</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>2</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>29517312.85</balance>
+		<balance>1048189.21</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>一码不定位</playType>
 		<betContent>0 1 2 8 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>10</spend>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>20</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>104.5458</drawnAmount>
-		<balance>29517407.3958</balance>
+		<drawnAmount>14.46</drawnAmount>
+		<balance>1048183.67</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
 		<playType>二码不定位</playType>
-		<betContent>7 8 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>6</spend>
+		<betContent>1 7 5 9</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>48</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>29517401.3958</balance>
+		<drawnAmount>290.32</drawnAmount>
+		<balance>1048425.99</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>复式</playType>
-		<betContent>1 2 6 7 8,1 3 4 6 7,0 1 2 3 4 5 6 7 8 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>500</spend>
+		<betContent>1 2 6 7 8,1 3 4 5 6 7,0 1 2 5 6 7 8 9</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>1440</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>29516901.3958</balance>
+		<drawnAmount>5880</drawnAmount>
+		<balance>1052865.99</balance>
 	</order>
-    <!--
 	<order>
 		<betRange>后三</betRange>
 		<playType>单式</playType>
-		<betContent></betContent>
+		<betContent>158</betContent>
 		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>0</spend>
+		<amount>1</amount>
+		<spend>2</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>29516901.3958</balance>
+		<drawnAmount>1960</drawnAmount>
+		<balance>1054823.99</balance>
 	</order>
-	-->
 	<order>
 		<betRange>后三</betRange>
 		<playType>直选和值</playType>
-		<betContent>1 2 3 9 10 11 12 13 14</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>858</spend>
+		<betContent>1 2 3 9 10 11 14</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>1124</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>7683200</drawnAmount>
-		<balance>37199243.3958</balance>
+		<drawnAmount>3920</drawnAmount>
+		<balance>1057619.99</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>跨度</playType>
-		<betContent>0 1 3 4 5 6 7 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>1616</spend>
+		<betContent>0 1 3 5 6 7 9</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>3984</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>7683200</drawnAmount>
-		<balance>44880827.3958</balance>
+		<drawnAmount>5880</drawnAmount>
+		<balance>1059515.99</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>组选和值</playType>
-		<betContent>1 2 3 4 6 7 25 26</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>52</spend>
+		<betContent>1 2 6 14 25 26</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>162</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>44880775.3958</balance>
+		<drawnAmount>979.995</drawnAmount>
+		<balance>1060333.985</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>组三</playType>
-		<betContent>0 1 2 3 4 5 6 7 8 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>180</spend>
+		<betContent>0 1 3 4 5 7 8 9</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>224</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>44880595.3958</balance>
+		<balance>1060109.985</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>组六</playType>
-		<betContent>0 1 2 3 4 5 6 7 8 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>240</spend>
+		<betContent>0 1 3 4 5 7 8 9</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>336</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>213413.5112</drawnAmount>
-		<balance>45093768.907</balance>
+		<drawnAmount>979.98</drawnAmount>
+		<balance>1060753.965</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>混合组选</playType>
-		<betContent>222</betContent>
+		<betContent>518</betContent>
 		<mutiple>1</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>2</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>45093766.907</balance>
+		<drawnAmount>326.665</drawnAmount>
+		<balance>1061078.63</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>组选包胆</playType>
 		<betContent>8</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>108</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>432</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>213420.04445</drawnAmount>
-		<balance>45307078.95145</balance>
+		<drawnAmount>1306.66</drawnAmount>
+		<balance>1061953.29</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>组三单式</playType>
-		<betContent>122</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>2</spend>
+		<betContent>855</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>6</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>45307076.95145</balance>
+		<balance>1061947.29</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>组六单式</playType>
-		<betContent>144</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>2</spend>
+		<betContent>185</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>4</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>45307074.95145</balance>
+		<drawnAmount>653.32</drawnAmount>
+		<balance>1062596.61</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>一码不定位</playType>
 		<betContent>0 1 2 6 7 8 9</betContent>
 		<mutiple>1</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>14</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>104.5458</drawnAmount>
-		<balance>45307165.49725</balance>
+		<drawnAmount>14.46</drawnAmount>
+		<balance>1062597.07</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
 		<playType>二码不定位</playType>
 		<betContent>0 2 3 4 5 8 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>42</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>168</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>2633.9282</drawnAmount>
-		<balance>45309757.42545</balance>
+		<drawnAmount>290.32</drawnAmount>
+		<balance>1062719.39</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
 		<playType>复式</playType>
-		<betContent>2 3 4 5 6 7 8 9,0 1 4 5 6 7 8 9,0 1 2 3 6 7 8 9,0 1 2 3 4 5 8 9</betContent>
+		<betContent>1 2 3 5 6,0 1 4 5 8 9,0 3 5 6 7 9,0 1 5 8 9</betContent>
 		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>8192</spend>
+		<amount>1</amount>
+		<spend>1800</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>45301565.42545</balance>
+		<drawnAmount>19600</drawnAmount>
+		<balance>1080519.39</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
 		<playType>单式</playType>
-		<betContent>7113</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>2</spend>
+		<betContent>1158</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>6</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>45301563.42545</balance>
+		<drawnAmount>58800</drawnAmount>
+		<balance>1139313.39</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
 		<playType>组选24</playType>
 		<betContent>0 1 2 4 5 6 8 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>140</spend>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>280</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>1333867.1112</drawnAmount>
-		<balance>46635290.53665</balance>
+		<drawnAmount>0</drawnAmount>
+		<balance>1139033.39</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
 		<playType>组选12</playType>
-		<betContent>0 1 2 6 7 8 9,0 1 2 3 4 5</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>180</spend>
+		<betContent>0 1 2 6 7 8 9,0 1 2 3 4 5 8 9</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>1288</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>46635110.53665</balance>
+		<drawnAmount>6533.32</drawnAmount>
+		<balance>1144278.71</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
 		<playType>组选6</playType>
-		<betContent>4 5 6 7 8 9</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>30</spend>
+		<betContent>1 4 5 6 7 8 9</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>84</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>46635080.53665</balance>
+		<balance>1144194.71</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
 		<playType>组选4</playType>
-		<betContent>0 1 2 3 4 5 6 7 8,0 1 2 7 8 9</betContent>
+		<betContent>0 1 2 5 6 7 8,0 1 2 7 8 9</betContent>
 		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>98</spend>
+		<amount>1</amount>
+		<spend>74</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>46634982.53665</balance>
+		<balance>1144120.71</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
 		<playType>一码不定位</playType>
-		<betContent>0 6 7 8 9</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>50</spend>
+		<betContent>0 1 2 5 6 7 8 9</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>16</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>323.761</drawnAmount>
-		<balance>46635256.29765</balance>
+		<drawnAmount>17.07</drawnAmount>
+		<balance>1144121.78</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
 		<playType>二码不定位</playType>
-		<betContent>0 1 2 3</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>60</spend>
+		<betContent>1 0 2 6 7 8 9</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>168</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>7301.548</drawnAmount>
-		<balance>46642497.84565</balance>
+		<drawnAmount>80.48</drawnAmount>
+		<balance>1144034.26</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>复式</playType>
-		<betContent>0 1 7 8 9,0 1 2 3,0 1 8 9,0 1 7,4 5 6 7</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>0</spend>
+		<betContent>0 1 2 7 8 9,0 1 2 3 4 9,0 1 2 7 8 9,0 1 3 5 8 9,0 1 4 5 7 8</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>46656</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>46642497.84565</balance>
+		<drawnAmount>588000</drawnAmount>
+		<balance>1685378.26</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>单式</playType>
-		<betContent>12212</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>10</spend>
+		<betContent>12212 85118 81158</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>24</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>46642487.84565</balance>
+		<drawnAmount>784000</drawnAmount>
+		<balance>2469354.26</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>组选120</playType>
-		<betContent>0 1 2 3 4 5 6 7 8 9</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>2520</spend>
+		<betContent>0 1 2 3 4 6 7 8 9</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>252</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>26677668.889</drawnAmount>
-		<balance>73317636.73465</balance>
+		<drawnAmount>0</drawnAmount>
+		<balance>2469102.26</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>组选60</playType>
-		<betContent>0 1 5 7 8 9 6,0 1 2 3 4 5 6</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>1850</spend>
+		<betContent>0 1 5 7 9 6,0 1 4 5 6 8 9</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>810</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>73315786.73465</balance>
+		<balance>2468292.26</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>组选30</playType>
-		<betContent>0 1 2 7,1 3 4 5 6 7</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>300</spend>
+		<betContent>0 1 2 7 8,1 3 4 5 6 7</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>104</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>73315486.73465</balance>
+		<drawnAmount>6533.33</drawnAmount>
+		<balance>2474721.59</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>组选20</playType>
-		<betContent>0 1 2 3,0 1 9</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>80</spend>
+		<betContent>0 1 2 7,0 1 8 9</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>108</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>73315406.73465</balance>
+		<balance>2474613.59</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>组选10</playType>
-		<betContent>0 4,0 1</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>30</spend>
+		<betContent>0 1 4,0 1 8</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>42</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>73315376.73465</balance>
+		<balance>2474571.59</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>组选5</playType>
 		<betContent>4 1 5,1 2 3</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>80</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>64</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>73315296.73465</balance>
+		<balance>2474507.59</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>一码不定位</playType>
 		<betContent>0 1 2 3 4 5 6</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>70</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>56</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>228.484</drawnAmount>
-		<balance>73315455.21865</balance>
+		<drawnAmount>19.12</drawnAmount>
+		<balance>2474470.71</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>二码不定位</playType>
 		<betContent>0 1 2 3 4 5 6</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>210</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>168</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>73315245.21865</balance>
+		<drawnAmount>53.44</drawnAmount>
+		<balance>2474356.15</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>三码不定位</playType>
-		<betContent>0 1 2 7 8 9</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>200</spend>
+		<betContent>0 1 2 5 8 9</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>40</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>73315045.21865</balance>
+		<drawnAmount>45.05</drawnAmount>
+		<balance>2474361.2</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>一帆风顺</playType>
 		<betContent>0 1 2 3 4 5 6 7 8 9</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>100</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>80</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>228.484</drawnAmount>
-		<balance>73315173.70265</balance>
+		<drawnAmount>19.12</drawnAmount>
+		<balance>2474300.32</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>好事成双</playType>
-		<betContent>0 1 2 3 4 5 6 7</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>80</spend>
+		<betContent>0 1 2 5 7 8</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>12</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>5788.836</drawnAmount>
-		<balance>73320882.53865</balance>
+		<drawnAmount>48.12</drawnAmount>
+		<balance>2474336.44</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>三星报喜</playType>
 		<betContent>1 2</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>20</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>4</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>73320862.53865</balance>
+		<balance>2474332.44</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
 		<playType>四季发财</playType>
 		<betContent>0 1 2 3 4 5 6 7 8 9</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>100</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>60</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>73320762.53865</balance>
+		<balance>2474272.44</balance>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
 		<playType>前二</playType>
 		<betContent>大 小 单 双,大 小 单 双</betContent>
-		<mutiple>5</mutiple>
-		<amount>3</amount>
-		<spend>160</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>96</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>614.656</drawnAmount>
-		<balance>73321217.19465</balance>
+		<drawnAmount>23.52</drawnAmount>
+		<balance>2474199.96</balance>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
 		<playType>后二</playType>
 		<betContent>大 小 单 双,大 小 单 双</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>96</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>32</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>368.7936</drawnAmount>
-		<balance>73321489.98825</balance>
+		<drawnAmount>7.84</drawnAmount>
+		<balance>2474175.8</balance>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
 		<playType>前三</playType>
 		<betContent>大 小 单 双,大 小 单 双,大 小 单 双</betContent>
-		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>256</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>128</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>983.4496</drawnAmount>
-		<balance>73322217.43785</balance>
+		<drawnAmount>15.68</drawnAmount>
+		<balance>2474063.48</balance>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
 		<playType>后三</playType>
 		<betContent>大 小 单 双,大 小 单 双,大 小 单 双</betContent>
 		<mutiple>3</mutiple>
-		<amount>3</amount>
+		<amount>1</amount>
 		<spend>384</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>1475.1744</drawnAmount>
-		<balance>73323308.61225</balance>
+		<drawnAmount>47.04</drawnAmount>
+		<balance>2473726.52</balance>
 	</order>
 	<order>
 		<betRange>两面</betRange>
 		<playType>两面</playType>
 		<betContent>和大 和小 和单 和双,大 小 单 双 质 合,大 小 单 双 质 合,大 小 单 双 质 合,大 小 单 双 质 合,大 小 单 双 质 合</betContent>
 		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>0</spend>
+		<amount>1</amount>
+		<spend>34</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>73323308.61225</balance>
+		<drawnAmount>11.76</drawnAmount>
+		<balance>2473704.28</balance>
 	</order>
 	<order>
 		<betRange>龙虎斗</betRange>
 		<playType>龙虎斗</playType>
 		<betContent>龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和</betContent>
-		<mutiple>3</mutiple>
-		<amount>3</amount>
-		<spend>0</spend>
+		<mutiple>1</mutiple>
+		<amount>4</amount>
+		<spend>120</spend>
 		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>73323308.61225</balance>
+		<drawnAmount>87.08</drawnAmount>
+		<balance>2473671.36</balance>
 	</order>
 	<order>
 		<betRange>猜豹子</betRange>
 		<playType>猜豹子</playType>
 		<betContent>0 1 2 3 4 5 6 7 8 9</betContent>
-		<mutiple>2</mutiple>
-		<amount>3</amount>
-		<spend>40</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>60</spend>
 		<resultNum>81158</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>73323268.61225</balance>
+		<balance>2473611.36</balance>
 	</order>
 </betorder>
