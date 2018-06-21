@@ -19,10 +19,10 @@ public class Betting_002_5Of11_Test {
     @Test
     public void orderBetting(ITestContext context) {
         String filePathXml = "./src/test/resources/res/5Of11BetDatas.xml";
-        BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePathXml, "11", "0", "02,05,07,03,08");
+        BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePathXml, "11", "062058");
         //投注
         betAPIHelper.betLottery();
         //指定开奖
-        betAPIHelper.openLottery();
+        //betAPIHelper.openLottery("0");
     }
 }

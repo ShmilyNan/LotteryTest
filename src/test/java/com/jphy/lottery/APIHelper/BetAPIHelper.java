@@ -32,9 +32,9 @@ public class BetAPIHelper {
     private static String resultNum;
     private static String resultOfBet;
     private static String bet_url;
-    private static String bet_Total_Amount;
+    private static String bet_Total_Amount;//花费
     private static String win_Amount;
-    private static String rebateAll;
+    private static String rebateAll;//返利
     private static String balance;
 
     /**
@@ -43,16 +43,15 @@ public class BetAPIHelper {
      * @param filePath
      * @param lotteryType
      * @param number
-     * @param resultNum
      */
-    public BetAPIHelper(ITestContext context,String filePath,String lotteryType,String number,String resultNum){
+    public BetAPIHelper(ITestContext context,String filePath,String lotteryType,String number){
         this.filePath = filePath;
         this.lotteryType = lotteryType;
         this.number = number;
-        this.resultNum = resultNum;
         seleniumUtil = new SeleniumUtil();
         interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
         betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
+        resultNum = betOrderList.get(0).getResultNum();
         token = PropertiesDataProvider.getTestData(interface_bet, "token");
     }
 
@@ -68,6 +67,7 @@ public class BetAPIHelper {
                     //调试
                     break;
             }
+            //break;
         }
     }
 
@@ -101,24 +101,24 @@ public class BetAPIHelper {
         System.out.println(betOrderList.get(i).getBetRange()+betOrderList.get(i).getPlayType());
         checkDatas(i,false);
         logger.info("==========start check Spend!=============");
-        seleniumUtil.isTextCorrect(bet_Total_Amount,betOrderList.get(i).getSpend());
+        //seleniumUtil.isTextCorrect(bet_Total_Amount,betOrderList.get(i).getSpend());
 
     }
 
     /**
      * 开奖，获取中奖信息
      */
-    public static void openLottery(){
+    public static void openLottery(String id){
         String openLottery_url = PropertiesDataProvider.getTestData(interface_bet, "openLottery_url");
-        String params_openLottery = "&lotteryType=" + Integer.parseInt(lotteryType) + "&number=" + number + "&resultNum=" + resultNum;
+        String params_openLottery = "&lotteryType=" + Integer.parseInt(lotteryType) + "&id=" + id + "&result=" + resultNum;
         HttpUtils.doPost(openLottery_url, params_openLottery);
         checkDatas(0,true);
-        for (int i = 0 ;i<betOrderList.size() ;i++ ){
+        for (int i = 0 ;i<betOrderList.size();i++ ){
             logger.info("==========start check Win_Amount!=============");
             seleniumUtil.isTextCorrect(win_Amount,betOrderList.get(i).getDrawnAmount());
             logger.info("==========start check UPPER_POINTS!=============");
             seleniumUtil.isTextCorrect(rebateAll,orderRebate.get(i).getRebateAll());
-            //break;
+            break;
         }
         logger.info("==========start check balance!=============");
         seleniumUtil.isTextCorrect(balance,betOrderList.get(0).getBalance());

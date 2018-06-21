@@ -8,17 +8,17 @@ import java.io.FileNotFoundException;
 
 /**
  * @author Lance
- * @Description 时时彩投注接口测试
+ * @Description K3投注接口测试
  * */
 public class Betting_003_K3_Test {
 
 	@Test
 	public void orderBetting(ITestContext context) {
 		String filePath = "./src/test/resources/res/K3BetDatas.xml";
-		BetAPIHelper betAPIHelper = new BetAPIHelper(context,filePath,"8","2","2,6,5");
+		BetAPIHelper betAPIHelper = new BetAPIHelper(context,filePath,"8","0620061");
 		//投注
 		betAPIHelper.betLottery();
 		//指定开奖
-		betAPIHelper.openLottery();
+		//betAPIHelper.openLottery("2");
 	}
 }

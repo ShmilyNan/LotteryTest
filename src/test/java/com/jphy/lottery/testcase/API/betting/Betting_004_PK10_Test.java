@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 /**
  * @author Lance
- * @Description 时时彩投注接口测试
+ * @Description PK10投注接口测试
  * */
 public class Betting_004_PK10_Test {
 
@@ -14,10 +14,10 @@ public class Betting_004_PK10_Test {
 	public void orderBetting(ITestContext context) {
 		String filePath = "./src/test/resources/res/PK10BetDatas.xml";
 		BetAPIHelper betAPIHelper = new BetAPIHelper(
-				context,filePath,"1","3","08,09,01,02,03,05,06,10,07,04");
+				context,filePath,"1","688335");
 		//投注
 		betAPIHelper.betLottery();
 		//指定开奖
-		betAPIHelper.openLottery();
+		//betAPIHelper.openLottery("");
 	}
 }
