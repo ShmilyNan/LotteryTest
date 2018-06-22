@@ -45,9 +45,10 @@ public class HttpUtils {
 			post.setHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			post.setHeader("Charset", "utf-8");
 			post.setHeader("clientCode", "0");
-			post.setHeader("terminal", "Mobile");
-			post.setHeader("platformCode", "003");
-			post.setHeader("deviceId", "123");
+			post.setHeader("terminal", "Android");
+			post.setHeader("platformCode", "001");
+			post.setHeader("deviceId", "867397038391761");
+			post.setHeader("versionCode", "1");
 			UrlEncodedFormEntity formEntity = new UrlEncodedFormEntity(formParams, "utf-8");
 			post.setEntity(formEntity);
 

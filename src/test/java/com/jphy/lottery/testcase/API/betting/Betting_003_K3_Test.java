@@ -12,13 +12,17 @@ import java.io.FileNotFoundException;
  * */
 public class Betting_003_K3_Test {
 
-	@Test
+	@Test(invocationCount = 1000)
 	public void orderBetting(ITestContext context) {
 		String filePath = "./src/test/resources/res/K3BetDatas.xml";
-		BetAPIHelper betAPIHelper = new BetAPIHelper(context,filePath,"8","0620061");
-		//投注
-		betAPIHelper.betLottery();
-		//指定开奖
-		//betAPIHelper.openLottery("2");
+		long start = System.currentTimeMillis();
+		while (true) {
+			BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "10");
+			//投注
+			betAPIHelper.betLottery();
+			if ((System.currentTimeMillis() - start) > 3600000 * 10) {
+				break;
+			}
+		}
 	}
 }

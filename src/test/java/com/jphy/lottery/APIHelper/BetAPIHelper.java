@@ -27,8 +27,8 @@ public class BetAPIHelper {
     private static List<BetOrder> betOrderList;
     private static List<OrderRebate> orderRebate;
     private static String lotteryType;
-    private static String number;
     private static String token;
+    private static String number;
     private static String resultNum;
     private static String resultOfBet;
     private static String bet_url;
@@ -42,12 +42,11 @@ public class BetAPIHelper {
      * @param context
      * @param filePath
      * @param lotteryType
-     * @param number
      */
-    public BetAPIHelper(ITestContext context,String filePath,String lotteryType,String number){
+    public BetAPIHelper(ITestContext context,String filePath,String lotteryType){
         this.filePath = filePath;
         this.lotteryType = lotteryType;
-        this.number = number;
+        this.number = JdbcUtil.query("SELECT number FROM basic_number WHERE LOTTERY_TYPE = 0 AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()");;
         seleniumUtil = new SeleniumUtil();
         interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
         betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
@@ -60,12 +59,22 @@ public class BetAPIHelper {
         for (int i = 0; i < betOrderList.size(); i++) {
             switch (str){
                 case "投注成功":
-                    bet(i);
+                    bet(i,number);
                     str = getBetInfo(resultOfBet);
+                    if (str.equals("当前期号不能投注")){
+                        number = JdbcUtil.query("SELECT number FROM basic_number WHERE LOTTERY_TYPE = 0 AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()");
+                    }
+                    logger.info(betOrderList.get(i).getBetRange()+betOrderList.get(i).getPlayType());
+                    logger.info(resultOfBet);
                     break;
-                case "投注成功1":
-                    //调试
-                    break;
+                default:
+                    bet(i,number);
+                    str = getBetInfo(resultOfBet);
+                    if (str.equals("当前期号不能投注")){
+                        number = JdbcUtil.query("SELECT number FROM basic_number WHERE LOTTERY_TYPE = 0 AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()");
+                    }
+                    logger.info(betOrderList.get(i).getBetRange()+betOrderList.get(i).getPlayType());
+                    logger.info(resultOfBet);
             }
             //break;
         }
@@ -74,7 +83,8 @@ public class BetAPIHelper {
     /**
      * 请求投注接口，获取返回信息
      */
-    private static void bet(int i){
+    private static void bet(int i,String number){
+
         JSONArray array = new JSONArray();
         JSONObject t = new JSONObject();
         t.put("betRange",betOrderList.get(i).getBetRange());
@@ -96,11 +106,9 @@ public class BetAPIHelper {
         bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
         String params_bet = "token=" + token + "&lotteryType=" + lotteryType + "&number=" + number + "&content=" + array.toString();
         resultOfBet = HttpUtils.doPost(bet_url, params_bet);
-        System.out.println(resultOfBet);
         System.out.println(i);
-        System.out.println(betOrderList.get(i).getBetRange()+betOrderList.get(i).getPlayType());
-        checkDatas(i,false);
-        logger.info("==========start check Spend!=============");
+        //checkDatas(i,false);
+        //logger.info("==========start check Spend!=============");
         //seleniumUtil.isTextCorrect(bet_Total_Amount,betOrderList.get(i).getSpend());
 
     }
@@ -112,7 +120,7 @@ public class BetAPIHelper {
         String openLottery_url = PropertiesDataProvider.getTestData(interface_bet, "openLottery_url");
         String params_openLottery = "&lotteryType=" + Integer.parseInt(lotteryType) + "&id=" + id + "&result=" + resultNum;
         HttpUtils.doPost(openLottery_url, params_openLottery);
-        checkDatas(0,true);
+        //checkDatas(0,true);
         for (int i = 0 ;i<betOrderList.size();i++ ){
             logger.info("==========start check Win_Amount!=============");
             seleniumUtil.isTextCorrect(win_Amount,betOrderList.get(i).getDrawnAmount());
@@ -127,8 +135,9 @@ public class BetAPIHelper {
 
     /**
      * 投注、开奖后在数据库中查询投注、开奖信息
-     * @param i
+     * @param
      */
+    /*
     public static void checkDatas(int i,boolean isOpen){
         Map<String,String> map1 = null;
         Map<String,String> map2 = null;
@@ -137,16 +146,16 @@ public class BetAPIHelper {
                 betOrderList.get(i).getBetRange(),lotteryType,betOrderList.get(i).getPlayType());
         String openSql = "SELECT * FROM lottery_user_account WHERE USER_ID = 35";
         if (!isOpen){
-            map1 = JdbcUtil.query(lotteryOrder,false);
+            map1 = JdbcUtil.query(lotteryOrder,1);
             bet_Total_Amount = map1.get("bet_Total_Amount");
         }else {
-            map1 = JdbcUtil.query(lotteryOrder,false);
+            map1 = JdbcUtil.query(lotteryOrder,1);
             win_Amount = map1.get("win_Amount");
             rebateAll = map1.get("UPPER_POINTS");
-            map2 = JdbcUtil.query(openSql,true);
+            map2 = JdbcUtil.query(openSql,2);
             balance = map2.get("balance");
         }
-    }
+    }*/
 
     private static String getBetInfo(String resultOfBet) {
         JSONObject json = JSONObject.parseObject(resultOfBet);

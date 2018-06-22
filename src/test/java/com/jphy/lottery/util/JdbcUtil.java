@@ -90,7 +90,25 @@ public class JdbcUtil {
 	}
 
 	/* 查询数据库，输出符合要求的记录的情况 */
-	public static Map<String,String> query(String sql,boolean isOpen) {
+	public static String query(String sql) {
+		connection = getConnection(); // 同样先要获取连接，即连接到数据库
+		String number = null;
+		try {
+			statement = (Statement) connection.createStatement(); // 创建用于执行静态sql语句的Statement对象，st属局部变量
+			ResultSet rs = statement.executeQuery(sql); // 执行sql查询语句，返回查询数据的结果集
+			while (rs.next()) { // 判断是否还有下一个数据
+				// 根据字段名获取相应的值
+				number = rs.getString("number");
+			}
+			rs.close();
+			statement.close();
+			connection.close(); // 关闭数据库连接
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return number;
+	}
+		/*
 		connection = getConnection(); // 同样先要获取连接，即连接到数据库
 		Map<String,String> map = null;
 		try {
@@ -98,18 +116,25 @@ public class JdbcUtil {
 			//PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			ResultSet rs = statement.executeQuery(sql); // 执行sql查询语句，返回查询数据的结果集
 			map = new HashMap<String,String>();
+			map.put("number",rs.getString("number"));
 			while (rs.next()) { // 判断是否还有下一个数据
 				// 根据字段名获取相应的值
-				if (!isOpen){
-					String bet_Total_Amount = rs.getString("bet_Total_Amount");
-					map.put("bet_Total_Amount",bet_Total_Amount);
-					String win_Amount = rs.getString("win_Amount");
-					String rebate = rs.getString("UPPER_POINTS");
-					map.put("win_Amount",win_Amount);
-					map.put("UPPER_POINTS",rebate);
-				}else {
-					String balance = rs.getString("num");
-					map.put("balance",balance);
+				switch (type){
+					case 1:
+						String bet_Total_Amount = rs.getString("bet_Total_Amount");
+						map.put("bet_Total_Amount",bet_Total_Amount);
+						String win_Amount = rs.getString("win_Amount");
+						String rebate = rs.getString("UPPER_POINTS");
+						map.put("win_Amount",win_Amount);
+						map.put("UPPER_POINTS",rebate);
+						break;
+					case 2:
+						String balance = rs.getString("num");
+						map.put("balance",balance);
+						break;
+					case 0:
+						map.put("number",rs.getString("number"));
+						break;
 				}
 			}
 			rs.close();
@@ -119,7 +144,8 @@ public class JdbcUtil {
 			e.printStackTrace();
 		}
 		return map;
-	}
+		*/
+
 
 	/* 删除符合要求的记录，输出情况 */
 	public static void delete(String sql) {

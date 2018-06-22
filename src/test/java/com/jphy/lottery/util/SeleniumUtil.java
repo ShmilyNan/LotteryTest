@@ -1,6 +1,9 @@
 package com.jphy.lottery.util;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -659,5 +662,15 @@ public class SeleniumUtil {
 			logger.error("元素：" + getLocatorByElement(findElementBy(by), ">") + "不存在");
 			return false;
 		}
+	}
+
+	public static String conversionTimeFormat(){
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:00");
+		long now = System.currentTimeMillis();
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTimeInMillis(now);
+		String str = sdf.format(calendar.getTime());
+		//System.out.println(now + " = " + sdf.format(calendar.getTime()));
+		return str.substring(0,15)+"0:00";
 	}
 }

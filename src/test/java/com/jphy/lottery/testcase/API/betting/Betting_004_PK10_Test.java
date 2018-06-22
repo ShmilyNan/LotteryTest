@@ -10,14 +10,17 @@ import org.testng.annotations.Test;
  * */
 public class Betting_004_PK10_Test {
 
-	@Test
+	@Test(invocationCount = 1000)
 	public void orderBetting(ITestContext context) {
 		String filePath = "./src/test/resources/res/PK10BetDatas.xml";
-		BetAPIHelper betAPIHelper = new BetAPIHelper(
-				context,filePath,"1","688335");
-		//投注
-		betAPIHelper.betLottery();
-		//指定开奖
-		//betAPIHelper.openLottery("");
+		long start = System.currentTimeMillis();
+		while (true) {
+			BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "1");
+			//投注
+			betAPIHelper.betLottery();
+			if ((System.currentTimeMillis() - start) > 3600000 * 10) {
+				break;
+			}
+		}
 	}
 }

@@ -5,369 +5,406 @@
 		<playType>前三直选复式</playType>
 		<betContent>01 02 03,04 05 06,07 08 09 10 11</betContent>
 		<mutiple>2</mutiple>
+		<amount>1</amount>
 		<spend>180</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>3841.00</drawnAmount>
-		<balance>1003661</balance>
+		<drawnAmount>3789.72</drawnAmount>
+		<balance>1003609.72</balance>
 	</order>
 	<order>
 		<betRange>三码</betRange>
 		<playType>前三直选单式</playType>
-		<betContent>01 02 03,04 05 06,07 08 09</betContent>
-		<mutiple>2</mutiple>
-		<spend>12</spend>
+		<betContent>01 02 03,04 05 06,07 08 09,02 05 07</betContent>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>30</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1003649.200</balance>
+		<drawnAmount>9474.3</drawnAmount>
+		<balance>1013054.02</balance>
 	</order>
 	<order>
 		<betRange>三码</betRange>
 		<playType>前三组选复式</playType>
 		<betContent>02 03 04 05 06 07 08 09</betContent>
-		<mutiple>2</mutiple>
-		<spend>224</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>336</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>3841.2</drawnAmount>
-		<balance>1007266.400</balance>
+		<drawnAmount>947.259</drawnAmount>
+		<balance>1013665.279</balance>
 	</order>
 	<order>
 		<betRange>三码</betRange>
 		<playType>前三组选单式</playType>
-		<betContent>05 02 07,07 08 09,10 11 03</betContent>
-		<mutiple>2</mutiple>
-		<spend>12</spend>
+		<betContent>01 02 03,06 07 08,09 10 11,05 02 07</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>24</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>3841.2</drawnAmount>
-		<balance>1011095.600</balance>
+		<drawnAmount>1263.012</drawnAmount>
+		<balance>1014904.291</balance>
 	</order>
 	<order>
 		<betRange>三码</betRange>
 		<playType>前三组选胆拖</playType>
 		<betContent>06 07,01 02 03 04 05 08 09 10 11</betContent>
 		<mutiple>2</mutiple>
+		<amount>1</amount>
 		<spend>36</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1011059.600</balance>
+		<balance>1014868.291</balance>
 	</order>
 	<order>
 		<betRange>二码</betRange>
 		<playType>前二直选复式</playType>
 		<betContent>01 02 03 04 05,06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>120</spend>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>300</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1010939.600</balance>
+		<balance>1014568.291</balance>
 	</order>
 	<order>
 		<betRange>二码</betRange>
 		<playType>前二直选单式</playType>
-		<betContent>01 02,02 01,05 06,07 08,09 10</betContent>
-		<mutiple>2</mutiple>
-		<spend>20</spend>
+		<betContent>01 02,02 05,05 02,07 08,09 10</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>30</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1010919.600</balance>
+		<drawnAmount>631.62</drawnAmount>
+		<balance>1015169.911</balance>
 	</order>
 	<order>
 		<betRange>二码</betRange>
 		<playType>前二组选复式</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>220</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>22</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>213.4</drawnAmount>
-		<balance>1010913.000</balance>
+		<drawnAmount>105.27</drawnAmount>
+		<balance>1015253.181</balance>
 	</order>
 	<order>
 		<betRange>二码</betRange>
 		<playType>前二组选单式</playType>
-		<betContent>01 02,03 04,05 06,07 08,09 10</betContent>
+		<betContent>01 02,02 01,05 02,07 08,09 10,11 07</betContent>
 		<mutiple>2</mutiple>
-		<spend>20</spend>
+		<amount>1</amount>
+		<spend>44</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1010897.000</balance>
+		<drawnAmount>210.54</drawnAmount>
+		<balance>1015419.721</balance>
 	</order>
 	<order>
 		<betRange>二码</betRange>
 		<playType>前二组选胆拖</playType>
 		<betContent>07,01 02 03 04 05 06 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>40</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>66</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1010857.000</balance>
+		<balance>1015353.721</balance>
 	</order>
 	<order>
 		<betRange>不定位</betRange>
 		<playType>前三一码不定位</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>44</spend>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>110</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>42.66</drawnAmount>
-		<balance>1010855.660</balance>
+		<drawnAmount>104.985</drawnAmount>
+		<balance>1015348.706</balance>
 	</order>
 	<order>
 		<betRange>定位胆</betRange>
 		<playType>复式</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11</betContent>
 		<mutiple>2</mutiple>
-		<spend>132</spend>
+		<amount>1</amount>
+		<spend>44</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>128.04</drawnAmount>
-		<balance>1010851.700</balance>
+		<drawnAmount>126.324</drawnAmount>
+		<balance>1015431.03</balance>
 	</order>
 	<order>
 		<betRange>趣味型</betRange>
 		<playType>定单双</playType>
 		<betContent>5单0双 4单1双 3单2双 2单3双 1单4双 0单5双</betContent>
-		<mutiple>2</mutiple>
-		<spend>24</spend>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>110</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>8.96</drawnAmount>
-		<balance>1010836.660</balance>
+		<drawnAmount>22.645</drawnAmount>
+		<balance>1015343.675</balance>
 	</order>
 	<order>
 		<betRange>趣味型</betRange>
 		<playType>猜中位</playType>
 		<betContent>03 04 05 06 07 08 09</betContent>
 		<mutiple>2</mutiple>
-		<spend>28</spend>
+		<amount>1</amount>
+		<spend>44</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>19.9</drawnAmount>
-		<balance>1010828.560</balance>
+		<drawnAmount>20.376</drawnAmount>
+		<balance>1015320.051</balance>
 	</order>
 	<order>
 		<betRange>任选复式</betRange>
 		<playType>一中一</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>44</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>20</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>42.6</drawnAmount>
-		<balance>1010827.160</balance>
+		<drawnAmount>20.94</drawnAmount>
+		<balance>1015320.991</balance>
 	</order>
 	<order>
 		<betRange>任选复式</betRange>
 		<playType>二中二</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
 		<mutiple>2</mutiple>
-		<spend>220</spend>
+		<amount>1</amount>
+		<spend>0</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>213.4</drawnAmount>
-		<balance>1010820.560</balance>
+		<drawnAmount>210.54</drawnAmount>
+		<balance>1015531.531</balance>
 	</order>
 	<order>
 		<betRange>任选复式</betRange>
 		<playType>三中三</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>660</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>640.2</drawnAmount>
-		<balance>1010800.760</balance>
+		<drawnAmount>947.43</drawnAmount>
+		<balance>1016478.961</balance>
 	</order>
 	<order>
 		<betRange>任选复式</betRange>
 		<playType>四中四</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>1320</spend>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>1280.4</drawnAmount>
-		<balance>1010761.160</balance>
+		<drawnAmount>3158.1</drawnAmount>
+		<balance>1019637.061</balance>
 	</order>
 	<order>
 		<betRange>任选复式</betRange>
 		<playType>五中五</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>1848</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>1792.56</drawnAmount>
-		<balance>1010705.720</balance>
+		<drawnAmount>3537.072</drawnAmount>
+		<balance>1023174.133</balance>
 	</order>
 	<order>
 		<betRange>任选复式</betRange>
 		<playType>六中五</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>1848</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>298.78</drawnAmount>
-		<balance>1009156.500</balance>
+		<drawnAmount>3537.072</drawnAmount>
+		<balance>1026711.205</balance>
 	</order>
 	<order>
 		<betRange>任选复式</betRange>
 		<playType>七中五</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>1320</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>86.36</drawnAmount>
-		<balance>1007922.860</balance>
+		<drawnAmount>1894.86</drawnAmount>
+		<balance>1028606.065</balance>
 	</order>
 	<order>
 		<betRange>任选复式</betRange>
 		<playType>八中五</playType>
 		<betContent>01 02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>660</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>32</drawnAmount>
-		<balance>1007294.860</balance>
+		<drawnAmount>945.72</drawnAmount>
+		<balance>1029551.785</balance>
 	</order>
 	<order>
 		<betRange>任选单式</betRange>
 		<playType>一中一</playType>
 		<betContent>01,02,03,04,05,06,07,08,09,10,11</betContent>
-		<mutiple>2</mutiple>
-		<spend>44</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>8</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>42.6</drawnAmount>
-		<balance>1007293.460</balance>
+		<drawnAmount>83.76</drawnAmount>
+		<balance>1029627.545</balance>
 	</order>
 	<order>
 		<betRange>任选单式</betRange>
 		<playType>二中二</playType>
 		<betContent>01 02,03 04,05 06,07 08,09 10</betContent>
-		<mutiple>2</mutiple>
-		<spend>20</spend>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>90</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>21.34</drawnAmount>
-		<balance>1007294.800</balance>
+		<drawnAmount>52.635</drawnAmount>
+		<balance>1029590.18</balance>
 	</order>
 	<order>
 		<betRange>任选单式</betRange>
 		<playType>三中三</playType>
-		<betContent>01 02 03,04 05 06,07 08 09</betContent>
-		<mutiple>2</mutiple>
-		<spend>12</spend>
+		<betContent>01 02 03,04 05 06,07 08 09,10 11 06</betContent>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>20</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1007282.800</balance>
+		<balance>1029570.18</balance>
 	</order>
 	<order>
 		<betRange>任选单式</betRange>
 		<playType>四中四</playType>
-		<betContent>01 02 03 04,05 06 07 08,09 10 11 06</betContent>
-		<mutiple>2</mutiple>
-		<spend>12</spend>
+		<betContent>01 02 03 04,05 06 07 08,09 10 11 05</betContent>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>80</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1007270.800</balance>
+		<balance>1029490.18</balance>
 	</order>
 	<order>
 		<betRange>任选单式</betRange>
 		<playType>五中五</playType>
-		<betContent>01 02 03 04 05,06 07 08 09 10,11 03 05 08 09,05 02 03 07 08</betContent>
-		<mutiple>2</mutiple>
-		<spend>16</spend>
+		<betContent>01 02 03 04 05,06 07 08 09 10</betContent>
+		<mutiple>8</mutiple>
+		<amount>1</amount>
+		<spend>32</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>1792.56</drawnAmount>
-		<balance>1009047.360</balance>
+		<drawnAmount>0</drawnAmount>
+		<balance>1029458.18</balance>
 	</order>
 	<order>
 		<betRange>任选单式</betRange>
 		<playType>六中五</playType>
-		<betContent>01 02 03 04 05 06,07 08 09 10 11 01,07 03 09 05 11 01</betContent>
+		<betContent>01 02 03 04 05 06,07 08 09 10 11 02</betContent>
 		<mutiple>2</mutiple>
-		<spend>12</spend>
+		<amount>1</amount>
+		<spend>32</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1009035.360</balance>
+		<balance>1029426.18</balance>
 	</order>
 	<order>
 		<betRange>任选单式</betRange>
 		<playType>七中五</playType>
-		<betContent>01 02 03 04 05 06 07,08 09 10 11 02 05 07</betContent>
+		<betContent>01 02 03 04 05 06 07</betContent>
 		<mutiple>2</mutiple>
-		<spend>8</spend>
+		<amount>1</amount>
+		<spend>12</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1009027.360</balance>
+		<balance>1029414.18</balance>
 	</order>
 	<order>
 		<betRange>任选单式</betRange>
 		<playType>八中五</playType>
-		<betContent>01 02 03 04 05 06 07 08,09 10 11 02 01 03 05 04</betContent>
-		<mutiple>2</mutiple>
-		<spend>8</spend>
+		<betContent>01 02 03 04 05 06 07 08,09 10 11 02 03 01 05 06</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>42</spend>
 		<resultNum>02,05,07,03,08</resultNum>
-		<drawnAmount>32</drawnAmount>
-		<balance>1009051.360</balance>
+		<drawnAmount>47.286</drawnAmount>
+		<balance>1029419.466</balance>
 	</order>
 	<order>
 		<betRange>任选胆拖</betRange>
 		<playType>二中二</playType>
 		<betContent>01,02 03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>40</spend>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>10</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1009011.360</balance>
+		<balance>1029409.466</balance>
 	</order>
 	<order>
 		<betRange>任选胆拖</betRange>
 		<playType>三中三</playType>
 		<betContent>01 02,03 04 05 06 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>36</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>30</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1008975.360</balance>
+		<balance>1029379.466</balance>
 	</order>
 	<order>
 		<betRange>任选胆拖</betRange>
 		<playType>四中四</playType>
-		<betContent>04,05 06 01 02 03 07 08 09 10 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>32</spend>
+		<betContent>04 05 06,01 02 03 07 08 09 10 11</betContent>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>24</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1008943.360</balance>
+		<balance>1029355.466</balance>
 	</order>
 	<order>
 		<betRange>任选胆拖</betRange>
 		<playType>五中五</playType>
 		<betContent>07 08 09 10,01 02 03 04 05 06 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>28</spend>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>70</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1008915.360</balance>
+		<balance>1029285.466</balance>
 	</order>
 	<order>
 		<betRange>任选胆拖</betRange>
 		<playType>六中五</playType>
 		<betContent>01 02 03 10 11,04 05 06 07 08 09</betContent>
-		<mutiple>2</mutiple>
-		<spend>24</spend>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>70</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1008891.360</balance>
+		<balance>1029215.466</balance>
 	</order>
 	<order>
 		<betRange>任选胆拖</betRange>
 		<playType>七中五</playType>
 		<betContent>01 10 11,02 03 04 05 06 07 08 09</betContent>
-		<mutiple>2</mutiple>
-		<spend>280</spend>
+		<mutiple>4</mutiple>
+		<amount>1</amount>
+		<spend>24</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1008611.360</balance>
+		<balance>1029191.466</balance>
 	</order>
 	<order>
 		<betRange>任选胆拖</betRange>
 		<playType>八中五</playType>
 		<betContent>01 03 04 06 07 09 10,02 05 08 11</betContent>
-		<mutiple>2</mutiple>
-		<spend>12</spend>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>0</spend>
 		<resultNum>02,05,07,03,08</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1008599.360</balance>
+		<balance>1029191.466</balance>
 	</order>
 </betorder>
