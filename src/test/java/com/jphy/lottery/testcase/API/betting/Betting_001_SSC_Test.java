@@ -14,10 +14,15 @@ import java.util.Map;
  */
 public class Betting_001_SSC_Test {
 
-    @Test(invocationCount = 1000)
+    @Test(invocationCount = 50)
     public void orderBetting(ITestContext context) {
         String filePath = "./src/test/resources/res/SSCBetDatas.xml";
-        long start = System.currentTimeMillis();
+        //long start = System.currentTimeMillis();
+        BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "0");
+        //投注
+        betAPIHelper.betLottery();
+
+        /*
         while (true) {
             BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "0");
             //投注
@@ -26,5 +31,6 @@ public class Betting_001_SSC_Test {
                 break;
             }
         }
+        */
     }
 }

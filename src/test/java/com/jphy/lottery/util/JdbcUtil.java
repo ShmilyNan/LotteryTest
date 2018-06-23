@@ -90,15 +90,15 @@ public class JdbcUtil {
 	}
 
 	/* 查询数据库，输出符合要求的记录的情况 */
-	public static String query(String sql) {
+	public static String query(String sql,String fieldName) {
 		connection = getConnection(); // 同样先要获取连接，即连接到数据库
-		String number = null;
+		String fieldValue = null;
 		try {
 			statement = (Statement) connection.createStatement(); // 创建用于执行静态sql语句的Statement对象，st属局部变量
 			ResultSet rs = statement.executeQuery(sql); // 执行sql查询语句，返回查询数据的结果集
 			while (rs.next()) { // 判断是否还有下一个数据
 				// 根据字段名获取相应的值
-				number = rs.getString("number");
+				fieldValue = rs.getString(fieldName);
 			}
 			rs.close();
 			statement.close();
@@ -106,7 +106,7 @@ public class JdbcUtil {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return number;
+		return fieldValue;
 	}
 		/*
 		connection = getConnection(); // 同样先要获取连接，即连接到数据库

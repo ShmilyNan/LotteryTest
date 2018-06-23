@@ -4,16 +4,31 @@ public class BetOrder {
 	/**
 	 * @author Lance
 	 */
-	
+	private Integer user_id;
 	private String betRange;
 	private String playType;
 	private String betContent;
-	private int mutiple;
+	private Integer mutiple;
 	private String amount;
 	private String spend;
 	private String resultNum;
 	private String drawnAmount;
 	private String balance;
+
+	/**
+	 * @return
+	 */
+	public Integer getUser_id() {
+		return user_id;
+	}
+
+	/**
+	 * @param user_id
+	 */
+	public void setUser_id(Integer user_id) {
+		this.user_id = user_id;
+	}
+
 
 	/**
 	 * @return the betRange
@@ -151,8 +166,8 @@ public class BetOrder {
 		this.resultNum = resultNum;
 	}
 
-	@Override
-	public String toString() {
-		return "BetOrder [betRange=" + betRange + ", playType=" + playType + ", betContent=" + betContent + ", mutiple=" + mutiple + ", amount=" + amount +", spend=" + spend +", drawnAmount=" + drawnAmount +", balance=" + balance + "]";
-	}
+	//@Override
+	//public String toString() {
+	//	return "BetOrder [betRange=" + betRange + ", playType=" + playType + ", betContent=" + betContent + ", mutiple=" + mutiple + ", amount=" + amount +", spend=" + spend +", drawnAmount=" + drawnAmount +", balance=" + balance + "]";
+	//}
 }

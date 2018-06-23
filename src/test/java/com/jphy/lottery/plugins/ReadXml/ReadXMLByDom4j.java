@@ -51,7 +51,10 @@ public class ReadXMLByDom4j {
                 while(betOrderIt.hasNext()){
                     Element child = (Element) betOrderIt.next();
                     String nodeName = child.getName();
-                    if(nodeName.equals("betRange")){
+                    if (nodeName.equals("user_id")){
+                        Integer user_id = Integer.valueOf(child.getStringValue());
+                        betOrder.setUser_id(user_id);
+                    }else if(nodeName.equals("betRange")){
                         String name = child.getStringValue();
                         betOrder.setBetRange(name);
                     }else if(nodeName.equals("playType")){
