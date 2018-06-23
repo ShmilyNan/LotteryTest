@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class Betting_001_SSC_Test {
 
-    @Test(invocationCount = 50)
+    @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) {
         String filePath = "./src/test/resources/res/SSCBetDatas.xml";
         //long start = System.currentTimeMillis();

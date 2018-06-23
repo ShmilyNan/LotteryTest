@@ -80,6 +80,7 @@ public class BetAPIHelper {
                         logger.info(betOrderList.get(i).getBetRange() + betOrderList.get(i).getPlayType());
                         logger.info(resultOfBet);
                 }
+                //break;
             }catch (Exception e){
                 logger.error(e);
             }
