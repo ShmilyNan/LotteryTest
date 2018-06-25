@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<betorder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<order>
+		<playType>和值</playType>
+		<betContent>大 小 单 双 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18</betContent>
+		<mutiple>1</mutiple>
+		<amount>2</amount>
+		<spend>40</spend>
+		<resultNum>265</resultNum>
+		<drawnAmount>25.94</drawnAmount>
+		<balance>999985.94</balance>
+	</order>
+	<order>
+		<playType>三同号通选</playType>
+		<betContent>三同号通选</betContent>
+		<mutiple>1</mutiple>
+		<amount>4</amount>
+		<spend>2</spend>
+		<resultNum>265</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>999983.94</balance>
+	</order>
+	<order>
+		<playType>三同号单选</playType>
+		<betContent>111 222 333 444 555 666</betContent>
+		<mutiple>1</mutiple>
+		<amount>7</amount>
+		<spend>12</spend>
+		<resultNum>265</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>999971.94</balance>
+	</order>
+	<order>
+		<playType>三不同号</playType>
+		<betContent>1 2 3 4 5 6</betContent>
+		<mutiple>1</mutiple>
+		<amount>3</amount>
+		<spend>40</spend>
+		<resultNum>265</resultNum>
+		<drawnAmount>158.4</drawnAmount>
+		<balance>1000090.34</balance>
+	</order>
+	<order>
+		<playType>三连号通选</playType>
+		<betContent>三连号通选</betContent>
+		<mutiple>1</mutiple>
+		<amount>6</amount>
+		<spend>2</spend>
+		<resultNum>265</resultNum>
+		<drawnAmount>47.52</drawnAmount>
+		<balance>1000135.86</balance>
+	</order>
+	<order>
+		<playType>二同号复选</playType>
+		<betContent>11 22 33 44 55 66</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>12</spend>
+		<resultNum>265</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1000123.86</balance>
+	</order>
+	<order>
+		<playType>二同号单选</playType>
+		<betContent>11 22 33 4 5 6</betContent>
+		<mutiple>1</mutiple>
+		<amount>5</amount>
+		<spend>18</spend>
+		<resultNum>265</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1000105.86</balance>
+	</order>
+	<order>
+		<playType>二不同号</playType>
+		<betContent>1 2 3 4 5 6</betContent>
+		<mutiple>1</mutiple>
+		<amount>6</amount>
+		<spend>12</spend>
+		<resultNum>265</resultNum>
+		<drawnAmount>56.97</drawnAmount>
+		<balance>1000150.83</balance>
+	</order>
+</betorder>

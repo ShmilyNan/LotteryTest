@@ -17,7 +17,7 @@ public class HttpRequestUtil {
 	 * @param jsonParams: json字符串,例如: "{\"username\":\"鄂F55555\",\"password\":\"123456\"}" ;其中属性名必须带双引号
 	 * @return 成功:返回json字符串
 	 */
-	public static String post(String strURL, String jsonParams) {
+	public static String doPost(String strURL, String jsonParams) {
 		String result="";
 		try {
 			URL url = new URL(strURL);// 创建连接
@@ -34,10 +34,10 @@ public class HttpRequestUtil {
 			connection.setRequestMethod("POST"); // 设置请求方式
 			connection.setRequestProperty("Accept", "application/json"); // 设置接收数据的格式
 			connection.setRequestProperty("Content-Type", "application/json"); // 设置发送数据的格式
-			connection.setRequestProperty("clientCode", "003");
-			connection.setRequestProperty("terminal", "PC");
-			connection.setRequestProperty("platformCode", "123");
-			connection.setRequestProperty("deviceId", "123");
+			connection.setRequestProperty("clientCode", "0");
+			connection.setRequestProperty("terminal", "Android");
+			connection.setRequestProperty("platformCode", "001");
+			connection.setRequestProperty("deviceId", "867397038391761");
 			
 			// 连接，从上述中url.openConnection()至此的配置必须要在connect之前完成
 			connection.connect();

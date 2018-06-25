@@ -16,17 +16,12 @@ import java.sql.SQLException;
  */
 public class Betting_002_5Of11_Test {
 
-    @Test(invocationCount = 100)
+    @Test(invocationCount = 50)
     public void orderBetting(ITestContext context) {
         String filePathXml = "./src/test/resources/res/5Of11BetDatas.xml";
-        //long start = System.currentTimeMillis();
-        //while (true) {
-            BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePathXml, "11");
-            //投注
-            betAPIHelper.betLottery();
-        //    if ((System.currentTimeMillis() - start) > 3600000 * 10) {
-        //        break;
-        //    }
-        //}
+        BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePathXml, "11");
+        //投注
+        betAPIHelper.betLottery();
+
     }
 }
