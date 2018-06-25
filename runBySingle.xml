@@ -25,10 +25,15 @@
 
     <test verbose="2" preserve-order="true" name="Single Test">
         <classes>
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_001_SSC_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_002_5Of11_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_003_K3_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_001_XJSSC_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_003_JSK3_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_003_AMK3_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_001_CQSSC_Test" />
             <class name="com.jphy.lottery.testcase.API.betting.Betting_004_PK10_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_002_5Of11_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_001_AMFFC_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_003_AHK3_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_001_AMWFC_Test" />
         </classes>
     </test>
     <listeners>
