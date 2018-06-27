@@ -24,7 +24,6 @@ public class Betting_009_PK10_Test {
 		}else {
 			logger.info("当前期已投注！");
             sleep(330000);
-
         }
 	}
 }

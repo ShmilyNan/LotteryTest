@@ -7,9 +7,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>52</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>114.84</drawnAmount>
-		<balance>1000062.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>77.2</drawnAmount>
+		<balance>1000025.2</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
@@ -18,9 +18,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>120</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>574.2</drawnAmount>
-		<balance>1000517.04</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>999905.2</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
@@ -29,9 +29,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>32</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>765.6</drawnAmount>
-		<balance>1001250.64</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>999873.2</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
@@ -40,9 +40,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>148</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>382.8</drawnAmount>
-		<balance>1001485.44</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>386</drawnAmount>
+		<balance>1000111.2</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
@@ -51,9 +51,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>112</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>191.4</drawnAmount>
-		<balance>1001564.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>193</drawnAmount>
+		<balance>1000192.2</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
@@ -62,9 +62,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>150</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>478.5</drawnAmount>
-		<balance>1001893.34</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>482.5</drawnAmount>
+		<balance>1000524.7</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
@@ -73,9 +73,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>16</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>191.4</drawnAmount>
-		<balance>1002068.74</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>193</drawnAmount>
+		<balance>1000701.7</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
@@ -84,9 +84,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>102</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>287.1</drawnAmount>
-		<balance>1002253.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>289.5</drawnAmount>
+		<balance>1000889.2</balance>
 	</order>
 	<order>
 		<betRange>前二</betRange>
@@ -95,9 +95,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>72</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>382.8</drawnAmount>
-		<balance>1002564.64</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>386</drawnAmount>
+		<balance>1001203.2</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
@@ -106,9 +106,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>160</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>957</drawnAmount>
-		<balance>1003361.64</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1001043.2</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
@@ -117,9 +117,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>16</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>382.8</drawnAmount>
-		<balance>1003728.44</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1001027.2</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
@@ -128,9 +128,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>94</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>191.4</drawnAmount>
-		<balance>1003825.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1000933.2</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
@@ -139,9 +139,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>396</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>574.2</drawnAmount>
-		<balance>1004004.04</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>579</drawnAmount>
+		<balance>1001116.2</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
@@ -150,9 +150,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>60</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>191.4</drawnAmount>
-		<balance>1004135.44</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1001056.2</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
@@ -161,9 +161,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>40</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>382.8</drawnAmount>
-		<balance>1004478.24</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1001016.2</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
@@ -172,20 +172,20 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>180</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>478.5</drawnAmount>
-		<balance>1004776.74</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1000836.2</balance>
 	</order>
 	<order>
 		<betRange>后二</betRange>
 		<playType>组选包胆</playType>
-		<betContent>0 1 4 5 6</betContent>
+		<betContent>8</betContent>
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>54</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>287.1</drawnAmount>
-		<balance>1005009.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1000782.2</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -194,9 +194,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>1080</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>5742</drawnAmount>
-		<balance>1009671.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>999702.2</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -205,9 +205,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>10</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1914</drawnAmount>
-		<balance>1011575.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>999692.2</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -216,9 +216,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>762</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1914</drawnAmount>
-		<balance>1012727.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>1930</drawnAmount>
+		<balance>1000860.2</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -227,9 +227,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>1508</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1914</drawnAmount>
-		<balance>1013133.84</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>999352.2</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -238,9 +238,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>590</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>3189.81</drawnAmount>
-		<balance>1015733.65</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>998762.2</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -249,9 +249,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>448</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>2551.848</drawnAmount>
-		<balance>1017837.498</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>998314.2</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -260,9 +260,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>80</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1017757.498</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>643.29</drawnAmount>
+		<balance>998877.49</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -271,9 +271,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>30</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1913.886</drawnAmount>
-		<balance>1019641.384</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>998847.49</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -282,9 +282,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>432</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>2551.848</drawnAmount>
-		<balance>1021761.232</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>1286.58</drawnAmount>
+		<balance>999702.07</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -293,9 +293,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>6</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1913.886</drawnAmount>
-		<balance>1023669.118</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>999696.07</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -304,9 +304,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>4</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1023665.118</balance>
+		<balance>999692.07</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -315,9 +315,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>14</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>14.078</drawnAmount>
-		<balance>1023665.196</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>21.285</drawnAmount>
+		<balance>999699.355</balance>
 	</order>
 	<order>
 		<betRange>前三</betRange>
@@ -326,9 +326,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>168</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1023497.196</balance>
+		<balance>999531.355</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -337,9 +337,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>2160</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>9570</drawnAmount>
-		<balance>1030907.196</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>997371.355</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -348,9 +348,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>8</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>3828</drawnAmount>
-		<balance>1034727.196</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>997363.355</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -359,9 +359,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>2058</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>5742</drawnAmount>
-		<balance>1038411.196</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>5790</drawnAmount>
+		<balance>1001095.355</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -370,9 +370,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>5800</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>9570</drawnAmount>
-		<balance>1042181.196</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>9650</drawnAmount>
+		<balance>1004945.355</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -381,9 +381,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>432</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>2551.848</drawnAmount>
-		<balance>1044301.044</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1004513.355</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -392,9 +392,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>120</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1275.924</drawnAmount>
-		<balance>1045456.968</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1004393.355</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -403,9 +403,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>70</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1045386.968</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>321.645</drawnAmount>
+		<balance>1004645</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -414,9 +414,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>6</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1913.886</drawnAmount>
-		<balance>1047294.854</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1004639</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -425,9 +425,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>540</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>3189.81</drawnAmount>
-		<balance>1049944.664</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1004099</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -436,9 +436,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>8</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>2551.848</drawnAmount>
-		<balance>1052488.512</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1004091</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -447,9 +447,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>10</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1052478.512</balance>
+		<balance>1004081</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -458,9 +458,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>40</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>28.156</drawnAmount>
-		<balance>1052466.668</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>85.14</drawnAmount>
+		<balance>1004126.14</balance>
 	</order>
 	<order>
 		<betRange>中三</betRange>
@@ -469,9 +469,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>24</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>70.878</drawnAmount>
-		<balance>1052513.546</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1004102.14</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -480,9 +480,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>1440</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>5742</drawnAmount>
-		<balance>1056815.546</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1002662.14</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -491,9 +491,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>2</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1914</drawnAmount>
-		<balance>1058727.546</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1002660.14</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -502,9 +502,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>1124</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>3828</drawnAmount>
-		<balance>1061431.546</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>3860</drawnAmount>
+		<balance>1005396.14</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -513,9 +513,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>1328</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>1914</drawnAmount>
-		<balance>1062017.546</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>1930</drawnAmount>
+		<balance>1005998.14</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -524,9 +524,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>108</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>637.962</drawnAmount>
-		<balance>1062547.508</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>643.29</drawnAmount>
+		<balance>1006533.43</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -535,9 +535,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>112</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1062435.508</balance>
+		<balance>1006421.43</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -546,9 +546,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>224</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>637.962</drawnAmount>
-		<balance>1062849.47</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>643.29</drawnAmount>
+		<balance>1006840.72</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -557,9 +557,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>6</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>956.943</drawnAmount>
-		<balance>1063800.413</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1006834.72</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -568,9 +568,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>108</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>318.981</drawnAmount>
-		<balance>1064011.394</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1006726.72</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -579,9 +579,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>4</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1064007.394</balance>
+		<balance>1006722.72</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -590,9 +590,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>6</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>956.943</drawnAmount>
-		<balance>1064958.337</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1006716.72</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -601,9 +601,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>42</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>42.234</drawnAmount>
-		<balance>1064958.571</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>42.57</drawnAmount>
+		<balance>1006717.29</balance>
 	</order>
 	<order>
 		<betRange>后三</betRange>
@@ -612,9 +612,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>126</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>106.317</drawnAmount>
-		<balance>1064938.888</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>321.615</drawnAmount>
+		<balance>1006912.905</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
@@ -623,9 +623,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>1800</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>19140</drawnAmount>
-		<balance>1082278.888</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1005112.905</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
@@ -634,9 +634,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>4</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>38280</drawnAmount>
-		<balance>1120554.888</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1005108.905</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
@@ -645,9 +645,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>700</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>0</drawnAmount>
-		<balance>1119854.888</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>4020.725</drawnAmount>
+		<balance>1008429.63</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
@@ -656,9 +656,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>1288</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>6379.848</drawnAmount>
-		<balance>1124946.736</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>1007141.63</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
@@ -667,9 +667,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>42</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1124904.736</balance>
+		<balance>1007099.63</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
@@ -678,9 +678,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>148</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>1124756.736</balance>
+		<balance>1006951.63</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
@@ -689,9 +689,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>48</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>49.635</drawnAmount>
-		<balance>1124758.371</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>66.66</drawnAmount>
+		<balance>1006970.29</balance>
 	</order>
 	<order>
 		<betRange>四星</betRange>
@@ -700,9 +700,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>42</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>19.62</drawnAmount>
-		<balance>1124735.991</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>59.34</drawnAmount>
+		<balance>1006987.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -711,9 +711,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>31104</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>382800</drawnAmount>
-		<balance>1476431.991</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>975883.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -722,9 +722,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>18</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>574200</drawnAmount>
-		<balance>2050613.991</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>975865.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -733,9 +733,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>252</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>2050361.991</balance>
+		<balance>975613.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -744,9 +744,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>540</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>2049821.991</balance>
+		<balance>975073.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -755,9 +755,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>104</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>6379.962</drawnAmount>
-		<balance>2056097.953</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>974969.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -766,9 +766,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>108</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>2055989.953</balance>
+		<balance>974861.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -777,9 +777,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>28</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>2055961.953</balance>
+		<balance>974833.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -788,9 +788,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>48</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>2055913.953</balance>
+		<balance>974785.63</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -799,9 +799,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>28</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>9.236</drawnAmount>
-		<balance>2055895.189</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>27.9</drawnAmount>
+		<balance>974785.53</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -810,9 +810,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>168</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>52.004</drawnAmount>
-		<balance>2055779.193</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>157.26</drawnAmount>
+		<balance>974774.79</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -821,9 +821,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>120</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>131.976</drawnAmount>
-		<balance>2055791.169</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>1330.8</drawnAmount>
+		<balance>975985.59</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -832,9 +832,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>80</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>18.472</drawnAmount>
-		<balance>2055729.641</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>93</drawnAmount>
+		<balance>975998.59</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -843,9 +843,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>24</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>93.832</drawnAmount>
-		<balance>2055799.473</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>0</drawnAmount>
+		<balance>975974.59</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -854,9 +854,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>16</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>2055783.473</balance>
+		<balance>975958.59</balance>
 	</order>
 	<order>
 		<betRange>五星</betRange>
@@ -865,9 +865,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>60</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>2055723.473</balance>
+		<balance>975898.59</balance>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
@@ -876,9 +876,9 @@
 		<mutiple>5</mutiple>
 		<amount>1</amount>
 		<spend>160</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>153.12</drawnAmount>
-		<balance>2055716.593</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>154.4</drawnAmount>
+		<balance>975892.99</balance>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
@@ -887,9 +887,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>32</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>30.624</drawnAmount>
-		<balance>2055715.217</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>30.88</drawnAmount>
+		<balance>975891.87</balance>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
@@ -898,9 +898,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>256</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>244.992</drawnAmount>
-		<balance>2055704.209</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>247.04</drawnAmount>
+		<balance>975882.91</balance>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
@@ -909,9 +909,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>384</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>367.488</drawnAmount>
-		<balance>2055687.697</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>370.56</drawnAmount>
+		<balance>975869.47</balance>
 	</order>
 	<order>
 		<betRange>两面</betRange>
@@ -920,9 +920,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>34</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>32.538</drawnAmount>
-		<balance>2055686.235</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>32.81</drawnAmount>
+		<balance>975868.28</balance>
 	</order>
 	<order>
 		<betRange>龙虎斗</betRange>
@@ -931,9 +931,9 @@
 		<mutiple>1</mutiple>
 		<amount>2</amount>
 		<spend>60</spend>
-		<resultNum>81158</resultNum>
-		<drawnAmount>73.024</drawnAmount>
-		<balance>2055699.259</balance>
+		<resultNum>18905</resultNum>
+		<drawnAmount>42.6</drawnAmount>
+		<balance>975850.88</balance>
 	</order>
 	<order>
 		<betRange>猜豹子</betRange>
@@ -942,8 +942,8 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>60</spend>
-		<resultNum>81158</resultNum>
+		<resultNum>18905</resultNum>
 		<drawnAmount>0</drawnAmount>
-		<balance>2055639.259</balance>
+		<balance>975790.88</balance>
 	</order>
 </betorder>
