@@ -31,7 +31,6 @@ public class BetAPIHelper {
     private static String lotteryType;
     private static String token;
     private static String number;
-    private static String getNumber;
     private static String resultNum;
     private static String resultOfBet;
     private static String bet_url;
@@ -62,21 +61,21 @@ public class BetAPIHelper {
      * @param filePath
      * @param lotteryType
      */
-    public BetAPIHelper(ITestContext context, String filePath, String lotteryType) {
+    public BetAPIHelper(ITestContext context, String filePath, String lotteryType,String number) {
         this.filePath = filePath;
         this.lotteryType = lotteryType;
-        getNumber = String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", Integer.parseInt(lotteryType));
-        String mark = lotteryType + "" + getNumber;
+        number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", Integer.parseInt(lotteryType)), "number");
+        String mark = lotteryType + "" + number;
         if(betMap.get(mark) != null){//已经投注过
             this.canBet = false;
         }else{//还未投注
-            this.number = JdbcUtil.query(getNumber, "number");
+            this.number = number;
             seleniumUtil = new SeleniumUtil();
             interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
             betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
             resultNum = betOrderList.get(0).getResultNum();
             token = PropertiesDataProvider.getTestData(interface_bet, "token");
-            betMap.put(mark,getNumber);
+            betMap.put(mark,number);
             this.canBet = true;
         }
     }
