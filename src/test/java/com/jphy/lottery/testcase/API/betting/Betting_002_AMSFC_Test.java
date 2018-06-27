@@ -27,7 +27,7 @@ public class Betting_002_AMSFC_Test {
                 break;
             }else {
                 logger.info("当前期已投注！");
-                sleep(100000);
+                sleep(30000);
                 continue;
             }
         }

@@ -32,7 +32,7 @@ public class Betting_005_5Of11_Test {
                 break;
             }else {
                 logger.info("当前期已投注！");
-                sleep(400000);
+                sleep(180000);
                 continue;
             }
         }

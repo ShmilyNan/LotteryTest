@@ -27,7 +27,7 @@ public class Betting_003_CQSSC_Test {
                 break;
             }else {
                 logger.info("当前期已投注！");
-                sleep(180000);
+                sleep(60000);
                 continue;
             }
         }
