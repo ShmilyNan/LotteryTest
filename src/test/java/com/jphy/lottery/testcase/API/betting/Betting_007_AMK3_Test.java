@@ -18,9 +18,9 @@ public class Betting_007_AMK3_Test {
 	@Test(invocationCount = 60)
 	public void orderBetting(ITestContext context) throws Exception{
 		String filePath = "./src/test/resources/res/AMK3BetDatas.xml";
-        String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 10),"number");
-		BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "10",number);
         while (true){
+            String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 10),"number");
+            BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "10",number);
             //投注
             if(betAPIHelper.getCanbet()){
                 betAPIHelper.betLottery();

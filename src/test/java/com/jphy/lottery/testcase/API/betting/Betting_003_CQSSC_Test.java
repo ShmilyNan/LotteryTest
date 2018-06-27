@@ -18,9 +18,9 @@ public class Betting_003_CQSSC_Test {
     @Test(invocationCount = 12)
     public void orderBetting(ITestContext context) throws Exception{
         String filePath = "./src/test/resources/res/CQSSCBetDatas.xml";
-        String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 0),"number");
-        BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "0",number);
         while (true){
+            String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 0),"number");
+            BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "0",number);
             //投注
             if(betAPIHelper.getCanbet()){
                 betAPIHelper.betLottery();

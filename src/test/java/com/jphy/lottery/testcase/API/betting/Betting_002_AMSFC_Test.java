@@ -18,9 +18,9 @@ public class Betting_002_AMSFC_Test {
     @Test(invocationCount = 30)
     public void orderBetting(ITestContext context) throws Exception{
         String filePath = "./src/test/resources/res/AMWFCBetDatas.xml";
-        String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 5),"number");
-        BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "5",number);
         while (true){
+            String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 5),"number");
+            BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "5",number);
             //投注
             if(betAPIHelper.getCanbet()){
                 betAPIHelper.betLottery();

@@ -18,9 +18,9 @@ public class Betting_009_PK10_Test {
 	@Test(invocationCount = 12)
 	public void orderBetting(ITestContext context) throws Exception{
 		String filePath = "./src/test/resources/res/PK10BetDatas.xml";
-		String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 1),"number");
-		BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "1",number);
 		while (true){
+			String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 1),"number");
+			BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "1",number);
 			//投注
 			if(betAPIHelper.getCanbet()){
 				betAPIHelper.betLottery();
