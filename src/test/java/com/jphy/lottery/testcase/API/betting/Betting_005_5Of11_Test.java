@@ -20,7 +20,7 @@ import static java.lang.Thread.sleep;
 public class Betting_005_5Of11_Test {
     public static Logger logger = Logger.getLogger(Betting_005_5Of11_Test.class.getName());
 
-    @Test(invocationCount = 6)
+    @Test(invocationCount = 3)
     public void orderBetting(ITestContext context) throws Exception{
         String filePathXml = "./src/test/resources/res/5Of11BetDatas.xml";
         while (true){

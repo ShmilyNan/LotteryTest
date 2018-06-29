@@ -16,7 +16,7 @@ import static java.lang.Thread.sleep;
 public class Betting_004_XJSSC_Test {
     public static Logger logger = Logger.getLogger(Betting_004_XJSSC_Test.class.getName());
 
-    @Test(invocationCount = 6)
+    @Test(invocationCount = 3)
     public void orderBetting(ITestContext context) throws Exception{
         String filePath = "./src/test/resources/res/XJSSCBetDatas.xml";
         while (true){

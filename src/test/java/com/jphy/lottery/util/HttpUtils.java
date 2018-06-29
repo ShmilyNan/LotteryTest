@@ -20,7 +20,7 @@ import org.apache.http.util.EntityUtils;
 
 @SuppressWarnings("deprecation")
 public class HttpUtils {
-	private static final int CONNECTION_TIME_OUT = 100000000;
+	private static final int CONNECTION_TIME_OUT = 5000;
 
 	@SuppressWarnings({ "resource" })
 	public static String doPost(String url, String param) {
