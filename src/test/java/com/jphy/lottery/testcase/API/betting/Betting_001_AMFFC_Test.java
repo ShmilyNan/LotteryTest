@@ -28,7 +28,7 @@ public class Betting_001_AMFFC_Test {
                 break;
             } else {
                 logger.info("当前期已投注！");
-                sleep(10000);
+                sleep(5000);
                 continue;
             }
         }
