@@ -14,8 +14,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -153,7 +153,7 @@
                         <!-- 解决用maven执行test时 日志乱码的问题，详见：http://www.cnblogs.com/discuss/archive/2010/10/27/1862225.html -->
                         <argLine>-Dfile.encoding=UTF-8</argLine>
                         <suiteXmlFiles>
-                            <suiteXmlFile>runAllByChrome.xml</suiteXmlFile>
+                            <suiteXmlFile>runBySingle.xml</suiteXmlFile>
                         </suiteXmlFiles>
                         <!--定义maven运行测试生成的报表路径 -->
                         <reportsDirectory>./result/test-report/default</reportsDirectory>
