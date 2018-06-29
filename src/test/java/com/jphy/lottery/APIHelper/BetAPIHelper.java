@@ -121,6 +121,12 @@ public class BetAPIHelper {
         t.put("isWinStop", 0);
         array.add(t);
         bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
+
+        int rand = (int)(Math.random()*91)+10;
+        String tokenQ = PropertiesDataProvider.getTestData(interface_bet, "tokenQ");
+        String tokenH = PropertiesDataProvider.getTestData(interface_bet, "tokenH");
+        token = tokenQ +rand+ tokenH;
+
         String params_bet = "token=" + token + "&lotteryType=" + lotteryType + "&number=" + number + "&content=" + array.toString();
 
         boolean success = true;
@@ -128,15 +134,10 @@ public class BetAPIHelper {
         resultOfBet = HttpUtils.doPost(bet_url, params_bet);
         if (resultOfBet == null) {
             resultOfBet = HttpUtils.doPost(bet_url, params_bet);
-            if (resultOfBet == null) {
-                resultOfBet = HttpUtils.doPost(bet_url, params_bet);
-                if (resultOfBet == null) {
                     success = false;
-                }
             }
             //logger.info("==========start check Spend!=============");
             //seleniumUtil.isTextCorrect(bet_Total_Amount,betOrderList.get(i).getSpend());
-        }
 
         return success;
     }
