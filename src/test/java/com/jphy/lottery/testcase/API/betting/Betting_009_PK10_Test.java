@@ -15,7 +15,7 @@ import static java.lang.Thread.sleep;
 public class Betting_009_PK10_Test {
 	public static Logger logger = Logger.getLogger(Betting_009_PK10_Test.class.getName());
 
-	@Test(invocationCount = 12)
+	@Test(invocationCount = 6)
 	public void orderBetting(ITestContext context) throws Exception{
 		String filePath = "./src/test/resources/res/PK10BetDatas.xml";
 		while (true){

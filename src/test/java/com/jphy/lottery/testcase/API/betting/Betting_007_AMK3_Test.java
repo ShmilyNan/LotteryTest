@@ -15,7 +15,7 @@ import static java.lang.Thread.sleep;
 public class Betting_007_AMK3_Test {
 	public static Logger logger = Logger.getLogger(Betting_007_AMK3_Test.class.getName());
 
-	@Test(invocationCount = 60)
+	@Test(invocationCount = 30)
 	public void orderBetting(ITestContext context) throws Exception{
 		String filePath = "./src/test/resources/res/AMK3BetDatas.xml";
         while (true){

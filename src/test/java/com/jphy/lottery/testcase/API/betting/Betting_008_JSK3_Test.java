@@ -15,7 +15,7 @@ import static java.lang.Thread.sleep;
 public class Betting_008_JSK3_Test {
 	public static Logger logger = Logger.getLogger(Betting_008_JSK3_Test.class.getName());
 
-	@Test(invocationCount = 6)
+	@Test(invocationCount = 3)
 	public void orderBetting(ITestContext context) throws Exception{
 		String filePath = "./src/test/resources/res/JSK3BetDatas.xml";
         while (true){

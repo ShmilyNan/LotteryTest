@@ -17,6 +17,7 @@ import java.net.ConnectException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * 投注接口测试
@@ -74,7 +75,7 @@ public class BetAPIHelper {
             interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
             betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
             resultNum = betOrderList.get(0).getResultNum();
-            token = PropertiesDataProvider.getTestData(interface_bet, "token");
+
             betMap.put(mark,number);
             this.canBet = true;
         }
@@ -82,6 +83,7 @@ public class BetAPIHelper {
 
     public static void betLottery() {
         for (int i = 0; i < betOrderList.size(); i++) {
+
             boolean success = bet(i, number);
             if (!success) {
                 logger.info("彩种：" + lotteryType + ", 期号：" + number + "投注结束，共投：" + i + "单");
@@ -122,6 +124,11 @@ public class BetAPIHelper {
         t.put("isWinStop", 0);
         array.add(t);
         bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
+
+        int rand = (int)(Math.random()*91)+10;
+        String tokenQ = PropertiesDataProvider.getTestData(interface_bet, "tokenQ");
+        String tokenH = PropertiesDataProvider.getTestData(interface_bet, "tokenH");
+        token = tokenQ +rand+ tokenH;
         String params_bet = "token=" + token + "&lotteryType=" + lotteryType + "&number=" + number + "&content=" + array.toString();
 
         boolean success = true;

@@ -16,7 +16,7 @@ import static java.lang.Thread.sleep;
 public class Betting_001_AMFFC_Test {
     public static Logger logger = Logger.getLogger(Betting_001_AMFFC_Test.class.getName());
 
-    @Test(invocationCount = 60)
+    @Test(invocationCount = 30)
     public void orderBetting(ITestContext context) throws Exception {
         String filePath = "./src/test/resources/res/AMFFCBetDatas.xml";
         while (true) {
