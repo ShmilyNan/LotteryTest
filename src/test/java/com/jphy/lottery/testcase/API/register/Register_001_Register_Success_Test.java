@@ -14,7 +14,7 @@ public class Register_001_Register_Success_Test {
 
 	@Test
 	public void accountRegistration(ITestContext context) {
-		RegisterHelper registerHelper = new RegisterHelper(context,"15196685176","007139182");
+		RegisterHelper registerHelper = new RegisterHelper();
 		registerHelper.register();
 	}
 }
