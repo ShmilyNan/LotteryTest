@@ -15,9 +15,9 @@ import static java.lang.Thread.sleep;
 public class Betting_003_CQSSC_Test {
     public static Logger logger = Logger.getLogger(Betting_003_CQSSC_Test.class.getName());
 
-    @Test(invocationCount = 6)
+    @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception{
-        String filePath = "./src/test/resources/res/CQSSCBetDatas.xml";
+        String filePath = "./src/test/resources/data/CQSSCBetDatas.xml";
         while (true){
             String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 0),"number");
             BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "0",number);
@@ -26,7 +26,7 @@ public class Betting_003_CQSSC_Test {
                 betAPIHelper.betLottery();
                 break;
             }else {
-                logger.info("当前期已投注！");
+                logger.info("期号:"+number+"，已投注！");
                 sleep(60000);
                 continue;
             }

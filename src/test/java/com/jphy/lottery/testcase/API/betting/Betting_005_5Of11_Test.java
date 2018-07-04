@@ -20,9 +20,9 @@ import static java.lang.Thread.sleep;
 public class Betting_005_5Of11_Test {
     public static Logger logger = Logger.getLogger(Betting_005_5Of11_Test.class.getName());
 
-    @Test(invocationCount = 3)
+    @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception{
-        String filePathXml = "./src/test/resources/res/5Of11BetDatas.xml";
+        String filePathXml = "./src/test/resources/data/5Of11BetDatas.xml";
         while (true){
             String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 11),"number");
             BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePathXml, "11",number);
@@ -31,7 +31,7 @@ public class Betting_005_5Of11_Test {
                 betAPIHelper.betLottery();
                 break;
             }else {
-                logger.info("当前期已投注！");
+                logger.info("期号:"+number+"，已投注！");
                 sleep(180000);
                 continue;
             }
