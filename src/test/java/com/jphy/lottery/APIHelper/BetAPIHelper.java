@@ -73,7 +73,6 @@ public class BetAPIHelper {
             interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
             betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
             resultNum = betOrderList.get(0).getResultNum();
-            token = PropertiesDataProvider.getTestData(interface_bet, "token");
             betMap.put(mark, number);
             this.canBet = true;
         }
