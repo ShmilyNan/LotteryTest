@@ -17,13 +17,13 @@ public class Betting_002_AMSFC_Test {
 
     @Test(invocationCount = 20)
     public void orderBetting(ITestContext context) throws Exception{
-        String filePath = "./src/test/resources/data/AMWFCBetDatas.xml";
+        String filePath = "./src/test/resources/data/SSCBetDatas.xml";
         while (true){
             String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 5),"number");
             BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "5",number);
             //投注
             if(betAPIHelper.getCanbet()){
-                betAPIHelper.betLottery();
+                betAPIHelper.betLottery(null);
                 break;
             }else {
                 logger.info("期号:"+number+"，已投注！");

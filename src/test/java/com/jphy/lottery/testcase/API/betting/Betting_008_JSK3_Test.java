@@ -23,7 +23,7 @@ public class Betting_008_JSK3_Test {
             BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "8",number);
             //投注
             if(betAPIHelper.getCanbet()){
-                betAPIHelper.betLottery();
+                betAPIHelper.betLottery(null);
                 break;
             }else {
                 logger.info("期号:"+number+"，已投注！");

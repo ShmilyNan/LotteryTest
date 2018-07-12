@@ -14,21 +14,23 @@ import static java.lang.Thread.sleep;
  */
 public class Betting_006_AHK3_Test {
     public static Logger logger = Logger.getLogger(Betting_006_AHK3_Test.class.getName());
+    public static String number;
+    public static String numberId;
 
-    @Test(invocationCount = 6)
+    @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception {
         String filePath = "./src/test/resources/data/AHK3BetDatas.xml";
-        while (true) {
-            String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 9), "number");
+        number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < SYSDATE() AND MODIFY_TIME > SYSDATE()", 9),"number");
+        numberId = JdbcUtil.query(String.format("SELECT ID FROM basic_number WHERE LOTTERY_TYPE = %d AND NUMBER = %s", 9,number),"id");
+        for(int i = 0;i<20;i++) {
             BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "9", number);
             //投注
             if (betAPIHelper.getCanbet()) {
-                betAPIHelper.betLottery();
-                break;
+                betAPIHelper.betLottery(null);
             } else {
-                logger.info("期号:"+number+"，已投注！");
-                sleep(180000);
-                continue;
+                number = JdbcUtil.query(String.format("select * from basic_number r where r.LOTTERY_TYPE = %d and r.id > %s order by r.ID asc LIMIT 1",9,numberId),"number");
+                numberId = JdbcUtil.query(String.format("SELECT ID FROM basic_number WHERE LOTTERY_TYPE = %d AND NUMBER = %s", 9,number),"id");
+                sleep(3000);
             }
         }
     }

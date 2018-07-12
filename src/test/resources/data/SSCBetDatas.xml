@@ -951,73 +951,73 @@
 	<order>
 		<betRange>大小单双</betRange>
 		<playType>前二</playType>
-		<betContent>大 小 单 双,大 小 单 双</betContent>
+		<betContent>大 双,大 双</betContent>
 		<mutiple>5</mutiple>
 		<amount>1</amount>
-		<spend>160</spend>
-		<RebateAll>5.44</RebateAll>
-		<drawnAmount>154.4</drawnAmount>
-		<balance>1141781.135</balance>
+		<spend>40</spend>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>0</drawnAmount>
+		<balance>1141746.735</balance>
 		<resultNum>12345</resultNum>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
 		<playType>后二</playType>
-		<betContent>大 小 单 双,大 小 单 双</betContent>
+		<betContent>大 双,大 双</betContent>
 		<mutiple>1</mutiple>
 		<amount>1</amount>
-		<spend>32</spend>
-		<RebateAll>1.088</RebateAll>
-		<drawnAmount>30.88</drawnAmount>
-		<balance>1141780.015</balance>
+		<spend>8</spend>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>0</drawnAmount>
+		<balance>1141738.735</balance>
 		<resultNum>12345</resultNum>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
 		<playType>前三</playType>
-		<betContent>大 小 单 双,大 小 单 双,大 小 单 双</betContent>
+		<betContent>大 双,大 双,大 双</betContent>
 		<mutiple>2</mutiple>
 		<amount>1</amount>
-		<spend>256</spend>
-		<RebateAll>8.704</RebateAll>
-		<drawnAmount>247.04</drawnAmount>
-		<balance>1141771.055</balance>
+		<spend>32</spend>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>0</drawnAmount>
+		<balance>1141706.735</balance>
 		<resultNum>12345</resultNum>
 	</order>
 	<order>
 		<betRange>大小单双</betRange>
 		<playType>后三</playType>
-		<betContent>大 小 单 双,大 小 单 双,大 小 单 双</betContent>
+		<betContent>大 双,大 双,大 双</betContent>
 		<mutiple>3</mutiple>
 		<amount>1</amount>
-		<spend>384</spend>
-		<RebateAll>13.056</RebateAll>
-		<drawnAmount>370.56</drawnAmount>
-		<balance>1141757.615</balance>
+		<spend>48</spend>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>0</drawnAmount>
+		<balance>1141658.735</balance>
 		<resultNum>12345</resultNum>
 	</order>
 	<order>
 		<betRange>两面</betRange>
 		<playType>两面</playType>
-		<betContent>和大 和小 和单 和双,大 小 单 双 质 合,大 小 单 双 质 合,大 小 单 双 质 合,大 小 单 双 质 合,大 小 单 双 质 合</betContent>
+		<betContent>和大 和双,大 单 质,大 单 质,大 单 质,大 单 质,大 单 质</betContent>
 		<mutiple>1</mutiple>
 		<amount>1</amount>
-		<spend>34</spend>
-		<RebateAll>1.156</RebateAll>
-		<drawnAmount>32.81</drawnAmount>
-		<balance>1141756.425</balance>
+		<spend>17</spend>
+		<RebateAll>0.544</RebateAll>
+		<drawnAmount>15.44</drawnAmount>
+		<balance>1141657.175</balance>
 		<resultNum>12345</resultNum>
 	</order>
 	<order>
 		<betRange>龙虎斗</betRange>
 		<playType>龙虎斗</playType>
-		<betContent>龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和,龙 虎 和</betContent>
+		<betContent>龙 和,龙 和,龙 和,龙 和,龙 和,龙 和,龙 和,龙 和,龙 和,龙 和</betContent>
 		<mutiple>1</mutiple>
 		<amount>2</amount>
-		<spend>60</spend>
-		<RebateAll>1.36</RebateAll>
-		<drawnAmount>42.6</drawnAmount>
-		<balance>1141739.025</balance>
+		<spend>40</spend>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>0</drawnAmount>
+		<balance>1141617.175</balance>
 		<resultNum>12345</resultNum>
 	</order>
 	<order>
@@ -1029,7 +1029,79 @@
 		<spend>30</spend>
 		<RebateAll>0</RebateAll>
 		<drawnAmount>0</drawnAmount>
-		<balance>1141709.025</balance>
+		<balance>1141587.175</balance>
+		<resultNum>12345</resultNum>
+	</order>
+	<order>
+		<betRange>大小单双</betRange>
+		<playType>前二</playType>
+		<betContent>小 单,小 单</betContent>
+		<mutiple>5</mutiple>
+		<amount>1</amount>
+		<spend>40</spend>
+		<RebateAll>2.72</RebateAll>
+		<drawnAmount>77.2</drawnAmount>
+		<balance>1141624.375</balance>
+		<resultNum>12345</resultNum>
+	</order>
+	<order>
+		<betRange>大小单双</betRange>
+		<playType>后二</playType>
+		<betContent>小 单,小 单</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>8</spend>
+		<RebateAll>0.544</RebateAll>
+		<drawnAmount>15.44</drawnAmount>
+		<balance>1141631.815</balance>
+		<resultNum>12345</resultNum>
+	</order>
+	<order>
+		<betRange>大小单双</betRange>
+		<playType>前三</playType>
+		<betContent>小 单,小 单,小 单</betContent>
+		<mutiple>2</mutiple>
+		<amount>1</amount>
+		<spend>32</spend>
+		<RebateAll>2.176</RebateAll>
+		<drawnAmount>61.76</drawnAmount>
+		<balance>1141661.575</balance>
+		<resultNum>12345</resultNum>
+	</order>
+	<order>
+		<betRange>大小单双</betRange>
+		<playType>后三</playType>
+		<betContent>小 单,小 单,小 单</betContent>
+		<mutiple>3</mutiple>
+		<amount>1</amount>
+		<spend>48</spend>
+		<RebateAll>3.264</RebateAll>
+		<drawnAmount>92.64</drawnAmount>
+		<balance>1141706.215</balance>
+		<resultNum>12345</resultNum>
+	</order>
+	<order>
+		<betRange>两面</betRange>
+		<playType>两面</playType>
+		<betContent>和小 和单,小 双 合,小 双 合,小 双 合,小 双 合,小 双 合</betContent>
+		<mutiple>1</mutiple>
+		<amount>1</amount>
+		<spend>17</spend>
+		<RebateAll>0.612</RebateAll>
+		<drawnAmount>17.37</drawnAmount>
+		<balance>1141706.585</balance>
+		<resultNum>12345</resultNum>
+	</order>
+	<order>
+		<betRange>龙虎斗</betRange>
+		<playType>龙虎斗</playType>
+		<betContent>虎 和,虎 和,虎 和,虎 和,虎 和,虎 和,虎 和,虎 和,虎 和,虎 和</betContent>
+		<mutiple>1</mutiple>
+		<amount>2</amount>
+		<spend>40</spend>
+		<RebateAll>1.36</RebateAll>
+		<drawnAmount>42.6</drawnAmount>
+		<balance>1141709.185</balance>
 		<resultNum>12345</resultNum>
 	</order>
 </betorder>
