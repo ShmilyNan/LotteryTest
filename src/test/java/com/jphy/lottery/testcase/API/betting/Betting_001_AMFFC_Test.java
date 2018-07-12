@@ -18,7 +18,7 @@ public class Betting_001_AMFFC_Test {
 
     @Test(invocationCount = 60)
     public void orderBetting(ITestContext context) throws Exception {
-        String filePath = "./src/test/resources/res/AMFFCBetDatas.xml";
+        String filePath = "./src/test/resources/data/AMFFCBetDatas.xml";
         while (true) {
             String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 6),"number");
             BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "6",number);
@@ -27,7 +27,7 @@ public class Betting_001_AMFFC_Test {
                 betAPIHelper.betLottery();
                 break;
             } else {
-                logger.info("当前期已投注！");
+                logger.info("期号:"+number+"，已投注！");
                 sleep(5000);
                 continue;
             }

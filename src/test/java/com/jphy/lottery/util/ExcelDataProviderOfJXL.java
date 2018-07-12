@@ -23,7 +23,7 @@ import org.testng.Assert;
  *               Excel的sheet命名方式：测试方法名
  *               Excel第一行为Map键值
  */
-public class ExcelDataProvider implements Iterator<Object[]> {
+public class ExcelDataProviderOfJXL implements Iterator<Object[]> {
 
 	private Workbook book = null;
 	private Sheet sheet = null;
@@ -32,7 +32,7 @@ public class ExcelDataProvider implements Iterator<Object[]> {
 	private int columnNum = 0;
 	private String[] columnnName;
 	private String path = null;
-	public static Logger logger = Logger.getLogger(ExcelDataProvider.class.getName());
+	public static Logger logger = Logger.getLogger(ExcelDataProviderOfJXL.class.getName());
 
 	/*
 	 * @description 
@@ -40,10 +40,10 @@ public class ExcelDataProvider implements Iterator<Object[]> {
 	 * moduleName - 模块的名称
 	 * caseNum - 测试用例编号
 	 **/
-	public ExcelDataProvider(String moduleName, String caseNum) {
+	public ExcelDataProviderOfJXL(String moduleName, String caseNum) {
 
 		try {
-			path = "data/" + moduleName + ".xlsx";
+			path = "./src/test/resources/data/" + moduleName + ".xlsx";
 			InputStream inputStream = new FileInputStream(path);
 
 			book = Workbook.getWorkbook(inputStream);
@@ -56,7 +56,6 @@ public class ExcelDataProvider implements Iterator<Object[]> {
 
 			for (int i = 0; i < cell.length; i++) {
 				columnnName[i] = cell[i].getContents().toString(); // 第一行的值
-																	// 被赋予为列名
 			}
 			this.currentRowNo++;
 

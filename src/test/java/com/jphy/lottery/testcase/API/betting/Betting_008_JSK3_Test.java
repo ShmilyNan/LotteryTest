@@ -17,7 +17,7 @@ public class Betting_008_JSK3_Test {
 
 	@Test(invocationCount = 6)
 	public void orderBetting(ITestContext context) throws Exception{
-		String filePath = "./src/test/resources/res/JSK3BetDatas.xml";
+		String filePath = "./src/test/resources/data/JSK3BetDatas.xml";
         while (true){
             String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %d AND CREATE_TIME < NOW() AND MODIFY_TIME > NOW()", 8),"number");
             BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, "8",number);
@@ -26,7 +26,7 @@ public class Betting_008_JSK3_Test {
                 betAPIHelper.betLottery();
                 break;
             }else {
-                logger.info("当前期已投注！");
+                logger.info("期号:"+number+"，已投注！");
                 sleep(180000);
                 continue;
             }

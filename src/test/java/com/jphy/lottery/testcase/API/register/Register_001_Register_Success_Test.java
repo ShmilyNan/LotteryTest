@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class Register_001_Register_Success_Test {
 
 	@Test
-	public void accountRegistration() {
+	public void accountRegistration(ITestContext context) {
 		RegisterHelper registerHelper = new RegisterHelper();
 		registerHelper.register();
 	}

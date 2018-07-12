@@ -121,22 +121,28 @@ public class BetAPIHelper {
         array.add(t);
         bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
 
-        int rand = (int)(Math.random()*91)+10;
+        int rand = (int) (Math.random() * 91) + 10;
         String tokenQ = PropertiesDataProvider.getTestData(interface_bet, "tokenQ");
         String tokenH = PropertiesDataProvider.getTestData(interface_bet, "tokenH");
-        token = tokenQ +rand+ tokenH;
+        //token = tokenQ +rand+ tokenH;
+        token = PropertiesDataProvider.getTestData(interface_bet, "token");
 
         String params_bet = "token=" + token + "&lotteryType=" + lotteryType + "&number=" + number + "&content=" + array.toString();
 
+        System.out.println(params_bet);
         boolean success = true;
 
         resultOfBet = HttpUtils.doPost(bet_url, params_bet);
         if (resultOfBet == null) {
+            logger.info("彩种：" + lotteryType + ", 期号：" + number + "第" + i + "单第一次投注失败！");
             resultOfBet = HttpUtils.doPost(bet_url, params_bet);
-                    success = false;
+            if (resultOfBet == null) {
+                logger.info("彩种：" + lotteryType + ", 期号：" + number + "第" + i + "单第二次投注失败，该订单投注结束！");
             }
-            //logger.info("==========start check Spend!=============");
-            //seleniumUtil.isTextCorrect(bet_Total_Amount,betOrderList.get(i).getSpend());
+            success = false;
+        }
+        //logger.info("==========start check Spend!=============");
+        //seleniumUtil.isTextCorrect(bet_Total_Amount,betOrderList.get(i).getSpend());
 
         return success;
     }

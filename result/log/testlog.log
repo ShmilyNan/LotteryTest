@@ -1,6 +1,17 @@
-[2018-06-09 16:48:00] [INFO] RetryCount=0
-[2018-06-09 16:48:00] [INFO] SourceDir=src/test/java/com/jphy/lottery/testcase/
-[2018-06-09 16:48:00] [INFO] SourceEncoding=UTF-8
-[2018-06-09 16:48:00] [INFO] orderBetting 测试用例开始执行！
-[2018-06-09 16:48:03] [INFO] orderBetting 测试用例执行成功！
-[2018-06-09 16:48:03] [INFO] 执行成功的用例 = orderBetting
+[2018-07-10 13:15:09] [INFO] RetryCount=0
+[2018-07-10 13:15:09] [INFO] SourceDir=src/test/java/com/jphy/lottery/testcase/
+[2018-07-10 13:15:09] [INFO] SourceEncoding=UTF-8
+[2018-07-10 13:15:09] [INFO] orderBetting 测试用例开始执行！
+[2018-07-10 13:15:10] [INFO] orderBetting 测试用例执行成功！
+[2018-07-10 13:15:10] [INFO] orderBetting 测试用例开始执行！
+[2018-07-10 13:15:10] [INFO] 期号:0710028，已投注！
+[2018-07-10 13:18:10] [INFO] 期号:0710028，已投注！
+[2018-07-10 13:21:10] [INFO] orderBetting 测试用例执行成功！
+[2018-07-10 13:21:10] [INFO] orderBetting 测试用例开始执行！
+[2018-07-10 13:21:10] [INFO] 期号:0710029，已投注！
+[2018-07-10 13:24:11] [INFO] 期号:0710029，已投注！
+[2018-07-10 13:27:11] [INFO] 期号:0710029，已投注！
+[2018-07-10 13:30:11] [INFO] orderBetting 测试用例执行成功！
+[2018-07-10 13:30:11] [INFO] 执行成功的用例 = orderBetting
+[2018-07-10 13:30:11] [INFO] 执行成功的用例 = orderBetting
+[2018-07-10 13:30:11] [INFO] 执行成功的用例 = orderBetting
