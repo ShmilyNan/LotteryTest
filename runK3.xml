@@ -14,15 +14,15 @@
     <parameter name="databasePath" value="./src/test/resources/config/database.properties" />
     <!-- 定义测试的站点地址 -->
     <parameter name="testurl" value="http://test.my-sql.cn/lottery/" />
-    <!-- 进程等待1秒中的控制时间 -->
-    <parameter name="sleepTime" value="8888888" />
+    <!-- 进程等待1秒钟的控制时间 -->
+    <parameter name="sleepTime" value="1000" />
     <!-- 页面元素30秒不出现超时时间 -->
-    <parameter name="timeOut" value="9999999" />
+    <parameter name="timeOut" value="300000" />
     <!-- 这个是等待alert弹出的时间 单位毫秒 -->
     <parameter name="waitMillisecondsForAlert" value="90000" />
     <test verbose="2" preserve-order="true" name="Single Test1">
         <classes>
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_007_AMK3_Test" />
+            <class name="com.jphy.lottery.testcase.API.betting.Betting_004_K3_Test" />
         </classes>
     </test>
     <listeners>

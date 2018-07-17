@@ -8,22 +8,23 @@ import org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager;
 import org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor;
 import org.apache.http.impl.nio.reactor.IOReactorConfig;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.support.ui.Sleeper;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 
 import static java.lang.Thread.sleep;
 
 /**
  * @author Lance
- * @Description 时时彩投注接口测试
+ * @Description K3投注接口测试
  */
-public class Betting_001_AMFFC_Test {
-    public static Logger logger = Logger.getLogger(Betting_001_AMFFC_Test.class.getName());
+public class Betting_004_K3_Test {
+    public static Logger logger = Logger.getLogger(Betting_004_K3_Test.class.getName());
 
     private CloseableHttpAsyncClient httpClient = null;
+    final CountDownLatch latch = new CountDownLatch(10);
 
     private void initHttpClient() {
         try {
@@ -43,17 +44,15 @@ public class Betting_001_AMFFC_Test {
 
     @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception {
-        String filePath = "./src/test/resources/data/SSCBetDatas.xml";
+        final String filePath = "./src/test/resources/data/K3BetDatas.xml";
+        final int lotteryType = 8;
 
         initHttpClient();
-
-        int lotteryType = 6, count = 10000;
-        List<String> numbers = JdbcUtil.queryNumbers(lotteryType, count);
-        for (int i = 0; i < numbers.size(); i++) {
-            BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, String.valueOf(lotteryType), numbers.get(i));
-            betAPIHelper.betLottery(httpClient);
-
-            //Thread.sleep(5 * 1000);
+        List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
+        for (int j = 0; j < numbers.size(); j++) {
+            System.out.println(j);
+            BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, String.valueOf(lotteryType), numbers.get(j));
+            betAPIHelper.betLottery(httpClient, latch);
         }
     }
 }

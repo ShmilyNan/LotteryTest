@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * 投注接口测试
@@ -24,35 +25,13 @@ import java.util.Map;
 public class BetAPIHelper {
     public static Logger logger = Logger.getLogger(BetAPIHelper.class.getName());
     public static HttpAsyncClientUtil httpAsyncClientUtil = new HttpAsyncClientUtil();
-    private static SeleniumUtil seleniumUtil;
     private static String interface_bet;
     private static String filePath;
     private static List<BetOrder> betOrderList;
-    private static List<OrderRebate> orderRebate;
     private static String lotteryType;
     private static String token;
     private static String number;
-    private static String resultNum;
     private static String bet_url;
-    private static String bet_Total_Amount;//花费
-    private static String win_Amount;
-    private static String rebateAll;//返利
-    private static String balance;
-    private static String lotteryOrder;
-
-    private static Map<String, Object> betMap = new HashMap<>();
-
-
-    private boolean canBet = false;//是否可以投注，true:能投注,false:不能投注
-
-    public void setCanBet(boolean canBet) {
-        this.canBet = canBet;
-    }
-
-    public boolean getCanbet() {
-        return this.canBet;
-    }
-
 
     /**
      * 初始化全局变量
@@ -62,27 +41,18 @@ public class BetAPIHelper {
      * @param lotteryType
      */
     public BetAPIHelper(ITestContext context, String filePath, String lotteryType, String number) {
+        interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
         this.filePath = filePath;
         this.lotteryType = lotteryType;
-        String mark = lotteryType + "" + number;
-        if (betMap.get(mark) != null) {//已经投注过
-            this.canBet = false;
-        } else {//还未投注
-            this.number = number;
-            seleniumUtil = new SeleniumUtil();
-            interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
-            bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
-            token = PropertiesDataProvider.getTestData(interface_bet, "token");
-            betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
-            resultNum = betOrderList.get(0).getResultNum();
-            betMap.put(mark, number);
-            this.canBet = true;
-        }
+        this.number = number;
+        bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
+        token = PropertiesDataProvider.getTestData(interface_bet, "token");
+        betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
     }
 
-    public static void betLottery(CloseableHttpAsyncClient httpClient) {
+    public static void betLottery(CloseableHttpAsyncClient httpClient, final CountDownLatch latch) {
         for (int i = 0; i < betOrderList.size(); i++) {
-            bet(i, number, httpClient);
+            bet(i, number, httpClient, latch);
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
@@ -94,7 +64,7 @@ public class BetAPIHelper {
     /**
      * 请求投注接口，获取返回信息
      */
-    private static void bet(int i, String number, CloseableHttpAsyncClient httpClient) {
+    private static void bet(int i, String number, CloseableHttpAsyncClient httpClient, final CountDownLatch latch) {
         JSONArray array = new JSONArray();
 
         JSONObject object = new JSONObject();
@@ -121,49 +91,7 @@ public class BetAPIHelper {
         params.add(new BasicNameValuePair("number", number));
         params.add(new BasicNameValuePair("content", array.toJSONString()));
 
-        httpAsyncClientUtil.doPost(bet_url, params, lotteryType, number, httpClient);
-    }
-
-    /**
-     * 开奖，获取中奖信息
-     */
-    public static void openLottery(String id) {
-        String openLottery_url = PropertiesDataProvider.getTestData(interface_bet, "openLottery_url");
-        String params_openLottery = "&lotteryType=" + Integer.parseInt(lotteryType) + "&id=" + id + "&result=" + resultNum;
-        HttpUtils.doPost(openLottery_url, params_openLottery);
-        //checkDatas(0,true);
-        for (int i = 0; i < betOrderList.size(); i++) {
-            logger.info("==========start check Win_Amount!=============");
-            seleniumUtil.isTextCorrect(win_Amount, betOrderList.get(i).getDrawnAmount());
-            logger.info("==========start check UPPER_POINTS!=============");
-            seleniumUtil.isTextCorrect(rebateAll, orderRebate.get(i).getRebateAll());
-            break;
-        }
-        logger.info("==========start check balance!=============");
-        //seleniumUtil.isTextCorrect(balance,betOrderList.get(0).getBalance());
-        //seleniumUtil.isTextCorrect(balance,betOrderList.get(betOrderList.size()-1).getBalance());
-    }
-
-    /**
-     * 投注、开奖后在数据库中查询投注、开奖信息
-     *
-     * @param i
-     */
-    public static void selectBetOrder(int i) {
-        lotteryOrder = String.format(
-                "SELECT * FROM lottery_order WHERE (USER_ID = 151 AND BET_RANGE = '%s' AND LOTTERY_TYPE = %s AND PLAY_TYPE = '%s')",
-                betOrderList.get(i).getUser_id(), betOrderList.get(i).getBetRange(), lotteryType, betOrderList.get(i).getPlayType());
-        //bet_Total_Amount = JdbcUtil.query(lotteryOrder,"bet_Total_Amount");
-        //win_Amount = JdbcUtil.query(lotteryOrder,"win_Amount");
-        //rebateAll = JdbcUtil.query(lotteryOrder,"UPPER_POINTS");
-    }
-
-    /**
-     * @param i
-     */
-    public static void getBalance(int i) {
-        String queryBalance = String.format("SELECT * FROM lottery_user_account WHERE USER_ID = %d", betOrderList.get(i).getUser_id());
-        balance = JdbcUtil.query(queryBalance, "number");
+        httpAsyncClientUtil.doPost(bet_url, params, lotteryType, number, httpClient, latch);
     }
 
 }
