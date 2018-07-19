@@ -1,6 +1,7 @@
-package com.jphy.lottery.testcase.API.betting;
+package com.jphy.lottery.testcase.API.asynBet;
 
-import com.jphy.lottery.APIHelper.BetAPIHelper;
+import com.jphy.lottery.APIHelper.BetAsynHelper;
+import com.jphy.lottery.APIHelper.BetSynHelper;
 import com.jphy.lottery.util.JdbcUtil;
 import org.apache.http.impl.nio.client.CloseableHttpAsyncClient;
 import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
@@ -14,14 +15,12 @@ import org.testng.annotations.Test;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
-import static java.lang.Thread.sleep;
-
 /**
  * @author Lance
- * @Description 11选5投注接口测试
+ * @Description PK10投注接口测试
  */
-public class Betting_003_5Of11_Test {
-    public static Logger logger = Logger.getLogger(Betting_003_5Of11_Test.class.getName());
+public class Bet_Asyn_005_PK10_Test {
+    public static Logger logger = Logger.getLogger(Bet_Asyn_005_PK10_Test.class.getName());
     private CloseableHttpAsyncClient httpClient = null;
     final CountDownLatch latch = new CountDownLatch(92);
 
@@ -41,17 +40,17 @@ public class Betting_003_5Of11_Test {
         }
     }
 
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 12)
     public void orderBetting(ITestContext context) throws Exception {
-        String filePath = "./src/test/resources/data/5Of11BetDatas.xml";
-        final int lotteryType = 11;
+        String filePath = "./src/test/resources/data/PK10BetDatas.xml";
+        final int lotteryType = 1;
 
         initHttpClient();
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         for (int j = 19999; j < numbers.size(); j++) {
             if (j < 20000) {
-                BetAPIHelper betAPIHelper = new BetAPIHelper(context, filePath, String.valueOf(lotteryType), numbers.get(j));
-                betAPIHelper.betLottery(httpClient, latch);
+                BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(j));
+                betAsynHelper.betLottery(httpClient, latch);
             }
         }
     }

@@ -3,9 +3,9 @@ package com.jphy.lottery.APIHelper;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.jphy.lottery.plugins.ReadXml.BetOrder;
-import com.jphy.lottery.plugins.ReadXml.OrderRebate;
 import com.jphy.lottery.plugins.ReadXml.ReadXMLByDom4j;
-import com.jphy.lottery.util.*;
+import com.jphy.lottery.util.HttpAsyncClientUtil;
+import com.jphy.lottery.util.PropertiesDataProvider;
 import org.apache.http.NameValuePair;
 import org.apache.http.impl.nio.client.CloseableHttpAsyncClient;
 import org.apache.http.message.BasicNameValuePair;
@@ -14,16 +14,14 @@ import org.testng.ITestContext;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 
 /**
  * 投注接口测试
  */
-public class BetAPIHelper {
-    public static Logger logger = Logger.getLogger(BetAPIHelper.class.getName());
+public class BetAsynHelper {
+    public static Logger logger = Logger.getLogger(BetAsynHelper.class.getName());
     public static HttpAsyncClientUtil httpAsyncClientUtil = new HttpAsyncClientUtil();
     private static String interface_bet;
     private static String filePath;
@@ -40,7 +38,7 @@ public class BetAPIHelper {
      * @param filePath
      * @param lotteryType
      */
-    public BetAPIHelper(ITestContext context, String filePath, String lotteryType, String number) {
+    public BetAsynHelper(ITestContext context, String filePath, String lotteryType, String number) {
         interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
         this.filePath = filePath;
         this.lotteryType = lotteryType;

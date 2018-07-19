@@ -22,7 +22,7 @@
     <parameter name="waitMillisecondsForAlert" value="90000" />
     <test verbose="2" preserve-order="true" name="Single Test1">
         <classes>
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_002_SSC_Test" />
+            <class name="com.jphy.lottery.testcase.API.synBet.Bet_Syn_002_SSC_Test" />
         </classes>
     </test>
     <listeners>
