@@ -14,10 +14,11 @@ public class RegisterHelper {
     private static String params;
 
     public static void register(){
-        url = "http://103.37.61.78:8081/appservice/platform/register";
+        url = "http://116.31.118.18:8080/lottery/appservice/platform/register";
+        //url = "http://192.168.1.199:8080/appservice/platform/register";
         pwd = "FE32DB846C24E3C91051F872F4319551";
-        inviteCode = "";
-        for (int i =11;i<=100;){
+        inviteCode = "001000001";
+        for (int i =1;i<=1;i++){
             if (i<10){
                 username = "test00"+i;
             }else {

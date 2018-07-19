@@ -25,15 +25,7 @@
 
     <test verbose="2" preserve-order="true" name="Single Test">
         <classes>
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_001_SSC_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_002_SSC_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_003_CQSSC_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_004_XJSSC_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_003_5Of11_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_004_K3_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_007_AMK3_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_008_JSK3_Test" />
-            <class name="com.jphy.lottery.testcase.API.betting.Betting_005_PK10_Test" />
+            <class name="com.jphy.lottery.testcase.API.register.Register_001_Register_Success_Test" />
         </classes>
     </test>
     <listeners>
@@ -41,6 +33,5 @@
         <listener class-name="com.jphy.lottery.plugins.arrow.TestResultListener" />
         <listener class-name="com.jphy.lottery.plugins.arrow.RetryListener" />
         <listener class-name="com.jphy.lottery.plugins.arrow.PowerEmailableReporter" />
-
     </listeners>
 </suite>
