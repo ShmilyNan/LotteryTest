@@ -18,10 +18,10 @@ public class RegisterHelper {
         //url = "http://192.168.1.199:8080/appservice/platform/register";
         pwd = "FE32DB846C24E3C91051F872F4319551";
         inviteCode = "001000001";
-        for (int i =1;i<=1;i++){
+        for (int i =2;i<=2;i++){
             if (i<10){
                 username = "test00"+i;
-            }else {
+            }else if(i>9&&i<100) {
                 username = "test0"+i;
             }
             params = "username="+username+"&pwd="+pwd+"&inviteCode="+inviteCode;

@@ -46,7 +46,7 @@ public class HttpUtils {
 			post.setHeader("Charset", "utf-8");
 			post.setHeader("clientCode", "0");
 			post.setHeader("terminal", "Android");
-			post.setHeader("platformCode", "002");
+			post.setHeader("platformCode", "001");
 			post.setHeader("deviceId", "867397038391761");
 			post.setHeader("versionCode", "100");
 			post.setHeader("ip", "222.209.33.199");

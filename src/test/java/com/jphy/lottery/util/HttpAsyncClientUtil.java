@@ -36,7 +36,7 @@ public class HttpAsyncClientUtil {
                 request.setHeader("terminal", "Android");
                 request.setHeader("platformCode", "001");
                 request.setHeader("deviceId", "867397038391761");
-                request.setHeader("versionCode", "1");
+                request.setHeader("versionCode", "100");
             } catch (Exception e) {
 
             }

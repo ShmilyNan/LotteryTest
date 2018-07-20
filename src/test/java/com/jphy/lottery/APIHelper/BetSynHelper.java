@@ -141,8 +141,8 @@ public class BetSynHelper {
             resultOfBet = HttpUtils.doPost(bet_url, params_bet);
             if (resultOfBet == null) {
                 logger.info("彩种：" + lotteryType + ", 期号：" + number + "第" + i + "单第二次投注失败，该订单投注结束！");
+                success = false;
             }
-            success = false;
         }
         return success;
     }
