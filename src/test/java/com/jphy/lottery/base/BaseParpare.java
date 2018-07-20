@@ -8,6 +8,7 @@ package com.jphy.lottery.base;
 import java.io.IOException;
 import java.util.Iterator;
 
+import com.jphy.lottery.util.ExcelDataProviderOfJXL;
 import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
@@ -16,7 +17,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
-import com.jphy.lottery.util.ExcelDataProvider;
 import com.jphy.lottery.util.SeleniumUtil;
 
 public class BaseParpare {
@@ -74,7 +74,7 @@ public class BaseParpare {
 		if (underlineIndexNum > 0) {
 			caseNum = className.substring(underlineIndexNum + 1, underlineIndexNum + 4); // 取到用例编号
 		}
-		// 将模块名称和用例的编号传给 ExcelDataProvider ，然后进行读取excel数据
-		return new ExcelDataProvider(moduleName, caseNum);
+		// 将模块名称和用例的编号传给 ExcelDataProviderOfJXL ，然后进行读取excel数据
+		return new ExcelDataProviderOfJXL(moduleName, caseNum);
 	}
 }

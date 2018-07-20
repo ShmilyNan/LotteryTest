@@ -99,8 +99,8 @@ public class ReadXMLByDom4j {
     //
 	//public static void main(String[] args) {
      //   // TODO Auto-generated method stub
-     //   //File file = new File("./src/test/resources/res/BetDatas.xml");
-     //   List<BetOrder> betOrderList = new ReadXMLByDom4j().getBetOrders(new File("./src/test/resources/res/BetDatas.xml"));
+     //   //File file = new File("./src/test/resources/data/BetDatas.xml");
+     //   List<BetOrder> betOrderList = new ReadXMLByDom4j().getBetOrders(new File("./src/test/resources/data/BetDatas.xml"));
     //
 	//	System.out.println(betOrderList.get(4).getBetRange());
 	//	//for (BetOrder betOrder : betOrderList) {

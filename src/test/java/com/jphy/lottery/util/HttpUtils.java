@@ -20,7 +20,7 @@ import org.apache.http.util.EntityUtils;
 
 @SuppressWarnings("deprecation")
 public class HttpUtils {
-	private static final int CONNECTION_TIME_OUT = 100000000;
+	private static final int CONNECTION_TIME_OUT = 5000;
 
 	@SuppressWarnings({ "resource" })
 	public static String doPost(String url, String param) {
@@ -48,7 +48,9 @@ public class HttpUtils {
 			post.setHeader("terminal", "Android");
 			post.setHeader("platformCode", "001");
 			post.setHeader("deviceId", "867397038391761");
-			post.setHeader("versionCode", "1");
+			post.setHeader("versionCode", "100");
+			post.setHeader("ip", "222.209.33.199");
+
 			UrlEncodedFormEntity formEntity = new UrlEncodedFormEntity(formParams, "utf-8");
 			post.setEntity(formEntity);
 

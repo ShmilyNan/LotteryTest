@@ -2,80 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efb9cf0e-24f3-48a2-9ae1-a469f0cf2458" name="Default" comment="新增11选5玩法">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_002_5Of11_Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_004_PK10_Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/res/PK10BetDatas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/others/SumOfWinNum_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpAsyncClientUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/ReadAndWriteExcelByPoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data/K3_SumOfWinNum_AllResult.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/log/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/result/log/testlog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runByChrome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/runByChrome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runBySingle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/runBySingle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lottery/apitest/BetOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lottery/apitest/Common.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lottery/apitest/ReadXMLByDom4j.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lottery/apitest/URLConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lottery/apitest/postBetOrder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/BetAPIHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/BetAPIHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/PowerEmailableReporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/PowerEmailableReporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/RetryListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/RetryListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/TestngRetry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/TestngRetry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/utils/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_001_SSC_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_SSC_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_002_5Of11_Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_003_K3_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_003_K3_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_001_UI_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_001_UI_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_002_Login_Success_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_002_Login_Success_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_003_Fail_All_Empty_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_003_Fail_All_Empty_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_004_Fail_Only_Username_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_004_Fail_Only_Username_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_005_Fail_Only_Password_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_005_Fail_Only_Password_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_006_Fail_Incorrect_Username_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_006_Fail_Incorrect_Username_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_007_Fail_Incorrect_Password_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_007_Fail_Incorrect_Password_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_008_EXIT_After_Login_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_008_EXIT_After_Login_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/login/LoginPage_009_Checkbox_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_009_Checkbox_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/register/Register_001_Register_Success_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/register/Register_001_Register_Success_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpRequestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/PropertiesDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/PropertiesDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/SeleniumUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/SeleniumUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/UpdateProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/base/BaseParpare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/base/BaseParpare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/ReadXml/ReadXMLByDom4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/ReadXml/ReadXMLByDom4j.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_AMFFC_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_AMFFC_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_002_AMSFC_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_002_AMSFC_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_003_CQSSC_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_003_CQSSC_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_004_XJSSC_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_004_XJSSC_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_005_5Of11_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_005_5Of11_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_006_AHK3_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_006_AHK3_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_007_AMK3_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_007_AMK3_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_008_JSK3_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_008_JSK3_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_009_PK10_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_009_PK10_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/register/Register_001_Register_Success_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/register/Register_001_Register_Success_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/ExcelDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/ExcelDataProviderOfJXL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/JdbcUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/driver.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/driver.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config/interfaceinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/interfaceinfo.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/user.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/res/SSCBetDatas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/res/SSCBetDatas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Suite/Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Suite/Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.lottery.apitest.APITest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/Test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/power-emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/registerinterface.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/registerinterface.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/5of11BetDatas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/5of11BetDatas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/AHK3BetDatas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/AHK3BetDatas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/AMFFCBetDatas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/AMK3BetDatas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/AMK3BetDatas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/AMWFCBetDatas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/CQSSCBetDatas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/JSK3BetDatas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/JSK3BetDatas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/PK10BetDatas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/PK10BetDatas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/SSCAgentDatas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/SSCAgentDatas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/XJSSCBetDatas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/SSCBetDatas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/res/driver/chrome/win/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/driver/chrome/win/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/power-emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/power-emailable-report.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,92 +52,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Betting_001_AMFFC_Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_AMFFC_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/JdbcUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2640">
+              <caret line="130" column="11" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BetAPIHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/BetAPIHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Betting_001_SSC_Test.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_SSC_Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeleniumUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/SeleniumUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-220">
-              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Betting_003_K3_Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_003_K3_Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Betting_004_PK10_Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_004_PK10_Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Betting_002_5Of11_Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_002_5Of11_Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage_008_EXIT_After_Login_Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_008_EXIT_After_Login_Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PowerEmailableReporter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/PowerEmailableReporter.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
-              <caret line="622" column="21" lean-forward="true" selection-start-line="622" selection-start-column="21" selection-end-line="622" selection-end-column="21" />
+              <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+              <folding>
+                <element signature="docComment;method#BetAPIHelper#0;class#BetAPIHelper#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5of11BetDatas.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/res/5of11BetDatas.xml">
+      <file leaf-file-name="HttpAsyncClientUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpAsyncClientUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            <state relative-caret-position="528">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+              <folding>
+                <element signature="e#2840#2841#0" expanded="true" />
+                <element signature="e#2955#2956#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SSCBetDatas.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/data/SSCBetDatas.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23958">
+              <caret line="1089" column="36" selection-start-line="1089" selection-start-column="36" selection-end-line="1089" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -180,31 +107,20 @@
       <file leaf-file-name="interfaceinfo.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/config/interfaceinfo.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runBySingle.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runBySingle.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PK10BetDatas.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/res/PK10BetDatas.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="99" column="39" lean-forward="true" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+            <state relative-caret-position="132">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -228,6 +144,10 @@
       <find>retry</find>
       <find>report</find>
       <find>modif</find>
+      <find>httpasyncclient</find>
+      <find>testlog</find>
+      <find>组三</find>
+      <find>interface_bet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,27 +161,44 @@
         <option value="$PROJECT_DIR$/src/test/java/com/jchy/lottery/util/HttpUtils.java" />
         <option value="$PROJECT_DIR$/runByChrome.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/config/database.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/JdbcUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_001_Bet_Success_Test.java" />
         <option value="$PROJECT_DIR$/src/test/resources/res/5of11BetDatas.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/config/config.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_001_5Of11_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_003_PK10_Test.java" />
         <option value="$PROJECT_DIR$/src/test/resources/res/SSCBetDatas.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/res/PK10BetDatas.xml" />
         <option value="$PROJECT_DIR$/runBySingle.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/config/interfaceinfo.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/PropertiesDataProvider.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpRequestUtil.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config/user.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/SeleniumUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/BetAPIHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_003_K3_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_001_SSC_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_004_PK10_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/betting/Betting_002_5Of11_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_SSC_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/creatLowerAccount/CreatLowerAccount_001_Creat_Success_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/CreatLowerAccountHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/RegisterHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/register/Register_001_Register_Success_Test.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/CloseableHttpAsyncClientTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config/registerinterface.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/config/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpAsyncClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_006_AHK3_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_004_XJSSC_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_008_JSK3_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_002_AMSFC_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_007_AMK3_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_003_CQSSC_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_005_5Of11_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_009_PK10_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/JdbcUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config/interfaceinfo.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_AMFFC_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/BetAPIHelper.java" />
       </list>
     </option>
   </component>
@@ -296,17 +233,12 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="jdk-1.8" />
-      </list>
-    </option>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
     <option name="width" value="1932" />
     <option name="height" value="1047" />
   </component>
@@ -319,65 +251,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="LotteryTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteryTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteryTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteryTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteryTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteryTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteryTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteryTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteryTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteryTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lottery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteryTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteryTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lottery" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LotteryTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LotteryTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lottery" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-              <item name="betting" type="462c0819:PsiDirectoryNode" />
+              <item name="LotteryTestLocal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LotteryTestLocal" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,6 +282,11 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jphy.lottery.testcase.betting" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JetBrains\IdeaProjects\LotteryTestLocal\src\test\resources\data" />
+      <recent name="E:\JetBrains\IdeaProjects\LotteryTestLocal\src\test\java\com\jphy\lottery\util" />
+      <recent name="E:\JetBrains\IdeaProjects\LotteryTestLocal" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -408,7 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.E:/Git Repository/LotteryTest/runBySingle.xml">
+  <component name="RunManager" selected="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -428,49 +320,164 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="E:/Git Repository/LotteryTest/runByChrome.xml" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+    <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runAllLottery.xml" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <module name="LotteryTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/runByChrome.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/runAllLottery.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
     </configuration>
-    <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+    <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAHK3.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="LotteryTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/runBySingle.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/runByAHK3.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LotteryTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/runByAMFFC.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMK3.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LotteryTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/runByAMK3.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByCQSSC.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LotteryTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/runByCQSSC.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByJSK3.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LotteryTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/runByJSK3.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByX115.xml" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <module name="LotteryTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/runByX115.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
     </configuration>
@@ -497,9 +504,23 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.E:/Git Repository/LotteryTest/runBySingle.xml" />
-      <item itemvalue="TestNG.E:/Git Repository/LotteryTest/runByChrome.xml" />
+      <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByX115.xml" />
+      <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runAllLottery.xml" />
+      <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByJSK3.xml" />
+      <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMK3.xml" />
+      <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByCQSSC.xml" />
+      <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAHK3.xml" />
+      <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" />
+        <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAHK3.xml" />
+        <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByCQSSC.xml" />
+        <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMK3.xml" />
+        <item itemvalue="TestNG.E:/JetBrains/IdeaProjects/LotteryTestLocal/runByJSK3.xml" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Lance\AppData\Roaming\Subversion</configuration>
@@ -513,6 +534,14 @@
       <updated>1528333814609</updated>
       <workItem from="1528333816086" duration="20389000" />
       <workItem from="1528419887796" duration="39625000" />
+      <workItem from="1530285110573" duration="15285000" />
+      <workItem from="1530866276295" duration="1230000" />
+      <workItem from="1531105791817" duration="611000" />
+      <workItem from="1531192601297" duration="34615000" />
+      <workItem from="1531306263409" duration="660000" />
+      <workItem from="1531313739110" duration="3275000" />
+      <workItem from="1531358410225" duration="629000" />
+      <workItem from="1531359934719" duration="1648000" />
     </task>
     <task id="LOCAL-00001" summary="新增11选5玩法">
       <created>1528334397194</created>
@@ -549,43 +578,64 @@
       <option name="project" value="LOCAL" />
       <updated>1528453725968</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify">
+      <created>1530284229386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1530284229386</updated>
+    </task>
+    <task id="LOCAL-00007" summary="m">
+      <created>1530284666945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1530284666945</updated>
+    </task>
+    <task id="LOCAL-00008" summary="MODIFY">
+      <created>1530866338636</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1530866338636</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 18m 41s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.11 at 22h 28m 09s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 19m 02s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 09h 14m 50s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 23m 34s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 09h 22m 51s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 24m 52s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 09h 47m 37s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 28m 50s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 09h 51m 02s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 29m 42s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 09h 58m 15s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 33m 22s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 10h 04m 23s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 37m 00s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 10h 09m 16s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 45m 01s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 10h 10m 51s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__Git_Repository_LotteryTest_runBySingle_xml - 2018.06.09 at 16h 48m 04s.xml">
-      <configuration name="E:/Git Repository/LotteryTest/runBySingle.xml" configurationId="TestNG" />
+    <history-entry file="E__JetBrains_IdeaProjects_LotteryTestLocal_runByAMFFC_xml - 2018.07.12 at 10h 13m 00s.xml">
+      <configuration name="E:/JetBrains/IdeaProjects/LotteryTestLocal/runByAMFFC.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60014000" />
+    <option name="totallyTimeSpent" value="120294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,67 +647,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="JRebel Executor" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30526316" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32865497" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32786885" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32865497" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.49941522" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32982457" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19849785" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.29356724" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4224537" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32865497" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32982457" />
+      <window_info anchor="bottom" id="JRebel remote servers log" order="7" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21413276" />
+      <window_info id="JRebel" order="4" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40350878" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.29274005" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49941522" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.277897" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32865497" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32982457" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32865497" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40350878" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32922733" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -669,316 +693,32 @@
     <MESSAGE value="新增11选5玩法" />
     <MESSAGE value="update" />
     <MESSAGE value="modify" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify" />
+    <MESSAGE value="m" />
+    <MESSAGE value="MODIFY" />
+    <option name="LAST_COMMIT_MESSAGE" value="MODIFY" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpAsyncClientUtil.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="97" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/res/5of11BetDatas.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config/interfaceinfo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/res/SSCBetDatas.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4466">
-          <caret line="203" column="31" lean-forward="true" selection-start-line="203" selection-start-column="31" selection-end-line="203" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runBySingle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lottery/apitest/ReadXMLByDom4j.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2050">
-          <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lottery/apitest/postBetOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lottery/apitest/Common.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/ReadXMLByDom4j.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/Bet_API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="153" column="7" lean-forward="true" selection-start-line="153" selection-start-column="7" selection-end-line="153" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runByChrome.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="592" selection-start-line="592" selection-end-line="592" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-          <folding>
-            <element signature="e#3645#3646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/spi/DefaultRepositorySelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#1134#1135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/LogManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="227" selection-start-line="227" selection-end-line="227" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Hierarchy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="265" selection-start-line="265" selection-end-line="265" />
-          <folding>
-            <element signature="e#7055#7056#0" expanded="true" />
-            <element signature="e#7103#7104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/CategoryKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/SuiteRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="488" selection-start-line="488" selection-end-line="488" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#2829#2830#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/log/testlog.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lottery/apitest/BetOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/res/K3BetDatas.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/res/BetDatas.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/res/SSCBetDatas.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="632" column="12" lean-forward="true" selection-start-line="632" selection-start-column="12" selection-end-line="632" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runBySingle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/UpdateProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config/interfaceinfo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/PropertiesDataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/JdbcUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="76" column="13" lean-forward="true" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpRequestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1051">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/old/Suite/toc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/SeleniumUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/UI/login/LoginPage_008_EXIT_After_Login_Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/res/5of11BetDatas.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/res/5of11BetDatas.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/utils/ConfigReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -986,13 +726,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/junitreports/TEST-com.lottery.apitest.APITest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/junitreports/TEST-com.lottery.apitest.APITest.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/plugins/arrow/PowerEmailableReporter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -1000,51 +734,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/ExcelDataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/BetAPIHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_002_5Of11_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_003_K3_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_004_PK10_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/res/PK10BetDatas.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="99" column="39" lean-forward="true" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/ExcelDataProvider.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_002_5Of11_Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_003_K3_Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_004_PK10_Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/res/PK10BetDatas.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/config/user.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1052,13 +746,248 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_SSC_Test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_SSC_Test.java" />
+    <entry file="file://$PROJECT_DIR$/runBySingle.xml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/creatLowerAccount/CreatLowerAccount_001_Creat_Success_Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/CreatLowerAccountHelper.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/register/Register_001_Register_Success_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="352">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/RegisterHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runByX115.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runAllLottery.xml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/PropertiesDataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/driver.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/registerinterface.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/data/AHK3BetDatas.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1480" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runByAMK3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="65" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="585" selection-start-line="585" selection-end-line="585" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/data/AMFFCBetDatas.xml" />
+    <entry file="file://$PROJECT_DIR$/runByCQSSC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runByXJSSC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="71" lean-forward="true" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runByAHK3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runByAMSFC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="70" lean-forward="true" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runByAMFFC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_006_AHK3_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_008_JSK3_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_002_AMSFC_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_007_AMK3_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_003_CQSSC_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_009_PK10_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_005_5Of11_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_004_XJSSC_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/data/SSCBetDatas.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23958">
+          <caret line="1089" column="36" selection-start-line="1089" selection-start-column="36" selection-end-line="1089" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/HttpAsyncClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2840#2841#0" expanded="true" />
+            <element signature="e#2955#2956#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/util/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="130" column="11" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/interfaceinfo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/APIHelper/BetAPIHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;method#BetAPIHelper#0;class#BetAPIHelper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jphy/lottery/testcase/API/betting/Betting_001_AMFFC_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
         </state>
       </provider>
     </entry>
