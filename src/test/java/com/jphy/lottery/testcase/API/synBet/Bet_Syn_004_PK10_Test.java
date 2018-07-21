@@ -14,7 +14,7 @@ import static java.lang.Thread.sleep;
  */
 public class Bet_Syn_004_PK10_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_004_PK10_Test.class.getName());
-    @Test(invocationCount = 20)
+    @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception{
         String lotteryType = "1";
         String filePath = "./src/test/resources/data/PK10BetDatas.xml";
@@ -27,7 +27,7 @@ public class Bet_Syn_004_PK10_Test {
                 //break;
             }else {
                 logger.info("期号:"+number+"，已投注！");
-                sleep(60000);
+                sleep(120000);
                 continue;
             }
         }

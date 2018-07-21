@@ -21,12 +21,31 @@ import java.util.concurrent.CountDownLatch;
 public class HttpAsyncClientUtil {
     public static Logger logger = Logger.getLogger(HttpAsyncClientUtil.class.getName());
     private static String resultOfBet;
+    public CloseableHttpAsyncClient httpClient = null;
+    public CountDownLatch latch = new CountDownLatch(92);
+
+    public void initHttpClient() {
+        try {
+            //创建连接池
+            DefaultConnectingIOReactor ioreactor = new DefaultConnectingIOReactor(IOReactorConfig.custom().
+                    setConnectTimeout(10000).
+                    setIoThreadCount(Runtime.getRuntime().availableProcessors()).
+                    setSoTimeout(10000).
+                    build());
+            PoolingNHttpClientConnectionManager mngr = new PoolingNHttpClientConnectionManager(ioreactor);
+            mngr.setMaxTotal(100);
+            httpClient = HttpAsyncClientBuilder.create().setConnectionManager(mngr).build();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * 发起请求
      */
-    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient, final CountDownLatch latch) {
+    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number) {
         try {
+            initHttpClient();
             HttpPost request = new HttpPost(url);
             try {
                 request.setEntity(new UrlEncodedFormEntity(params, "utf-8"));

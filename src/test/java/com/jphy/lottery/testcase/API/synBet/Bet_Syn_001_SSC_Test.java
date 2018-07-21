@@ -16,18 +16,24 @@ public class Bet_Syn_001_SSC_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_001_SSC_Test.class.getName());
     @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception{
-        String lotteryType = "0";
+        String lotteryType = "4";
         String filePath = "./src/test/resources/data/SSCBetDatas.xml";
         while (true){
             String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %s AND CREATE_TIME < SYSDATE() AND MODIFY_TIME > SYSDATE()", lotteryType),"number");
             BetSynHelper betSynHelper = new BetSynHelper(context, filePath, lotteryType,number);
             //投注
-            if(true){
+            if(betSynHelper.getCanbet()){
                 betSynHelper.betLottery();
                 //break;
             }else {
                 logger.info("期号:"+number+"，已投注！");
-                sleep(30000);
+                if (lotteryType.equals("0") || lotteryType.equals("4")){
+                    sleep(180000);
+                }else if (lotteryType.equals("6")){
+                    sleep(10000);
+                }else {
+                    sleep(30000);
+                }
                 continue;
             }
         }

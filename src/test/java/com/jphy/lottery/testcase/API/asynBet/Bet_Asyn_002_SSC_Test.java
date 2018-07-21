@@ -21,36 +21,17 @@ import java.util.concurrent.CountDownLatch;
  */
 public class Bet_Asyn_002_SSC_Test {
     public static Logger logger = Logger.getLogger(Bet_Asyn_002_SSC_Test.class.getName());
-    private CloseableHttpAsyncClient httpClient = null;
-    final CountDownLatch latch = new CountDownLatch(92);
-
-    private void initHttpClient() {
-        try {
-            //创建连接池
-            DefaultConnectingIOReactor ioreactor = new DefaultConnectingIOReactor(IOReactorConfig.custom().
-                    setConnectTimeout(10000).
-                    setIoThreadCount(Runtime.getRuntime().availableProcessors()).
-                    setSoTimeout(10000).
-                    build());
-            PoolingNHttpClientConnectionManager mngr = new PoolingNHttpClientConnectionManager(ioreactor);
-            mngr.setMaxTotal(100);
-            httpClient = HttpAsyncClientBuilder.create().setConnectionManager(mngr).build();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     @Test(invocationCount = 20)
     public void orderBetting(ITestContext context) throws Exception {
         final String filePath = "./src/test/resources/data/SSCBetDatas.xml";
         final int lotteryType = 6;
 
-        initHttpClient();
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         for (int j = 19999; j < numbers.size(); j++) {
             if (j < 20000) {
                 BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(j));
-                betAsynHelper.betLottery(httpClient, latch);
+                betAsynHelper.betLottery();
             }
         }
     }

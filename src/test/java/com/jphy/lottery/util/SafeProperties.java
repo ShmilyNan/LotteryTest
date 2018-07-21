@@ -399,7 +399,6 @@ public class SafeProperties extends Properties {
         }
     }
 
-
     public void addComment(String comment) {
         if (comment != null) {
             context.addCommentLine("#" + comment);

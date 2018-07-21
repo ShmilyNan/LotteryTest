@@ -13,6 +13,8 @@ import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -85,7 +87,7 @@ public class BetSynHelper {
         for (int i = 0; i < len; i++) {
             boolean success = bet(i, number);
             if (!success) {
-                logger.info("彩种：" + lotteryType + ", 期号：" + number + "投注结束，共投：" + i + "单");
+                logger.info("彩种：" + lotteryType + ", 期号：" + number + "投注结束，共投：" + (i + 1) + "单");
                 break;
             }
 
@@ -95,6 +97,11 @@ public class BetSynHelper {
                 continue;
             } else {
                 logger.info("彩种：" + lotteryType + ", 期号：" + number + "投注结束，共投：" + (i + 1) + "单");
+                if (lotteryType.equals("")&&i == (len - 1)) {
+                    logger.info("记录当期期号，后期方便后期比对订单数据");
+                    ExcelDataProviderByPoi edpbPoi = new ExcelDataProviderByPoi();
+                    edpbPoi.updateExcel("./src/test/resources/data/K3BetDatas.xml",1,0,number);
+                }
                 break;
             }
         }
@@ -137,86 +144,18 @@ public class BetSynHelper {
 
         resultOfBet = HttpUtils.doPost(bet_url, params_bet);
         if (resultOfBet == null) {
-            logger.info("彩种：" + lotteryType + ", 期号：" + number + "第" + i + "单第一次投注失败！");
+            logger.info("彩种：" + lotteryType + ", 期号：" + number + "第" + (i + 1) + "单第一次投注失败,尝试第二次投注！");
             resultOfBet = HttpUtils.doPost(bet_url, params_bet);
             if (resultOfBet == null) {
-                logger.info("彩种：" + lotteryType + ", 期号：" + number + "第" + i + "单第二次投注失败，该订单投注结束！");
+                logger.info("彩种：" + lotteryType + ", 期号：" + number + "第" + (i + 1) + "单第二次投注失败，该订单投注结束！");
                 success = false;
             }
         }
         return success;
     }
 
-    /**
-     * 开奖，获取中奖信息
-     */
-    public static void openLottery(String id) {
-        String openLottery_url = PropertiesDataProvider.getTestData(interface_bet, "openLottery_url");
-        String params_openLottery = "&lotteryType=" + Integer.parseInt(lotteryType) + "&id=" + id + "&result=" + resultNum;
-        HttpUtils.doPost(openLottery_url, params_openLottery);
-        //checkDatas(0,true);
-        for (int i = 0; i < betOrderList.size(); i++) {
-            logger.info("==========start check Win_Amount!=============");
-            seleniumUtil.isTextCorrect(win_Amount, betOrderList.get(i).getDrawnAmount());
-            logger.info("==========start check UPPER_POINTS!=============");
-            seleniumUtil.isTextCorrect(rebateAll, orderRebate.get(i).getRebateAll());
-            break;
-        }
-        logger.info("==========start check balance!=============");
-        //seleniumUtil.isTextCorrect(balance,betOrderList.get(0).getBalance());
-        //seleniumUtil.isTextCorrect(balance,betOrderList.get(betOrderList.size()-1).getBalance());
-    }
-
-    /**
-     * 投注、开奖后在数据库中查询投注、开奖信息
-     *
-     * @param i
-     */
-    public static void selectBetOrder(int i) {
-        lotteryOrder = String.format(
-                "SELECT * FROM lottery_order WHERE (USER_ID = 151 AND BET_RANGE = '%s' AND LOTTERY_TYPE = %s AND PLAY_TYPE = '%s')",
-                betOrderList.get(i).getUser_id(), betOrderList.get(i).getBetRange(), lotteryType, betOrderList.get(i).getPlayType());
-        //bet_Total_Amount = JdbcUtil.query(lotteryOrder,"bet_Total_Amount");
-        //win_Amount = JdbcUtil.query(lotteryOrder,"win_Amount");
-        //rebateAll = JdbcUtil.query(lotteryOrder,"UPPER_POINTS");
-    }
-
-    /**
-     * @param i
-     */
-    public static void getBalance(int i) {
-        String queryBalance = String.format("SELECT * FROM lottery_user_account WHERE USER_ID = %d", betOrderList.get(i).getUser_id());
-        balance = JdbcUtil.query(queryBalance, "number");
-    }
-
     private static String getBetInfo(String resultOfBet) {
         JSONObject json = JSONObject.parseObject(resultOfBet);
         return json.getString("msg");
     }
-
-    /*
-    private static String getUserInfo(String resultOfUserInfo) {
-        String userInfo_url = PropertiesDataProvider.getTestData(interface_bet, "userInfo_url");
-        String params_userInfo = "token=" + token;
-        resultOfUserInfo = HttpUtils.doPost(userInfo_url, params_userInfo);
-
-        JSONObject json = JSONObject.parseObject(resultOfUserInfo);
-        JSONObject json2 = json.getJSONObject("data");
-        return json2.getString("balance");
-    }
-*/
-    /*
-    private static String getBetLogInfo(String resultOfBetLog, String key) {
-        String betLog_url = PropertiesDataProvider.getTestData(interface_bet, "betLog_url");
-        String params_betLog = "token=" + token + "&lotteryType=" + lotteryType + "&number=" + number;
-        resultOfBetLog = HttpUtils.doPost(betLog_url, params_betLog);
-
-        JSONObject json = JSONObject.parseObject(resultOfBetLog);
-        JSONObject json2 = json.getJSONObject("data");
-        JSONArray json3 = new JSONArray(json2.getJSONArray("logs"));
-        JSONObject json4 = json3.getJSONObject(0);
-        return json4.getString(key);
-    }
-    */
-
 }
