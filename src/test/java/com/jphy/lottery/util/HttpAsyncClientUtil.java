@@ -59,7 +59,7 @@ public class HttpAsyncClientUtil {
      */
     public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient) {
         try {
-            initHttpClient0();
+            //initHttpClient0();
             HttpPost request = new HttpPost(url);
             try {
                 request.setEntity(new UrlEncodedFormEntity(params, "utf-8"));
@@ -73,8 +73,8 @@ public class HttpAsyncClientUtil {
             } catch (Exception e) {
 
             }
-            httpClient0.start();
-            httpClient0.execute(request, new FutureCallback<HttpResponse>() {
+            httpClient.start();
+            httpClient.execute(request, new FutureCallback<HttpResponse>() {
                 public void completed(final HttpResponse response) {
                     latch.countDown();
                     try {

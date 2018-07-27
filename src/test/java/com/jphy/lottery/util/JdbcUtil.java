@@ -342,13 +342,13 @@ public class JdbcUtil {
         return fieldValue;
     }
 
-    public static List<String> queryNumbersToUpdateResult(int lotteryType) {
+    public static List<String> queryNumbersToUpdateResult(int lotteryType,int orders) {
         connection = getConnection(); // 同样先要获取连接，即连接到数据库
         List<String> numbers = new ArrayList<>();
 
         try {
             statement = (Statement) connection.createStatement(); // 创建用于执行静态sql语句的Statement对象，st属局部变量
-            ResultSet rs = statement.executeQuery("SELECT number FROM basic_number WHERE LOTTERY_TYPE = "+lotteryType+" AND RESULT is NULL AND NUMBER in(SELECT number FROM lottery_order_001 WHERE LOTTERY_TYPE = "+lotteryType+" GROUP BY number HAVING count(*) = 92);"); // 执行sql查询语句，返回查询数据的结果集
+            ResultSet rs = statement.executeQuery("SELECT number FROM basic_number WHERE LOTTERY_TYPE = "+lotteryType+" AND RESULT is NULL AND NUMBER in(SELECT number FROM lottery_order_001 WHERE LOTTERY_TYPE = "+lotteryType+" GROUP BY number HAVING count(*) = "+orders+");"); // 执行sql查询语句，返回查询数据的结果集
             while (rs.next()) { // 判断是否还有下一个数据
                 // 根据字段名获取相应的值
                 numbers.add(rs.getString("number"));
