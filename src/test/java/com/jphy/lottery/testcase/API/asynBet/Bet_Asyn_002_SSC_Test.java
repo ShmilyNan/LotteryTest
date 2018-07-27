@@ -20,10 +20,16 @@ public class Bet_Asyn_002_SSC_Test {
         final int lotteryType = 4;
         int orders = 92;
         //JdbcUtil.insertNumbers(lotteryType);
-        List<String> numbers = JdbcUtil.queryNumbersToUpdateResult(lotteryType,orders);
-        for (int i = 0; i < numbers.size(); i++) {
-            JdbcUtil.updateResult(lotteryType, numbers.get(i));
+        while (true) {
+            List<String> numbers = JdbcUtil.queryNumbersToUpdateResult(lotteryType, orders);
+            if (numbers.size() == 0) {
+                Thread.sleep(60000);
+            } else {
+                for (int i = 0; i < numbers.size(); i++) {
+                    JdbcUtil.updateResult(lotteryType, numbers.get(i));
+                }
+                //JdbcUtil.insertNumbers(lotteryType);
+            }
         }
-        //JdbcUtil.insertNumbers(lotteryType);
     }
 }
