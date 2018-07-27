@@ -6,6 +6,8 @@ import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 import static java.lang.Thread.sleep;
 
 /**
@@ -16,25 +18,13 @@ public class Bet_Syn_003_K3_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_003_K3_Test.class.getName());
 
     @Test(invocationCount = 1)
-    public void orderBetting(ITestContext context) throws Exception{
-        String lotteryType = "9";
+    public void orderBetting(ITestContext context) throws Exception {
+        int lotteryType = 9;
         String filePath = "./src/test/resources/data/K3BetDatas.xml";
-        while (true){
-            String number = JdbcUtil.query(String.format("SELECT number FROM basic_number WHERE LOTTERY_TYPE = %s AND CREATE_TIME < SYSDATE() AND MODIFY_TIME > SYSDATE()", lotteryType),"number");
-            BetSynHelper betSynHelper = new BetSynHelper(context, filePath, lotteryType,number);
-            //投注
-            if(betSynHelper.getCanbet()){
-                betSynHelper.betLottery();
-                //break;
-            }else {
-                logger.info("期号:"+number+"，已投注！");
-                if (lotteryType.equals("8") || lotteryType.equals("9")){
-                    sleep(180000);
-                }else if (lotteryType.equals("10")){
-                    sleep(10000);
-                }
-                continue;
-            }
+        List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
+        for (int i = 0; i < 1000; i++) {
+            BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(i));
+            betSynHelper.betLottery();
         }
     }
 }

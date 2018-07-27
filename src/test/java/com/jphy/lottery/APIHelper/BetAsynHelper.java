@@ -48,9 +48,9 @@ public class BetAsynHelper {
         betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
     }
 
-    public static void betLottery() {
+    public static void betLottery(CloseableHttpAsyncClient httpClient) {
         for (int i = 0; i < betOrderList.size(); i++) {
-            bet(i, number);
+            bet(i, number,httpClient);
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
@@ -62,7 +62,7 @@ public class BetAsynHelper {
     /**
      * 请求投注接口，获取返回信息
      */
-    private static void bet(int i, String number) {
+    private static void bet(int i, String number,CloseableHttpAsyncClient httpClient) {
         JSONArray array = new JSONArray();
 
         JSONObject object = new JSONObject();
@@ -89,7 +89,7 @@ public class BetAsynHelper {
         params.add(new BasicNameValuePair("number", number));
         params.add(new BasicNameValuePair("content", array.toJSONString()));
 
-        httpAsyncClientUtil.doPost(bet_url, params, lotteryType, number);
+        httpAsyncClientUtil.doPost(bet_url, params, lotteryType, number,httpClient);
     }
 
 }

@@ -3,6 +3,7 @@ package com.jphy.lottery.util;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.concurrent.FutureCallback;
@@ -11,6 +12,8 @@ import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
 import org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager;
 import org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor;
 import org.apache.http.impl.nio.reactor.IOReactorConfig;
+import org.apache.http.nio.reactor.ConnectingIOReactor;
+import org.apache.http.nio.reactor.IOReactorException;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
@@ -21,20 +24,31 @@ import java.util.concurrent.CountDownLatch;
 public class HttpAsyncClientUtil {
     public static Logger logger = Logger.getLogger(HttpAsyncClientUtil.class.getName());
     private static String resultOfBet;
-    public CloseableHttpAsyncClient httpClient = null;
-    public CountDownLatch latch = new CountDownLatch(92);
+    public CountDownLatch latch = new CountDownLatch(1000);
+    public CloseableHttpAsyncClient httpClient0 = null;
 
-    public void initHttpClient() {
+    public void initHttpClient0() {
         try {
-            //创建连接池
-            DefaultConnectingIOReactor ioreactor = new DefaultConnectingIOReactor(IOReactorConfig.custom().
-                    setConnectTimeout(10000).
-                    setIoThreadCount(Runtime.getRuntime().availableProcessors()).
-                    setSoTimeout(10000).
-                    build());
+            RequestConfig requestConfig = RequestConfig.custom()
+                    .setConnectTimeout(50000)
+                    .setSocketTimeout(50000)
+                    .setConnectionRequestTimeout(1000)
+                    .build();
+            IOReactorConfig ioReactorConfig = IOReactorConfig.custom().
+                    setIoThreadCount(Runtime.getRuntime().availableProcessors())
+                    .setSoKeepAlive(true)
+                    .build();
+            //创建连接池0
+            ConnectingIOReactor ioreactor = null;
+            ioreactor = new DefaultConnectingIOReactor(ioReactorConfig);
             PoolingNHttpClientConnectionManager mngr = new PoolingNHttpClientConnectionManager(ioreactor);
             mngr.setMaxTotal(100);
-            httpClient = HttpAsyncClientBuilder.create().setConnectionManager(mngr).build();
+            mngr.setDefaultMaxPerRoute(100);
+            httpClient0 = HttpAsyncClientBuilder
+                    .create()
+                    .setConnectionManager(mngr)
+                    .setDefaultRequestConfig(requestConfig)
+                    .build();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -43,9 +57,9 @@ public class HttpAsyncClientUtil {
     /**
      * 发起请求
      */
-    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number) {
+    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient) {
         try {
-            initHttpClient();
+            initHttpClient0();
             HttpPost request = new HttpPost(url);
             try {
                 request.setEntity(new UrlEncodedFormEntity(params, "utf-8"));
@@ -59,8 +73,8 @@ public class HttpAsyncClientUtil {
             } catch (Exception e) {
 
             }
-            httpClient.start();
-            httpClient.execute(request, new FutureCallback<HttpResponse>() {
+            httpClient0.start();
+            httpClient0.execute(request, new FutureCallback<HttpResponse>() {
                 public void completed(final HttpResponse response) {
                     latch.countDown();
                     try {

@@ -3,35 +3,35 @@ package com.jphy.lottery;
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 
-import com.mysql.jdbc.PreparedStatement;
 
 public class InsertTest {
     public static List<Numbers> numbersList;
-    public static int lottery_type = 11;
+    public static int lottery_type = 0;
 
     public static void main(String[] args) throws Exception {
         numbersList = new ReadXMLByDom4j().getNumbers(new File("./src/main/resources/X115_Numbers.xml"));
         final String url = "jdbc:mysql://192.168.1.129:3306/lottery_v2_2?autoReconnect=true&rewriteBatchedStatements=true&useUnicode=true&zeroDateTimeBehavior=convertToNull";
-        final String name = "com.mysql.jdbc.Driver";
+        final String name = "com.mysql.cj.jdbc.Driver";
         final String user = "root";
         final String password = "whcd@dev";
         Connection conn = null;
         Class.forName(name);//指定连接类型
         conn = DriverManager.getConnection(url, user, password);//获取连接
         if (conn != null) {
-            System.out.println("获取连接成功");
+            System.out.println("Get connection success！");
             //update(conn);
-            insert(conn);
+            insertNumbers(conn);
         } else {
-            System.out.println("获取连接失败");
+            System.out.println("Get Connection Failure！");
         }
     }
 
-    public static void insert(Connection conn) {
+    public static void insertNumbers(Connection conn) {
 
         String number1;
         // 开始时间
@@ -103,8 +103,8 @@ public class InsertTest {
         // 结束时间
         Long end = new Date().getTime();
         // 耗时
-        System.out.println("数据插入花费时间 : " + (end - begin) / 1000 + " s");
-        System.out.println("插入完成");
+        System.out.println("Insert time : " + (end - begin) / 1000 + " s");
+        System.out.println("Insert completion");
     }
 
     public static void update(Connection conn) throws Exception {
@@ -184,7 +184,7 @@ public class InsertTest {
         // 结束时间
         Long end = new Date().getTime();
         // 耗时
-        System.out.println("数据插入花费时间 : " + (end - begin) / 1000 + " s");
-        System.out.println("插入完成");
+        System.out.println("Update time : " + (end - begin) / 1000 + " s");
+        System.out.println("Update completion");
     }
 }

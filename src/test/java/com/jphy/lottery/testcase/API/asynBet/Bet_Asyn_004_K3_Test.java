@@ -24,7 +24,7 @@ public class Bet_Asyn_004_K3_Test {
         for (int j = 0; j < numbers.size(); j++) {
             System.out.println(j);
             BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(j));
-            betAsynHelper.betLottery();
+            //betAsynHelper.betLottery();
         }
     }
 }

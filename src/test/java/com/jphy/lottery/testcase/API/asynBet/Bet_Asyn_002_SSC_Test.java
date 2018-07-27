@@ -22,17 +22,15 @@ import java.util.concurrent.CountDownLatch;
 public class Bet_Asyn_002_SSC_Test {
     public static Logger logger = Logger.getLogger(Bet_Asyn_002_SSC_Test.class.getName());
 
-    @Test(invocationCount = 20)
+    @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception {
-        final String filePath = "./src/test/resources/data/SSCBetDatas.xml";
-        final int lotteryType = 6;
-
-        List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
-        for (int j = 19999; j < numbers.size(); j++) {
-            if (j < 20000) {
-                BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(j));
-                betAsynHelper.betLottery();
-            }
+        //final String filePath = "./src/test/resources/data/SSCBetDatas.xml";
+        final int lotteryType = 4;
+        //initHttpClient();
+        List<String> numbers = JdbcUtil.queryNumbersToUpdateResult(lotteryType);
+        for (int i = 0; i < numbers.size(); i++) {
+            JdbcUtil.updateResult(lotteryType, numbers.get(i));
         }
+        //JdbcUtil.insertNumbers(lotteryType);
     }
 }

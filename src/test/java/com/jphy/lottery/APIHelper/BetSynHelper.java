@@ -30,31 +30,12 @@ public class BetSynHelper {
     private static String interface_bet;
     private static String filePath;
     private static List<BetOrder> betOrderList;
-    private static List<OrderRebate> orderRebate;
     private static String lotteryType;
     private static String token;
     private static String number;
-    private static String resultNum;
     private static String resultOfBet;
     private static String bet_url;
-    private static String bet_Total_Amount;//花费
-    private static String win_Amount;
-    private static String rebateAll;//返利
-    private static String balance;
     private static String lotteryOrder;
-
-    private static Map<String, Object> betMap = new HashMap<>();
-
-    private boolean canBet = false;//是否可以投注，true:能投注,false:不能投注
-
-    public void setCanBet(boolean canBet) {
-        this.canBet = canBet;
-    }
-
-    public boolean getCanbet() {
-        return this.canBet;
-    }
-
 
     /**
      * 初始化全局变量
@@ -64,21 +45,13 @@ public class BetSynHelper {
      * @param lotteryType
      */
     public BetSynHelper(ITestContext context, String filePath, String lotteryType, String number) {
+        interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
         this.filePath = filePath;
         this.lotteryType = lotteryType;
-        String mark = lotteryType + "" + number;
-        if (betMap.get(mark) != null) {//已经投注过
-            this.canBet = false;
-        } else {//还未投注
-            this.number = number;
-            seleniumUtil = new SeleniumUtil();
-            interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
-            betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
-            resultNum = betOrderList.get(0).getResultNum();
-            token = PropertiesDataProvider.getTestData(interface_bet, "token");
-            betMap.put(mark, number);
-            this.canBet = true;
-        }
+        this.number = number;
+        bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
+        token = PropertiesDataProvider.getTestData(interface_bet, "token");
+        betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
     }
 
     public static void betLottery() {
@@ -97,11 +70,6 @@ public class BetSynHelper {
                 continue;
             } else {
                 logger.info("彩种：" + lotteryType + ", 期号：" + number + "投注结束，共投：" + (i + 1) + "单");
-                if (lotteryType.equals("")&&i == (len - 1)) {
-                    logger.info("记录当期期号，后期方便后期比对订单数据");
-                    ExcelDataProviderByPoi edpbPoi = new ExcelDataProviderByPoi();
-                    edpbPoi.updateExcel("./src/test/resources/data/K3BetDatas.xml",1,0,number);
-                }
                 break;
             }
         }
@@ -131,9 +99,9 @@ public class BetSynHelper {
         array.add(t);
         bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
 
-        int rand = (int) (Math.random() * 91) + 10;
-        String tokenQ = PropertiesDataProvider.getTestData(interface_bet, "tokenQ");
-        String tokenH = PropertiesDataProvider.getTestData(interface_bet, "tokenH");
+        //int rand = (int) (Math.random() * 91) + 10;
+        //String tokenQ = PropertiesDataProvider.getTestData(interface_bet, "tokenQ");
+        //String tokenH = PropertiesDataProvider.getTestData(interface_bet, "tokenH");
         //token = tokenQ +rand+ tokenH;
         token = PropertiesDataProvider.getTestData(interface_bet, "token");
 

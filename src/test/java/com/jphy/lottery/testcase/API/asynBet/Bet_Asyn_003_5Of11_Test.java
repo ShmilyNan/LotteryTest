@@ -31,7 +31,7 @@ public class Bet_Asyn_003_5Of11_Test {
         for (int j = 19999; j < numbers.size(); j++) {
             if (j < 20000) {
                 BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(j));
-                betAsynHelper.betLottery();
+                //betAsynHelper.betLottery();
             }
         }
     }
