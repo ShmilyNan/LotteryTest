@@ -127,11 +127,11 @@ public class JdbcUtil {
                 // 构建完整SQL
                 String sql = prefix + suffix.substring(0, suffix.length() - 1);
                 // 添加执行SQL
-                //pst.addBatch(sql);
+                pst.addBatch(sql);
                 // 执行操作
-                //pst.executeBatch();
+                pst.executeBatch();
                 // 提交事务
-                //connection.commit();
+                connection.commit();
                 // 清空上一次添加的数据
                 suffix = new StringBuffer();
             }

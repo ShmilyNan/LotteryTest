@@ -27,6 +27,7 @@ public class Bet_Asyn_002_SSC_Test {
         //final String filePath = "./src/test/resources/data/SSCBetDatas.xml";
         final int lotteryType = 4;
         //initHttpClient();
+        //JdbcUtil.insertNumbers(lotteryType);
         List<String> numbers = JdbcUtil.queryNumbersToUpdateResult(lotteryType);
         for (int i = 0; i < numbers.size(); i++) {
             JdbcUtil.updateResult(lotteryType, numbers.get(i));

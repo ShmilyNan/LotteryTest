@@ -11,7 +11,7 @@ import java.util.List;
 
 public class InsertTest {
     public static List<Numbers> numbersList;
-    public static int lottery_type = 0;
+    public static int lottery_type = 8;
 
     public static void main(String[] args) throws Exception {
         numbersList = new ReadXMLByDom4j().getNumbers(new File("./src/main/resources/X115_Numbers.xml"));
