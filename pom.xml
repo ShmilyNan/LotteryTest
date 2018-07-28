@@ -175,6 +175,7 @@
                         <argLine>-Dfile.encoding=UTF-8</argLine>
                         <suiteXmlFiles>
                             <suiteXmlFile>runSSC2.xml</suiteXmlFile>
+                            <suiteXmlFile>runSSC.xml</suiteXmlFile>
                         </suiteXmlFiles>
                         <!--定义maven运行测试生成的报表路径 -->
                         <reportsDirectory>./result/test-report/default</reportsDirectory>
