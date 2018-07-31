@@ -11,8 +11,7 @@ public class OpenLottery {
     public static Logger logger = Logger.getLogger(OpenLottery.class.getName());
 
     @Test(invocationCount = 1)
-    public void orderBetting(ITestContext context) throws Exception {
-        //final String filePath = "./src/test/resources/data/SSCBetDatas.xml";
+    public void orderBetting() throws Exception {
         final int lotteryType = 4;
         int orders = 92;
         //JdbcUtil.insertNumbers(lotteryType);
@@ -24,7 +23,6 @@ public class OpenLottery {
                 for (int i = 0; i < numbers.size(); i++) {
                     JdbcUtil.updateResult(lotteryType, numbers.get(i));
                 }
-                //JdbcUtil.insertNumbers(lotteryType);
             }
         }
     }
