@@ -1,4 +1,4 @@
-package com.jphy.lottery.testcase.API.asynBet;
+package com.jphy.lottery.testcase.others;
 
 import com.jphy.lottery.util.JdbcUtil;
 import org.apache.log4j.Logger;
@@ -7,12 +7,8 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-/**
- * @author Lance
- * @Description 时时彩投注接口测试
- */
-public class Bet_Asyn_002_SSC_Test {
-    public static Logger logger = Logger.getLogger(Bet_Asyn_002_SSC_Test.class.getName());
+public class OpenLottery {
+    public static Logger logger = Logger.getLogger(OpenLottery.class.getName());
 
     @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception {
