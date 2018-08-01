@@ -28,10 +28,10 @@ public class Bet_Asyn_003_5Of11_Test {
         final int lotteryType = 11;
 
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
+        BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
         for (int j = 19999; j < numbers.size(); j++) {
             if (j < 20000) {
-                BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(j));
-                //betAsynHelper.betLottery();
+                //betAsynHelper.betLottery(, numbers.get(j));
             }
         }
     }

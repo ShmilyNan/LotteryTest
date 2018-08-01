@@ -24,11 +24,9 @@ public class BetAsynHelper {
     public static Logger logger = Logger.getLogger(BetAsynHelper.class.getName());
     public static HttpAsyncClientUtil httpAsyncClientUtil = new HttpAsyncClientUtil();
     private static String interface_bet;
-    private static String filePath;
     private static List<BetOrder> betOrderList;
     private static String lotteryType;
     private static String token;
-    private static String number;
     private static String bet_url;
 
     /**
@@ -38,31 +36,24 @@ public class BetAsynHelper {
      * @param filePath
      * @param lotteryType
      */
-    public BetAsynHelper(ITestContext context, String filePath, String lotteryType, String number) {
+    public BetAsynHelper(ITestContext context, String filePath, String lotteryType) {
         interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
-        this.filePath = filePath;
         this.lotteryType = lotteryType;
-        this.number = number;
         bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
         token = PropertiesDataProvider.getTestData(interface_bet, "token");
         betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
     }
 
-    public static void betLottery(CloseableHttpAsyncClient httpClient) {
+    public static void betLottery(CloseableHttpAsyncClient httpClient, String number) {
         for (int i = 0; i < betOrderList.size(); i++) {
-            bet(i, number,httpClient);
-            try {
-                Thread.sleep(20);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            bet(i, number, httpClient);
         }
     }
 
     /**
      * 请求投注接口，获取返回信息
      */
-    private static void bet(int i, String number,CloseableHttpAsyncClient httpClient) {
+    private static void bet(int i, String number, CloseableHttpAsyncClient httpClient) {
         JSONArray array = new JSONArray();
 
         JSONObject object = new JSONObject();
@@ -89,7 +80,7 @@ public class BetAsynHelper {
         params.add(new BasicNameValuePair("number", number));
         params.add(new BasicNameValuePair("content", array.toJSONString()));
 
-        httpAsyncClientUtil.doPost(bet_url, params, lotteryType, number,httpClient);
+        httpAsyncClientUtil.doPost(bet_url, params, lotteryType, number, httpClient);
     }
 
 }
