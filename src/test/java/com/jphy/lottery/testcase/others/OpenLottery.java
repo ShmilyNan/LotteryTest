@@ -11,7 +11,7 @@ public class OpenLottery {
     public static Logger logger = Logger.getLogger(OpenLottery.class.getName());
 
     @Test(invocationCount = 1)
-    public void orderBetting() throws Exception {
+    public void openLottery() throws Exception {
         final int lotteryType = 4;
         int orders = 92;
         //JdbcUtil.insertNumbers(lotteryType);
