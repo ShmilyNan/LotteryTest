@@ -24,7 +24,6 @@ import java.util.concurrent.CountDownLatch;
 public class HttpAsyncClientUtil {
     public static Logger logger = Logger.getLogger(HttpAsyncClientUtil.class.getName());
     private static String resultOfBet;
-    public CountDownLatch latch = new CountDownLatch(1000);
     public CloseableHttpAsyncClient httpClient0 = null;
 
     public void initHttpClient0() {
@@ -57,7 +56,7 @@ public class HttpAsyncClientUtil {
     /**
      * 发起请求
      */
-    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient) {
+    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient, final CountDownLatch latch) {
         try {
             //initHttpClient0();
             HttpPost request = new HttpPost(url);
