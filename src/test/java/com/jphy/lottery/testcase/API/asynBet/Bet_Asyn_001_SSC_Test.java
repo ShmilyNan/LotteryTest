@@ -47,7 +47,7 @@ public class Bet_Asyn_001_SSC_Test {
         initHttpClient();
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
-        for (int j = 9500; j < numbers.size(); j++) {
+        for (int j = 40000; j < numbers.size(); j++) {
             betAsynHelper.betLottery(httpClient, numbers.get(j));
         }
     }
