@@ -47,7 +47,7 @@ public class JdbcUtil {
             // connection = DriverManager.getConnection(jdbc_url + jdbc_db, jdbc_name,
             // jdbc_password);// 创建数据连接
             connection = DriverManager.getConnection(
-                    jdbc_url + jdbc_db + "?user=" + jdbc_username + "&password=" + jdbc_password + "&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC");// 创建数据连接
+                    jdbc_url + jdbc_db + "?user=" + jdbc_username + "&password=" + jdbc_password + "&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false");// 创建数据连接
             //connection = DriverManager.getConnection(jdbc_url,jdbc_username,jdbc_password);// 创建数据连接
         } catch (Exception e) {
             System.out.println("数据库连接失败" + e.getMessage());
