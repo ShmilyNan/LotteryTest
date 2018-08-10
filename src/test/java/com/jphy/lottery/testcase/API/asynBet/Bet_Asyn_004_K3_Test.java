@@ -1,6 +1,7 @@
 package com.jphy.lottery.testcase.API.asynBet;
 
 import com.jphy.lottery.APIHelper.BetAsynHelper;
+import com.jphy.lottery.plugins.father.BetOrderFather;
 import com.jphy.lottery.util.JdbcUtil;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
@@ -19,11 +20,11 @@ public class Bet_Asyn_004_K3_Test {
     public void orderBetting(ITestContext context) {
         final String filePath = "./src/test/resources/data/K3BetDatas.xml";
         final int lotteryType = 8;
-
+        BetOrderFather.initHttpClient();
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
         for (int j = 0; j < numbers.size(); j++) {
-            betAsynHelper.betLottery(numbers.get(j));
+            betAsynHelper.betLottery(BetOrderFather.httpClient,numbers.get(j));
         }
     }
 }

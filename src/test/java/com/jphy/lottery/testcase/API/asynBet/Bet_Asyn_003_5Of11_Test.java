@@ -2,6 +2,7 @@ package com.jphy.lottery.testcase.API.asynBet;
 
 import com.jphy.lottery.APIHelper.BetAsynHelper;
 import com.jphy.lottery.APIHelper.BetSynHelper;
+import com.jphy.lottery.plugins.father.BetOrderFather;
 import com.jphy.lottery.util.JdbcUtil;
 import org.apache.http.impl.nio.client.CloseableHttpAsyncClient;
 import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
@@ -26,12 +27,12 @@ public class Bet_Asyn_003_5Of11_Test {
     public void orderBetting(ITestContext context) throws Exception {
         String filePath = "./src/test/resources/data/5Of11BetDatas.xml";
         final int lotteryType = 11;
-
+        BetOrderFather.initHttpClient();
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         int number = numbers.size() / 7;
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
         for (int j = 0; j < number * 1; j++) {
-            betAsynHelper.betLottery(numbers.get(j));
+            betAsynHelper.betLottery(BetOrderFather.httpClient,numbers.get(j));
         }
     }
 }
