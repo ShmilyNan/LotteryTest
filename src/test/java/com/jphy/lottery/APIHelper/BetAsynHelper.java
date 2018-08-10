@@ -87,7 +87,7 @@ public class BetAsynHelper {
         params.add(new BasicNameValuePair("number", number));
         params.add(new BasicNameValuePair("content", array.toJSONString()));
 
-        httpAsyncClientUtil.doPost(bet_url, params, lotteryType, number, latch);
+        httpAsyncClientUtil.doPost(bet_url, params, lotteryType, number,httpClient, latch);
     }
 
 }
