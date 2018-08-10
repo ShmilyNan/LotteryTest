@@ -22,29 +22,11 @@ import java.util.concurrent.CountDownLatch;
  */
 public class Bet_Asyn_001_SSC_Test {
     public static Logger logger = Logger.getLogger(Bet_Asyn_001_SSC_Test.class.getName());
-    public CloseableHttpAsyncClient httpClient = null;
-
-    public void initHttpClient() {
-        try {
-            //创建连接池
-            DefaultConnectingIOReactor ioreactor = new DefaultConnectingIOReactor(IOReactorConfig.custom().
-                    setConnectTimeout(10000).
-                    setIoThreadCount(Runtime.getRuntime().availableProcessors()).
-                    setSoTimeout(10000).
-                    build());
-            PoolingNHttpClientConnectionManager mngr = new PoolingNHttpClientConnectionManager(ioreactor);
-            mngr.setMaxTotal(100);
-            httpClient = HttpAsyncClientBuilder.create().setConnectionManager(mngr).build();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     @Test(invocationCount = 1)
     public void orderBetting(final ITestContext context) throws Exception {
         final String filePath = "./src/test/resources/data/SSCBetDatas.xml";
         final int lotteryType = 4;
-        //initHttpClient();
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
         for (int j = 0; j < numbers.size(); j++) {
