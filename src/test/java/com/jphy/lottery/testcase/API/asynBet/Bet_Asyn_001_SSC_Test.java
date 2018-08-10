@@ -44,11 +44,11 @@ public class Bet_Asyn_001_SSC_Test {
     public void orderBetting(final ITestContext context) throws Exception {
         final String filePath = "./src/test/resources/data/SSCBetDatas.xml";
         final int lotteryType = 4;
-        initHttpClient();
+        //initHttpClient();
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
         for (int j = 0; j < numbers.size(); j++) {
-            betAsynHelper.betLottery(httpClient, numbers.get(j));
+            betAsynHelper.betLottery(numbers.get(j));
         }
     }
 }
