@@ -28,8 +28,9 @@ public class Bet_Asyn_003_5Of11_Test {
         final int lotteryType = 11;
 
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
+        int number = numbers.size()/7;
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
-        for (int j = 0; j < 7920; j++) {
+        for (int j = 0; j < number*1; j++) {
             betAsynHelper.betLottery(numbers.get(j));
         }
     }
