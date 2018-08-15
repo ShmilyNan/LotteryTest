@@ -16,16 +16,16 @@ import java.util.List;
 public class Bet_Asyn_002_PK10_Test {
     public static Logger logger = Logger.getLogger(Bet_Asyn_002_PK10_Test.class.getName());
 
-    @Test(invocationCount = 12)
+    @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) throws Exception {
         String filePath = "./src/test/resources/data/PK10BetDatas.xml";
         final int lotteryType = 1;
         BetOrderFather.initHttpClient();
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
-        int number = numbers.size() / 7;
+        int number = numbers.size() / 16;
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
-        for (int j = 0; j < number*1; j++) {
-            betAsynHelper.betLottery(BetOrderFather.httpClient,numbers.get(j));
+        for (int j = number * 0; j < number * 1; j++) {
+            betAsynHelper.betLottery(BetOrderFather.httpClient, numbers.get(j));
         }
     }
 }
