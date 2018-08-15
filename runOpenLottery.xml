@@ -21,7 +21,7 @@
     <!--插入number/更新result时，参数化LotteryType-->
     <parameter name="lotteryType" value="1"/>
     <!--type值：0 insert，1 update-->
-    <parameter name="type" value="0"/>
+    <parameter name="type" value="1"/>
     <test verbose="2" preserve-order="true" name="Single Test1">
         <classes>
             <class name="com.jphy.lottery.testcase.others.OpenLottery"/>
