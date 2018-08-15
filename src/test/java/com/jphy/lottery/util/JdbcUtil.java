@@ -11,11 +11,15 @@ import java.util.Date;
 
 import com.jphy.lottery.plugins.ReadXml.Numbers;
 import com.jphy.lottery.plugins.ReadXml.ReadXMLByDom4j;
+import com.jphy.lottery.plugins.Sort.Arrange;
 import org.apache.log4j.Logger;
 
 public class JdbcUtil {
     public static Logger logger = Logger.getLogger(JdbcUtil.class.getName());
+    public static Arrange arrange = null;
     public static List<Numbers> numbersList;
+    public static List<String> data = null;
+    public static List<String> numberOfPK10 = null;
     // 创建静态全局变量
     static Connection connection;
     static Statement statement;
@@ -75,8 +79,10 @@ public class JdbcUtil {
 
     public static void insertNumbers(int lottery_type) {
         numbersList = new ReadXMLByDom4j().getNumbers(new File("./src/test/resources/data/numberListOf11X5.xml"));
+        arrange = new Arrange();
+        data = new ArrayList<String>();
         connection = getConnection();
-        String number1;
+        String number;
         // 开始时间
         Long begin = new Date().getTime();
         // sql前缀
@@ -89,42 +95,55 @@ public class JdbcUtil {
             // 比起st，pst会更好些
             PreparedStatement pst = (PreparedStatement) connection.prepareStatement(" ");//准备执行语句
             // 外层循环，总提交事务次数
-            for (int i = 1; i <= 1; i++) {
+            for (int i = 1; i <= 40; i++) {
                 suffix = new StringBuffer();
                 // 第j次提交步长
                 if (lottery_type == 0 || lottery_type == 4 || lottery_type == 5 || lottery_type == 6) {
                     for (int j = 0; j <= 99999; j++) {
                         // 构建SQL后缀
                         if (j < 10) {
-                            number1 = "0000" + j;
+                            number = "0000" + j;
                         } else if (j > 9 && j < 100) {
-                            number1 = "000" + j;
+                            number = "000" + j;
                         } else if (j > 99 && j < 1000) {
-                            number1 = "00" + j;
+                            number = "00" + j;
                         } else if (j > 999 && j < 10000) {
-                            number1 = "0" + j;
+                            number = "0" + j;
                         } else {
-                            number1 = String.valueOf(j);
+                            number = String.valueOf(j);
                         }
-                        suffix.append("('" + lottery_type + "','" + number1 + "'),");
+                        suffix.append("('" + lottery_type + "','" + number + "'),");
                     }
                 } else if (lottery_type >= 8 && lottery_type <= 10) {
                     for (int j = 1; j <= 6; j++) {
                         for (int k = 1; k <= 6; k++) {
                             for (int l = 1; l <= 6; l++) {
-                                number1 = String.valueOf(j) + String.valueOf(k) + String.valueOf(l);
+                                number = String.valueOf(j) + String.valueOf(k) + String.valueOf(l);
                                 // 构建SQL后缀
-                                suffix.append("('" + lottery_type + "','" + number1 + "'),");
+                                suffix.append("('" + lottery_type + "','" + number + "'),");
                             }
                         }
                     }
                 } else if (lottery_type == 11) {
-                    for (int j = 0; j <numbersList.size(); j++) {
-                        number1 = numbersList.get(j).getNumber();
+                    for (int j = 0; j < numbersList.size(); j++) {
+                        number = numbersList.get(j).getNumber();
                         // 构建SQL后缀
-                        suffix.append("('" + lottery_type + "','" + number1 + "'),");
+                        suffix.append("('" + lottery_type + "','" + number + "'),");
                         System.out.println(numbersList.get(j).getNumber());
                     }
+                } else if (lottery_type == 1) {
+                    if (i == 1) {
+                        for (int j = 0; j < 10; j++) {
+                            data.add(String.valueOf(j));
+                        }
+                        numberOfPK10 = arrange.arrangeSelect(data, new ArrayList<String>(), data.size());
+                    }
+                    for (int j = 90720 * (i - 1); j < 90720 * i; j++) {
+                        number = numberOfPK10.get(j);
+                        // 构建SQL后缀
+                        suffix.append("('" + lottery_type + "','" + number + "'),");
+                    }
+                    System.out.println("准备第" + i + "次提交");
                 }
                 // 构建完整SQL
                 String sql = prefix + suffix.substring(0, suffix.length() - 1);
@@ -137,7 +156,7 @@ public class JdbcUtil {
                 // 清空上一次添加的数据
                 suffix = new StringBuffer();
             }
-            // 头等连接
+            // 关闭连接
             pst.close();
             connection.close();
         } catch (SQLException e) {
@@ -192,7 +211,7 @@ public class JdbcUtil {
                 result = number.substring(0, 1) + "," + number.substring(1, 2) + "," + number.substring(2);
                 // 构建SQL后缀
                 infix.append("when '" + number + "' then '" + result + "' ");
-            }else if (lottery_type==11){
+            } else if (lottery_type == 11) {
                 result = String.format("%s,%s,%s,%s,%s", number.substring(0, 2), number.substring(2, 4), number.substring(4, 6), number.substring(6, 8), number.substring(8));
                 // 构建SQL后缀
                 infix.append("when '" + number + "' then '" + result + "' ");
@@ -348,14 +367,14 @@ public class JdbcUtil {
         return fieldValue;
     }
 
-    public static List<String> queryNumbersToUpdateResult(int lotteryType,int orders) {
+    public static List<String> queryNumbersToUpdateResult(int lotteryType, int orders) {
         connection = getConnection(); // 同样先要获取连接，即连接到数据库
         List<String> numbers = new ArrayList<>();
         try {
             statement = (Statement) connection.createStatement(); // 创建用于执行静态sql语句的Statement对象，st属局部变量
-            ResultSet rs = statement.executeQuery("SELECT number FROM basic_number WHERE LOTTERY_TYPE = "+lotteryType
-                    +" AND RESULT is NULL AND NUMBER in(SELECT number FROM lottery_order_001 WHERE LOTTERY_TYPE = "+lotteryType
-                    +" GROUP BY number HAVING count(*) = "+orders+");"); // 执行sql查询语句，返回查询数据的结果集
+            ResultSet rs = statement.executeQuery("SELECT number FROM basic_number WHERE LOTTERY_TYPE = " + lotteryType
+                    + " AND RESULT is NULL AND NUMBER in(SELECT number FROM lottery_order_001 WHERE LOTTERY_TYPE = " + lotteryType
+                    + " GROUP BY number HAVING count(*) = " + orders + ");"); // 执行sql查询语句，返回查询数据的结果集
             while (rs.next()) { // 判断是否还有下一个数据
                 // 根据字段名获取相应的值
                 numbers.add(rs.getString("number"));
