@@ -5,10 +5,12 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OpenLottery {
     public static Logger logger = Logger.getLogger(OpenLottery.class.getName());
+    public static List<String> numbers = null;
 
     @Parameters({"lotteryType", "type"})
     @Test(invocationCount = 1)
@@ -36,13 +38,16 @@ public class OpenLottery {
             orders = 12;
         }
         while (true) {
-            List<String> numbers = JdbcUtil.queryNumbersToUpdateResult(lotteryType, orders);
+            numbers = JdbcUtil.queryNumbersToUpdateResult(lotteryType, orders);
+            //numbers = new ArrayList<>();
+            //numbers.add("9090910");
             if (numbers.size() == 0) {
-                Thread.sleep(60000);
+                //JdbcUtil.updateResult(lotteryType, numbers);
+                Thread.sleep(10000);
+                //break;
             } else {
-                for (int i = 0; i < numbers.size(); i++) {
-                    JdbcUtil.updateResult(lotteryType, numbers.get(i));
-                }
+                JdbcUtil.updateResult(lotteryType, numbers);
+                //break;
             }
         }
     }

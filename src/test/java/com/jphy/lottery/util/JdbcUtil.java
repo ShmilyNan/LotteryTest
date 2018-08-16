@@ -12,6 +12,7 @@ import java.util.Date;
 import com.jphy.lottery.plugins.ReadXml.Numbers;
 import com.jphy.lottery.plugins.ReadXml.ReadXMLByDom4j;
 import com.jphy.lottery.plugins.Sort.Arrange;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
 public class JdbcUtil {
@@ -20,6 +21,7 @@ public class JdbcUtil {
     public static List<Numbers> numbersList;
     public static List<String> data = null;
     public static List<String> numberOfPK10 = null;
+    public static List<String> digit = null;
     // 创建静态全局变量
     static Connection connection;
     static Statement statement;
@@ -187,7 +189,7 @@ public class JdbcUtil {
         }
     }
 
-    public static void updateResult(int lottery_type, String number) throws Exception {
+    public static void updateResult(int lottery_type, List<String> number) throws Exception {
         connection = getConnection();
         // 开始时间
         Long begin = new Date().getTime();
@@ -201,109 +203,31 @@ public class JdbcUtil {
             // 比起st，pst会更好些
             PreparedStatement pst = (PreparedStatement) connection.prepareStatement(" ");//准备执行语句
             String result = "";
-            infix = new StringBuffer();
-            // 第j次提交步长
-            if (lottery_type == 0 || lottery_type == 4 || lottery_type == 5 || lottery_type == 6) {
-                result = String.format("%s,%s,%s,%s,%s", number.substring(0, 1), number.substring(1, 2), number.substring(2, 3), number.substring(3, 4), number.substring(4));
-                // 构建SQL后缀
-                infix.append("when '" + number + "' then '" + result + "' ");
-            } else if (lottery_type >= 8 && lottery_type <= 10) {
-                result = number.substring(0, 1) + "," + number.substring(1, 2) + "," + number.substring(2);
-                // 构建SQL后缀
-                infix.append("when '" + number + "' then '" + result + "' ");
-            } else if (lottery_type == 11) {
-                result = String.format("%s,%s,%s,%s,%s", number.substring(0, 2), number.substring(2, 4), number.substring(4, 6), number.substring(6, 8), number.substring(8));
-                // 构建SQL后缀
-                infix.append("when '" + number + "' then '" + result + "' ");
-            }
-            String suffix = " end where lottery_type = " + lottery_type + " and  result is null  ";
-            // 构建完整SQL
-            String sql = prefix + infix.substring(0, infix.length() - 1) + suffix;
-            // 添加执行SQL
-            pst.addBatch(sql);
-            // 执行操作
-            pst.executeBatch();
-            // 提交事务
-            connection.commit();
-            // 清空上一次添加的数据
-            infix = new StringBuffer();
-            //Thread.sleep(90000);
-            // 头等连接
-            pst.close();
-            connection.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        // 结束时间
-        Long end = new Date().getTime();
-        // 耗时
-        System.out.println("Update time : " + (end - begin) / 1000 + " s");
-        System.out.println("Update completion");
-    }
+            for (int i = 0; i < number.size(); i++) {
+                ff(number.get(i), lottery_type);
+                infix = new StringBuffer();
+                // 第j次提交步长
+                if (lottery_type == 0 || (lottery_type >= 4 && lottery_type <= 6)) {
 
-/*
-    /**
-     *
-     * @param lottery_type
-     * @param endNumber
-     * @throws Exception
-     */
-    /*
-    public static void updateResult(int lottery_type, int endNumber) throws Exception {
-        connection = getConnection();
-        // 开始时间
-        Long begin = new Date().getTime();
-        // sql前缀
-        String prefix = "update basic_number SET RESULT = case number ";
-        try {
-            // 保存sql后缀
-            StringBuffer infix = new StringBuffer();
-            // 设置事务为非自动提交
-            connection.setAutoCommit(false);
-            // 比起st，pst会更好些
-            PreparedStatement pst = (PreparedStatement) connection.prepareStatement(" ");//准备执行语句
-            String result = "";
-            String numbers = "";
-            infix = new StringBuffer();
-            // 第j次提交步长
-            if (lottery_type == 0 || lottery_type == 4 || lottery_type == 5 || lottery_type == 6) {
-                for (int n = endNumber; n <= endNumber; n++) {
-                    if (n >= 0 && n < 10) {
-                        result = String.format("0,0,0,0,%s", String.valueOf(n));
-                        numbers = "0000" + n;
-                        // 构建SQL后缀
-                        infix.append("when '" + numbers + "' then '" + result + "' ");
-                    } else if (n > 9 && n < 100) {
-                        result = String.format("0,0,0,%s,%s", String.valueOf(n).substring(0, 1), String.valueOf(n).substring(1));
-                        numbers = "000" + n;
-                        // 构建SQL后缀
-                        infix.append("when '" + numbers + "' then '" + result + "' ");
-                    } else if (n > 99 && n < 1000) {
-                        result = String.format("0,0,%s,%s,%s", String.valueOf(n).substring(0, 1), String.valueOf(n).substring(1, 2), String.valueOf(n).substring(2));
-                        numbers = "00" + n;
-                        // 构建SQL后缀
-                        infix.append("when '" + numbers + "' then '" + result + "' ");
-                    } else if (n > 999 && n < 10000) {
-                        result = String.format("0,%s,%s,%s,%s", String.valueOf(n).substring(0, 1), String.valueOf(n).substring(1, 2), String.valueOf(n).substring(2, 3), String.valueOf(n).substring(3));
-                        numbers = "0" + n;
-                        // 构建SQL后缀
-                        infix.append("when '" + numbers + "' then '" + result + "' ");
-                    } else {
-                        result = String.format("%s,%s,%s,%s,%s", String.valueOf(n).substring(0, 1), String.valueOf(n).substring(1, 2), String.valueOf(n).substring(2, 3), String.valueOf(n).substring(3, 4), String.valueOf(n).substring(4));
-                        // 构建SQL后缀
-                        infix.append("when '" + n + "' then '" + result + "' ");
-                    }
-                }
-            } else if (lottery_type >= 8 && lottery_type <= 10) {
-                for (int j = 1; j <= 6; j++) {
-                    for (int k = 1; k <= 6; k++) {
-                        for (int l = 1; l <= 6; l++) {
-                            numbers = String.valueOf(j) + String.valueOf(k) + String.valueOf(l);
-                            result = j + "," + k + "," + l;
-                            // 构建SQL后缀
-                            infix.append("when '" + numbers + "' then '" + result + "' ");
-                        }
-                    }
+                    result = StringUtils.join(digit, ",");
+                    System.out.println(result);
+                    // 构建SQL后缀
+                    infix.append("when '" + number + "' then '" + result + "' ");
+                } else if (lottery_type >= 8 && lottery_type <= 10) {
+                    result = StringUtils.join(digit, ",");
+                    System.out.println(result);
+                    // 构建SQL后缀
+                    infix.append("when '" + number + "' then '" + result + "' ");
+                } else if (lottery_type == 11) {
+                    result = StringUtils.join(digit, ",");
+                    System.out.println(result);
+                    // 构建SQL后缀
+                    infix.append("when '" + number + "' then '" + result + "' ");
+                } else if (lottery_type == 1) {
+                    result = StringUtils.join(digit, ",");
+                    System.out.println(result);
+                    // 构建SQL后缀
+                    infix.append("when '" + number + "' then '" + result + "' ");
                 }
             }
             String suffix = " end where lottery_type = " + lottery_type + " and  result is null  ";
@@ -317,8 +241,7 @@ public class JdbcUtil {
             connection.commit();
             // 清空上一次添加的数据
             infix = new StringBuffer();
-            //Thread.sleep(90000);
-            // 头等连接
+            // 关闭连接
             pst.close();
             connection.close();
         } catch (SQLException e) {
@@ -330,7 +253,6 @@ public class JdbcUtil {
         System.out.println("Update time : " + (end - begin) / 1000 + " s");
         System.out.println("Update completion");
     }
-    */
 
     /* 查询数据库，输出符合要求的记录的情况 */
     public static String query(String sql, String fieldName) {
@@ -456,6 +378,26 @@ public class JdbcUtil {
             logger.info("jdbc删除数据结束");
         } catch (SQLException e) {
             System.out.println("删除数据失败");
+        }
+    }
+
+    public static void ff(String number, int lotteryType) {
+        digit = new ArrayList<>();
+        if (lotteryType == 1) {
+            for (int i = 0; i < number.length(); i++) {
+                if (number.substring(i, i + 1).equals("0"))
+                    digit.add("1" + number.substring(i, i + 1));
+                else
+                    digit.add("0" + number.substring(i, i + 1));
+            }
+        } else if (lotteryType == 11) {
+            for (int i = 0; i < number.length(); i = i + 2) {
+                digit.add(number.substring(i, i + 2));
+            }
+        } else {
+            for (int i = 0; i < number.length(); i++) {
+                digit.add(number.substring(i, i + 1));
+            }
         }
     }
 }
