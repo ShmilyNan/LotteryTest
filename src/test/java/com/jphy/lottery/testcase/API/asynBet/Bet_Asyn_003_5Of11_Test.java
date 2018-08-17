@@ -32,7 +32,7 @@ public class Bet_Asyn_003_5Of11_Test {
         int number = numbers.size() / 7;
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
         for (int j = 0; j < number * 1; j++) {
-            betAsynHelper.betLottery(BetOrderFather.httpClient,numbers.get(j));
+            betAsynHelper.betLottery(BetOrderFather.httpClient, numbers.get(j));
         }
     }
 }
