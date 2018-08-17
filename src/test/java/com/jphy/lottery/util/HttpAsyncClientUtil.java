@@ -28,7 +28,7 @@ public class HttpAsyncClientUtil {
     /**
      * 发起请求
      */
-    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient,final CountDownLatch latch) {
+    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient, final CountDownLatch latch) {
         try {
             HttpPost request = new HttpPost(url);
             try {
@@ -50,26 +50,26 @@ public class HttpAsyncClientUtil {
                     try {
                         resultOfBet = EntityUtils.toString(response.getEntity(), "utf-8");
                         if (!getBetInfo(resultOfBet).equals("投注成功")) {
-                            logger.warn(String.format("%s第%s期请求不成功：%s", new Object[]{lotteryType, number, resultOfBet}));
+                            logger.warn(String.format("彩种：%s，第%s期请求不成功：%s", new Object[]{lotteryType, number, resultOfBet}));
                         }
                     } catch (IOException e) {
-                        logger.warn(String.format("%s第%s期请求异常", new Object[]{lotteryType, number}), e);
+                        logger.warn(String.format("彩种：%s，第%s期请求异常", new Object[]{lotteryType, number}), e);
                     }
                 }
 
                 public void failed(final Exception e) {
                     latch.countDown();
-                    logger.warn(String.format("%s第%s期请求失败", new Object[]{lotteryType, number,}), e);
+                    logger.warn(String.format("彩种：%s，第%s期请求失败", new Object[]{lotteryType, number,}), e);
                 }
 
                 public void cancelled() {
                     latch.countDown();
-                    logger.warn(String.format("%s第%s期投注取消", new Object[]{lotteryType, number}));
+                    logger.warn(String.format("彩种：%s，第%s期投注取消", new Object[]{lotteryType, number}));
                 }
 
             });
         } catch (Exception e) {
-            logger.warn(String.format("%s第%s期请求异常", new Object[]{lotteryType, number}), e);
+            logger.warn(String.format("彩种：%s，第%s期请求异常", new Object[]{lotteryType, number}), e);
         }
     }
 

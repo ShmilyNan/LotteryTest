@@ -210,22 +210,18 @@ public class JdbcUtil {
                 if (lottery_type == 0 || (lottery_type >= 4 && lottery_type <= 6)) {
 
                     result = StringUtils.join(digit, ",");
-                    System.out.println(result);
                     // 构建SQL后缀
                     infix.append("when '" + number + "' then '" + result + "' ");
                 } else if (lottery_type >= 8 && lottery_type <= 10) {
                     result = StringUtils.join(digit, ",");
-                    System.out.println(result);
                     // 构建SQL后缀
                     infix.append("when '" + number + "' then '" + result + "' ");
                 } else if (lottery_type == 11) {
                     result = StringUtils.join(digit, ",");
-                    System.out.println(result);
                     // 构建SQL后缀
                     infix.append("when '" + number + "' then '" + result + "' ");
                 } else if (lottery_type == 1) {
                     result = StringUtils.join(digit, ",");
-                    System.out.println(result);
                     // 构建SQL后缀
                     infix.append("when '" + number + "' then '" + result + "' ");
                 }

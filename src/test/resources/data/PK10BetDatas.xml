@@ -7,9 +7,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>400</spend>
-		<RebateAll>13.6</RebateAll>
-		<drawnAmount>386</drawnAmount>
-		<balance>99999986</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>399.6</drawnAmount>
+		<balance>99999999.6</balance>
 	</order>
 	<order>
 		<betRange>猜前五</betRange>
@@ -17,10 +17,10 @@
 		<betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10</betContent>
 		<mutiple>1</mutiple>
 		<amount>1</amount>
-		<spend>49056</spend>
-		<RebateAll>2056.32</RebateAll>
-		<drawnAmount>58363.2</drawnAmount>
-		<balance>100009293.2</balance>
+		<spend>60480</spend>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>60419.52</drawnAmount>
+		<balance>99999939.12</balance>
 	</order>
 	<order>
 		<betRange>猜前五</betRange>
@@ -29,9 +29,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>12</spend>
-		<RebateAll>6168.96</RebateAll>
-		<drawnAmount>175089.6</drawnAmount>
-		<balance>100184370.8</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>0</drawnAmount>
+		<balance>99999927.12</balance>
 	</order>
 	<order>
 		<betRange>猜前四</betRange>
@@ -40,9 +40,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>10080</spend>
-		<RebateAll>342.72</RebateAll>
-		<drawnAmount>9727.2</drawnAmount>
-		<balance>100184018</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>10069.92</drawnAmount>
+		<balance>99999917.04</balance>
 	</order>
 	<order>
 		<betRange>猜前四</betRange>
@@ -51,9 +51,9 @@
 		<mutiple>2</mutiple>
 		<amount>1</amount>
 		<spend>12</spend>
-		<RebateAll>685.44</RebateAll>
-		<drawnAmount>19454.4</drawnAmount>
-		<balance>100203460.4</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>0</drawnAmount>
+		<balance>99999905.04</balance>
 	</order>
 	<order>
 		<betRange>猜前三</betRange>
@@ -62,9 +62,9 @@
 		<mutiple>4</mutiple>
 		<amount>1</amount>
 		<spend>5760</spend>
-		<RebateAll>195.84</RebateAll>
-		<drawnAmount>5558.4</drawnAmount>
-		<balance>100203258.8</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>5754.24</drawnAmount>
+		<balance>99999899.28</balance>
 	</order>
 	<order>
 		<betRange>猜前三</betRange>
@@ -75,7 +75,7 @@
 		<spend>10</spend>
 		<RebateAll>0</RebateAll>
 		<drawnAmount>0</drawnAmount>
-		<balance>100203248.8</balance>
+		<balance>99999889.28</balance>
 	</order>
 	<order>
 		<betRange>猜前二</betRange>
@@ -84,9 +84,9 @@
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 		<spend>180</spend>
-		<RebateAll>6.12</RebateAll>
-		<drawnAmount>173.7</drawnAmount>
-		<balance>100203242.5</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>179.82</drawnAmount>
+		<balance>99999889.1</balance>
 	</order>
 	<order>
 		<betRange>猜前二</betRange>
@@ -97,7 +97,7 @@
 		<spend>16</spend>
 		<RebateAll>0</RebateAll>
 		<drawnAmount>0</drawnAmount>
-		<balance>100203226.5</balance>
+		<balance>99999873.1</balance>
 	</order>
 	<order>
 		<betRange>猜冠军</betRange>
@@ -106,9 +106,9 @@
 		<mutiple>3</mutiple>
 		<amount>1</amount>
 		<spend>60</spend>
-		<RebateAll>2.04</RebateAll>
-		<drawnAmount>57.9</drawnAmount>
-		<balance>100203224.4</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>59.94</drawnAmount>
+		<balance>99999873.04</balance>
 	</order>
 	<order>
 		<betRange>冠亚军</betRange>
@@ -117,9 +117,9 @@
 		<mutiple>1</mutiple>
 		<amount>3</amount>
 		<spend>63</spend>
-		<RebateAll>4.794</RebateAll>
-		<drawnAmount>140.385</drawnAmount>
-		<balance>100203301.785</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>45.468</drawnAmount>
+		<balance>99999855.508</balance>
 	</order>
 	<order>
 		<betRange>双面盘</betRange>
@@ -128,8 +128,8 @@
 		<mutiple>1</mutiple>
 		<amount>4</amount>
 		<spend>200</spend>
-		<RebateAll>6.8</RebateAll>
-		<drawnAmount>193</drawnAmount>
-		<balance>100203294.785</balance>
+		<RebateAll>0</RebateAll>
+		<drawnAmount>199.8</drawnAmount>
+		<balance>99999855.308</balance>
 	</order>
 </betorder>
