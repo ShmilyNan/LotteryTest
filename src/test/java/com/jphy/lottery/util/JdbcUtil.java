@@ -196,7 +196,7 @@ public class JdbcUtil {
         // sql前缀
         String prefix = "update basic_number SET RESULT = case number ";
         try {
-            // 保存sql后缀
+            // 保存sql中缀
             StringBuffer infix = new StringBuffer();
             // 设置事务为非自动提交
             connection.setAutoCommit(false);
@@ -205,25 +205,25 @@ public class JdbcUtil {
             String result = "";
             for (int i = 0; i < number.size(); i++) {
                 ff(number.get(i), lottery_type);
-                infix = new StringBuffer();
+                //infix = new StringBuffer();
                 // 第j次提交步长
                 if (lottery_type == 0 || (lottery_type >= 4 && lottery_type <= 6)) {
 
                     result = StringUtils.join(digit, ",");
                     // 构建SQL后缀
-                    infix.append("when '" + number + "' then '" + result + "' ");
+                    infix.append("when '" + number.get(i) + "' then '" + result + "' ");
                 } else if (lottery_type >= 8 && lottery_type <= 10) {
                     result = StringUtils.join(digit, ",");
                     // 构建SQL后缀
-                    infix.append("when '" + number + "' then '" + result + "' ");
+                    infix.append("when '" + number.get(i) + "' then '" + result + "' ");
                 } else if (lottery_type == 11) {
                     result = StringUtils.join(digit, ",");
                     // 构建SQL后缀
-                    infix.append("when '" + number + "' then '" + result + "' ");
+                    infix.append("when '" + number.get(i) + "' then '" + result + "' ");
                 } else if (lottery_type == 1) {
                     result = StringUtils.join(digit, ",");
                     // 构建SQL后缀
-                    infix.append("when '" + number + "' then '" + result + "' ");
+                    infix.append("when '" + number.get(i) + "' then '" + result + "' ");
                 }
             }
             String suffix = " end where lottery_type = " + lottery_type + " and  result is null  ";
