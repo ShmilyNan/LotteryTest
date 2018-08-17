@@ -28,7 +28,7 @@ public class HttpAsyncClientUtil {
     /**
      * 发起请求
      */
-    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient,final CountDownLatch latch) {
+    public void doPost(String url, List<NameValuePair> params, final String lotteryType, final String number, CloseableHttpAsyncClient httpClient, final CountDownLatch latch) {
         try {
             HttpPost request = new HttpPost(url);
             try {

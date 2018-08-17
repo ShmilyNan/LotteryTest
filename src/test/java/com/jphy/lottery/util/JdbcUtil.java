@@ -194,14 +194,13 @@ public class JdbcUtil {
         // sql前缀
         String prefix = "update basic_number SET RESULT = case number ";
         try {
-            // 保存sql后缀
+            // 保存sql中缀
             StringBuffer infix = new StringBuffer();
             // 设置事务为非自动提交
             connection.setAutoCommit(false);
             // 比起st，pst会更好些
             PreparedStatement pst = (PreparedStatement) connection.prepareStatement(" ");//准备执行语句
             String result = "";
-            infix = new StringBuffer();
             // 第j次提交步长
             if (lottery_type == 0 || lottery_type == 4 || lottery_type == 5 || lottery_type == 6) {
                 result = String.format("%s,%s,%s,%s,%s", number.substring(0, 1), number.substring(1, 2), number.substring(2, 3), number.substring(3, 4), number.substring(4));
