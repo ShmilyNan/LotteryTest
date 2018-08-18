@@ -26,7 +26,6 @@ import java.util.concurrent.CountDownLatch;
  */
 public class BetSynHelper {
     public static Logger logger = Logger.getLogger(BetSynHelper.class.getName());
-    private static SeleniumUtil seleniumUtil;
     private static String interface_bet;
     private static List<BetOrder> betOrderList;
     private static String lotteryType;
