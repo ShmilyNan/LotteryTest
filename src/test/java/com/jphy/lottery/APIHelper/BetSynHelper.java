@@ -28,11 +28,9 @@ public class BetSynHelper {
     public static Logger logger = Logger.getLogger(BetSynHelper.class.getName());
     private static SeleniumUtil seleniumUtil;
     private static String interface_bet;
-    private static String filePath;
     private static List<BetOrder> betOrderList;
     private static String lotteryType;
     private static String token;
-    private static String number;
     private static String resultOfBet;
     private static String bet_url;
     private static String lotteryOrder;
@@ -44,17 +42,15 @@ public class BetSynHelper {
      * @param filePath
      * @param lotteryType
      */
-    public BetSynHelper(ITestContext context, String filePath, String lotteryType, String number) {
+    public BetSynHelper(ITestContext context, String filePath, String lotteryType) {
         interface_bet = context.getCurrentXmlTest().getParameter("interface_bet");
-        this.filePath = filePath;
         this.lotteryType = lotteryType;
-        this.number = number;
         bet_url = PropertiesDataProvider.getTestData(interface_bet, "bet_url");
         token = PropertiesDataProvider.getTestData(interface_bet, "token");
         betOrderList = new ReadXMLByDom4j().getBetOrders(new File(filePath));
     }
 
-    public static void betLottery() {
+    public static void betLottery(String number) {
         int len = betOrderList.size();
         //int len = 10;
         for (int i = 0; i < len; i++) {
