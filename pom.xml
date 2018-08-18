@@ -177,10 +177,9 @@
                         <!-- 解决用maven执行test时 日志乱码的问题，详见：http://www.cnblogs.com/discuss/archive/2010/10/27/1862225.html -->
                         <argLine>-Dfile.encoding=UTF-8</argLine>
                         <suiteXmlFiles>
-                            <suiteXmlFile>runOpenLottery.xml</suiteXmlFile>
                             <!--<suiteXmlFile>runSSC.xml</suiteXmlFile>-->
                             <!--<suiteXmlFile>runX115.xml</suiteXmlFile>-->
-                            <!--<suiteXmlFile>runPK10.xml</suiteXmlFile>-->
+                            <suiteXmlFile>runPK10.xml</suiteXmlFile>
                         </suiteXmlFiles>
                         <!--定义maven运行测试生成的报表路径 -->
                         <reportsDirectory>./result/test-report/default</reportsDirectory>
