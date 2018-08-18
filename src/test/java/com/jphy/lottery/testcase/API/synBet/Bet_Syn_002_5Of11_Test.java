@@ -22,9 +22,9 @@ public class Bet_Syn_002_5Of11_Test {
         int lotteryType = 11;
         String filePath = "./src/test/resources/data/5Of11BetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
+        BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType));
         for (int i = 0; i < 1000; i++) {
-            BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(i));
-            betSynHelper.betLottery();
+            betSynHelper.betLottery(numbers.get(i));
         }
     }
 }

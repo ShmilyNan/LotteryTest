@@ -16,14 +16,16 @@ import static java.lang.Thread.sleep;
  */
 public class Bet_Syn_004_PK10_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_004_PK10_Test.class.getName());
+
     @Test(invocationCount = 1)
-    public void orderBetting(ITestContext context) throws Exception{
+    public void orderBetting(ITestContext context) throws Exception {
         int lotteryType = 1;
         String filePath = "./src/test/resources/data/PK10BetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
-        for (int i = 0; i < 1000; i++) {
-            BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(i));
-            betSynHelper.betLottery();
+        int number = numbers.size() / 16;
+        BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType));
+        for (int i = 0; i < number * 1; i++) {
+            betSynHelper.betLottery(numbers.get(i));
         }
     }
 }
