@@ -49,7 +49,7 @@ public class BetAsynHelper {
         for (int i = 0; i < betOrderList.size(); i++) {
             bet(i, number, httpClient, latch);
             try {
-                Thread.sleep(200);
+                Thread.sleep(400);
             } catch (Exception e) {
                 e.printStackTrace();
             }
