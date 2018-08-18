@@ -22,9 +22,10 @@ public class Bet_Syn_003_K3_Test {
         int lotteryType = 8;
         String filePath = "./src/test/resources/data/K3BetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
-        for (int i = 0; i < numbers.size(); i++) {
-            BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType), numbers.get(i));
-            betSynHelper.betLottery();
+        int number = numbers.size() / 64;
+        BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType));
+        for (int i = number * 3; i < number * 4; i++) {
+            betSynHelper.betLottery(numbers.get(i));
         }
     }
 }
