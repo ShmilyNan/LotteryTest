@@ -22,9 +22,9 @@ public class Bet_Syn_004_PK10_Test {
         int lotteryType = 1;
         String filePath = "./src/test/resources/data/PK10BetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
-        int number = numbers.size() / 16;
+        int number = numbers.size() / 64;
         BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType));
-        for (int i = 0; i < number * 1; i++) {
+        for (int i = number * 4; i < number * 5; i++) {
             betSynHelper.betLottery(numbers.get(i));
         }
     }
