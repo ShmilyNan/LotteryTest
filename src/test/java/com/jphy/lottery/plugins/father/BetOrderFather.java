@@ -16,9 +16,9 @@ public class BetOrderFather {
         try {
             //创建连接池
             RequestConfig requestConfig = RequestConfig.custom()
-                    .setConnectTimeout(50000)
-                    .setSocketTimeout(50000)
-                    .setConnectionRequestTimeout(1000)
+                    .setConnectTimeout(120 * 1000)
+                    .setSocketTimeout(120 * 1000)
+                    .setConnectionRequestTimeout(120 * 1000)
                     .build();
             IOReactorConfig ioReactorConfig = IOReactorConfig.custom().
                     setIoThreadCount(Runtime.getRuntime().availableProcessors())

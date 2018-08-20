@@ -3,33 +3,33 @@
 <!-- thread-count 定义同时启动的浏览器数 paralle选择平行模式 -->
 <suite name="Single Suite" parallel="tests" thread-count="1">
     <!-- chrome,firefox和ie不区分大小写 -->
-    <parameter name="browserName" value="chrome" />
+    <parameter name="browserName" value="chrome"/>
     <!-- user的属性文件地址,此配置文件存储了用户名和密码等信息 -->
-    <parameter name="userInfoPath" value="./src/test/resources/config/user.properties" />
+    <parameter name="userInfoPath" value="./src/test/resources/config/user.properties"/>
     <!-- 流程接口以及json数据 -->
-    <parameter name="interface_bet" value="./src/test/resources/config/interfaceinfo.properties" />
+    <parameter name="interface_bet" value="./src/test/resources/config/interfaceinfo.properties"/>
     <!-- driver的属性配置文件保存路径 -->
-    <parameter name="driverConfgFilePath" value="./src/test/resources/config/driver.properties" />
+    <parameter name="driverConfgFilePath" value="./src/test/resources/config/driver.properties"/>
     <!-- 数据库的备份和还原存放路径 -->
-    <parameter name="databasePath" value="./src/test/resources/config/database.properties" />
+    <parameter name="databasePath" value="./src/test/resources/config/database.properties"/>
     <!-- 定义测试的站点地址 -->
-    <parameter name="testurl" value="http://test.my-sql.cn/lottery/" />
+    <parameter name="testurl" value="http://test.my-sql.cn/lottery/"/>
     <!-- 进程等待1秒中的控制时间 -->
-    <parameter name="sleepTime" value="8888888" />
+    <parameter name="sleepTime" value="8888888"/>
     <!-- 页面元素30秒不出现超时时间 -->
-    <parameter name="timeOut" value="9999999" />
+    <parameter name="timeOut" value="9999999"/>
     <!-- 这个是等待alert弹出的时间 单位毫秒 -->
-    <parameter name="waitMillisecondsForAlert" value="90000" />
+    <parameter name="waitMillisecondsForAlert" value="90000"/>
     <test verbose="2" preserve-order="true" name="Single Test1">
         <classes>
             <!--<class name="com.jphy.lottery.testcase.API.synBet.Bet_Syn_001_SSC_Test" />-->
-            <class name="com.jphy.lottery.testcase.API.asynBet.Bet_Asyn_001_SSC_Test" />
+            <class name="com.jphy.lottery.testcase.API.asynBet.Bet_Asyn_001_SSC_Test"/>
         </classes>
     </test>
     <listeners>
         <!-- arrow插件实现用例失败重跑以及生成测试报告 -->
-        <listener class-name="com.jphy.lottery.plugins.arrow.TestResultListener" />
-        <listener class-name="com.jphy.lottery.plugins.arrow.RetryListener" />
-        <listener class-name="com.jphy.lottery.plugins.arrow.PowerEmailableReporter" />
+        <listener class-name="com.jphy.lottery.plugins.arrow.TestResultListener"/>
+        <listener class-name="com.jphy.lottery.plugins.arrow.RetryListener"/>
+        <listener class-name="com.jphy.lottery.plugins.arrow.PowerEmailableReporter"/>
     </listeners>
 </suite>
