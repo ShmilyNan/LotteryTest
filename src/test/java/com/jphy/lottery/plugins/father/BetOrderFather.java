@@ -16,7 +16,7 @@ public class BetOrderFather {
             //创建连接池
             RequestConfig requestConfig = RequestConfig.custom()
                     .setConnectTimeout(120 * 1000)
-                    .setSocketTimeout(120 * 1000)
+                    .setSocketTimeout(300 * 1000)
                     .setConnectionRequestTimeout(120 * 1000)
                     .build();
             IOReactorConfig ioReactorConfig = IOReactorConfig.custom().

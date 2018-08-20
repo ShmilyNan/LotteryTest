@@ -12,13 +12,13 @@ public class OpenLottery {
     public static Logger logger = Logger.getLogger(OpenLottery.class.getName());
     public static List<String> numbers = null;
 
-    @Parameters({"lotteryType", "type"})
+    @Parameters({"lotteryType", "type", "waitTime"})
     @Test(invocationCount = 1)
-    public void openLottery(int lotteryType, int type) throws Exception {
+    public void openLottery(int lotteryType, int type, long waitTime) throws Exception {
         if (type == 0) {
             insert(lotteryType);
         } else if (type == 1) {
-            update(lotteryType);
+            update(lotteryType, waitTime);
         }
     }
 
@@ -26,7 +26,7 @@ public class OpenLottery {
         JdbcUtil.insertNumbers(lotteryType);
     }
 
-    public void update(int lotteryType) throws Exception {
+    public void update(int lotteryType, long waitTime) throws Exception {
         int orders = 0;
         if (lotteryType == 0 || (lotteryType >= 4 && lotteryType <= 6)) {
             orders = 92;
@@ -43,7 +43,7 @@ public class OpenLottery {
             //numbers.add("9090910");
             if (numbers.size() == 0) {
                 //JdbcUtil.updateResult(lotteryType, numbers);
-                Thread.sleep(10000);
+                Thread.sleep(waitTime);
                 //break;
             } else {
                 JdbcUtil.updateResult(lotteryType, numbers);
