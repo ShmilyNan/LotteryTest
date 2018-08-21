@@ -194,7 +194,6 @@ public class JdbcUtil {
         // 开始时间
         Long begin = new Date().getTime();
         // sql前缀
-        String prefix = "update basic_number SET RESULT = case number ";
         try {
             // 保存sql中缀
             StringBuffer infix = new StringBuffer();
@@ -202,35 +201,38 @@ public class JdbcUtil {
             connection.setAutoCommit(false);
             // 比起st，pst会更好些
             PreparedStatement pst = (PreparedStatement) connection.prepareStatement(" ");//准备执行语句
-            String result = "";
+            //for (int i = 0; i < number.size(); i++) {
+            //    ff(number.get(i), lottery_type);
+            //    //infix = new StringBuffer();
+            //    // 第j次提交步长
+            //    if (lottery_type == 0 || (lottery_type >= 4 && lottery_type <= 6)) {
+            //
+            //        result = StringUtils.join(digit, ",");
+            //        // 构建SQL后缀
+            //        infix.append("when '" + number.get(i) + "' then '" + result + "' ");
+            //    } else if (lottery_type >= 8 && lottery_type <= 10) {
+            //        result = StringUtils.join(digit, ",");
+            //        // 构建SQL后缀
+            //        infix.append("when '" + number.get(i) + "' then '" + result + "' ");
+            //    } else if (lottery_type == 11) {
+            //        result = StringUtils.join(digit, ",");
+            //        // 构建SQL后缀
+            //        infix.append("when '" + number.get(i) + "' then '" + result + "' ");
+            //    } else if (lottery_type == 1) {
+            //        result = StringUtils.join(digit, ",");
+            //        // 构建SQL后缀
+            //        infix.append("when '" + number.get(i) + "' then '" + result + "' ");
+            //    }
+            //}
+
             for (int i = 0; i < number.size(); i++) {
                 ff(number.get(i), lottery_type);
-                //infix = new StringBuffer();
-                // 第j次提交步长
-                if (lottery_type == 0 || (lottery_type >= 4 && lottery_type <= 6)) {
-
-                    result = StringUtils.join(digit, ",");
-                    // 构建SQL后缀
-                    infix.append("when '" + number.get(i) + "' then '" + result + "' ");
-                } else if (lottery_type >= 8 && lottery_type <= 10) {
-                    result = StringUtils.join(digit, ",");
-                    // 构建SQL后缀
-                    infix.append("when '" + number.get(i) + "' then '" + result + "' ");
-                } else if (lottery_type == 11) {
-                    result = StringUtils.join(digit, ",");
-                    // 构建SQL后缀
-                    infix.append("when '" + number.get(i) + "' then '" + result + "' ");
-                } else if (lottery_type == 1) {
-                    result = StringUtils.join(digit, ",");
-                    // 构建SQL后缀
-                    infix.append("when '" + number.get(i) + "' then '" + result + "' ");
+                if (lottery_type == 1) {
+                    String result = StringUtils.join(digit, ",");
+                    String sql = "update basic_number set RESULT = '" + result + "' WHERE LOTTERY_TYPE = " + lottery_type + " and number = '" + number.get(i) + "'";
+                    pst.addBatch(sql);
                 }
             }
-            String suffix = " end where lottery_type = " + lottery_type + " and  result is null  ";
-            // 构建完整SQL
-            String sql = prefix + infix.substring(0, infix.length() - 1) + suffix;
-            // 添加执行SQL
-            pst.addBatch(sql);
             // 执行操作
             pst.executeBatch();
             // 提交事务
@@ -289,14 +291,21 @@ public class JdbcUtil {
         connection = getConnection(); // 同样先要获取连接，即连接到数据库
         List<String> numbers = new ArrayList<>();
         try {
+            connection.setAutoCommit(false);
             statement = (Statement) connection.createStatement(); // 创建用于执行静态sql语句的Statement对象，st属局部变量
-            ResultSet rs = statement.executeQuery("SELECT number FROM basic_number WHERE LOTTERY_TYPE = " + lotteryType
-                    + " AND RESULT is NULL AND NUMBER in(SELECT number FROM lottery_order_001 WHERE LOTTERY_TYPE = " + lotteryType
-                    + " GROUP BY number HAVING count(*) = " + orders + ");"); // 执行sql查询语句，返回查询数据的结果集
+            StringBuffer sb = new StringBuffer();
+            sb.append("SELECT n.number                       ")
+                    .append(" FROM basic_number n, lottery_order_001 l ")
+                    .append("WHERE n.LOTTERY_TYPE = l.LOTTERY_TYPE ")
+                    .append("  AND n.LOTTERY_TYPE =               " + lotteryType)
+                    .append("  AND n.RESULT IS NULL                ")
+                    .append("GROUP BY n.number HAVING count(1) = " + orders);
+            ResultSet rs = statement.executeQuery(sb.toString()); // 执行sql查询语句，返回查询数据的结果集
             while (rs.next()) { // 判断是否还有下一个数据
                 // 根据字段名获取相应的值
                 numbers.add(rs.getString("number"));
             }
+            connection.commit();
             rs.close();
             statement.close();
             connection.close(); // 关闭数据库连接
