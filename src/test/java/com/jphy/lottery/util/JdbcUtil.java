@@ -299,7 +299,7 @@ public class JdbcUtil {
                     .append(" WHERE n.LOTTERY_TYPE = l.LOTTERY_TYPE")
                     .append(" AND n.LOTTERY_TYPE =" + lotteryType)
                     .append(" AND n.RESULT IS NULL")
-                    .append("GROUP BY n.number HAVING count(1) = " + orders);
+                    .append(" GROUP BY n.number HAVING count(1) = " + orders);
             //sb.append("SELECT number")
             //        .append(" FROM basic_number")
             //        .append(" WHERE LOTTERY_TYPE = " + lotteryType)
