@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <!-- thread-count 定义同时启动的浏览器数 paralle选择平行模式 -->
-<suite name="Single Suite" parallel="classes" thread-count="1">
+<suite name="Single Suite" parallel="tests" thread-count="1">
+    <!-- chrome,firefox和ie不区分大小写 -->
+    <parameter name="browserName" value="chrome"/>
+    <!-- user的属性文件地址,此配置文件存储了用户名和密码等信息 -->
+    <parameter name="userInfoPath" value="./src/test/resources/config/user.properties"/>
     <!-- 流程接口以及json数据 -->
-    <parameter name="interface_register" value="./src/test/resources/config/registerinterface.properties"/>
+    <parameter name="interface_bet" value="./src/test/resources/config/interfaceinfo.properties"/>
     <!-- 数据库的备份和还原存放路径 -->
     <parameter name="databasePath" value="./src/test/resources/config/database.properties"/>
-
-    <test verbose="2" preserve-order="true" name="Single Test">
+    <test verbose="2" preserve-order="true" name="Single Test1">
         <classes>
-            <class name="com.jphy.lottery.testcase.API.register.Register_001_Register_Success_Test"/>
+            <!--<class name="com.jphy.lottery.testcase.API.asynBet.Bet_Asyn_005_LHC_Test"/>-->
+            <class name="com.jphy.lottery.testcase.API.synBet.Bet_Syn_005_LHC_Test"/>
         </classes>
     </test>
     <listeners>

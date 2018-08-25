@@ -12,7 +12,7 @@ public class Register_001_Register_Success_Test {
 
 	@Test
 	public void accountRegistration(ITestContext context) {
-		RegisterHelper registerHelper = new RegisterHelper();
+		RegisterHelper registerHelper = new RegisterHelper(context);
 		registerHelper.register();
 	}
 }

@@ -294,24 +294,24 @@ public class JdbcUtil {
             //connection.setAutoCommit(false);
             statement = (Statement) connection.createStatement(); // 创建用于执行静态sql语句的Statement对象，st属局部变量
             StringBuffer sb = new StringBuffer();
-            sb.append("SELECT n.number")
-                    .append(" FROM basic_number n, lottery_order_001 l")
-                    .append(" WHERE n.LOTTERY_TYPE = l.LOTTERY_TYPE")
-                    .append(" AND n.LOTTERY_TYPE =" + lotteryType)
-                    .append(" AND n.RESULT IS NULL")
-                    .append(" GROUP BY n.number HAVING count(1) = " + orders);
-            //sb.append("SELECT number")
-            //        .append(" FROM basic_number")
-            //        .append(" WHERE LOTTERY_TYPE = " + lotteryType)
-            //        .append(" AND RESULT IS NULL")
-            //        .append(" AND NUMBER IN (")
-            //        .append(" SELECT number")
-            //        .append(" FROM ( SELECT number")
-            //        .append(" FROM lottery_order_001")
-            //        .append(" WHERE LOTTERY_TYPE = " + lotteryType)
-            //        .append(" GROUP BY number")
-            //        .append(" HAVING count( * ) = " + orders)
-            //        .append(" ) AS tmp )");
+            //sb.append("SELECT n.number")
+            //        .append(" FROM basic_number n, lottery_order_001 l")
+            //        .append(" WHERE n.LOTTERY_TYPE = l.LOTTERY_TYPE")
+            //        .append(" AND n.LOTTERY_TYPE =" + lotteryType)
+            //        .append(" AND n.RESULT IS NULL")
+            //        .append(" GROUP BY n.number HAVING count(1) = " + orders);
+            sb.append("SELECT number")
+                    .append(" FROM basic_number")
+                    .append(" WHERE LOTTERY_TYPE = " + lotteryType)
+                    .append(" AND RESULT IS NULL")
+                    .append(" AND NUMBER IN (")
+                    .append(" SELECT number")
+                    .append(" FROM ( SELECT number")
+                    .append(" FROM lottery_order_001")
+                    .append(" WHERE LOTTERY_TYPE = " + lotteryType)
+                    .append(" GROUP BY number")
+                    .append(" HAVING count( * ) = " + orders)
+                    .append(" ) AS tmp )");
             ResultSet rs = statement.executeQuery(sb.toString()); // 执行sql查询语句，返回查询数据的结果集
             while (rs.next()) { // 判断是否还有下一个数据
                 // 根据字段名获取相应的值
@@ -345,7 +345,6 @@ public class JdbcUtil {
     public static List<String> queryNumbers(int lotteryType) {
         connection = getConnection(); // 同样先要获取连接，即连接到数据库
         List<String> numbers = new ArrayList<>();
-
         try {
             statement = (Statement) connection.createStatement(); // 创建用于执行静态sql语句的Statement对象，st属局部变量
             ResultSet rs = statement.executeQuery("SELECT number FROM basic_number WHERE LOTTERY_TYPE = " + lotteryType
