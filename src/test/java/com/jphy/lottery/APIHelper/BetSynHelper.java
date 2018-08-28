@@ -51,7 +51,7 @@ public class BetSynHelper {
     public static void betLottery(String number) {
         int len = betOrderList.size();
         //int len = 10;
-        for (int i = 1; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             boolean success = bet(i, number);
             if (!success) {
                 logger.info("彩种：" + lotteryType + ", 期号：" + number + "投注结束，共投：" + (i + 1) + "单");

@@ -3,7 +3,7 @@
 	<order>
 		<betRange>特码</betRange>
 		<playType>直选</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
+		<betContent>01 02 03 04 05 06 07 08 09 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
 		<mutiple>1</mutiple>
 		<amount>3</amount>
 	</order>
@@ -108,35 +108,35 @@
 	<order>
 		<betRange>连码</betRange>
 		<playType>三全中</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
+		<betContent>01 02 03 04 05 06 07 08 09 10 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 44 45 46 47 48 49</betContent>
 		<mutiple>1</mutiple>
 		<amount>5</amount>
 	</order>
 	<order>
 		<betRange>连码</betRange>
 		<playType>三中二</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
+		<betContent>01 02 03 04 05 06 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 41 42 43 44 45 46 47 48 49</betContent>
 		<mutiple>1</mutiple>
 		<amount>2</amount>
 	</order>
 	<order>
 		<betRange>连码</betRange>
 		<playType>二全中</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
+		<betContent>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40</betContent>
 		<mutiple>1</mutiple>
 		<amount>3</amount>
 	</order>
 	<order>
 		<betRange>连码</betRange>
 		<playType>二中特</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
+		<betContent>10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
 		<mutiple>1</mutiple>
 		<amount>5</amount>
 	</order>
 	<order>
 		<betRange>连码</betRange>
 		<playType>特串</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
+		<betContent>01 02 03 06 07 08 09 10 11 12 13 16 17 18 19 20 23 24 25 26 27 28 29 30 31 32 33 36 37 38 39 40 41 42 43 44 45 46 47 48 49</betContent>
 		<mutiple>1</mutiple>
 		<amount>4</amount>
 	</order>
@@ -213,42 +213,42 @@
 	<order>
 		<betRange>不中</betRange>
 		<playType>五不中</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10</betContent>
+		<betContent>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15</betContent>
 		<mutiple>1</mutiple>
 		<amount>5</amount>
 	</order>
 	<order>
 		<betRange>不中</betRange>
 		<playType>六不中</playType>
-		<betContent>11 12 13 14 15 16 17 18 19 20</betContent>
+		<betContent>11 12 13 14 15 16 17 18 19 20 21 22 23 24 25</betContent>
 		<mutiple>1</mutiple>
 		<amount>3</amount>
 	</order>
 	<order>
 		<betRange>不中</betRange>
 		<playType>七不中</playType>
-		<betContent>21 22 23 24 25 26 27 28 29 30</betContent>
+		<betContent>21 22 23 24 25 26 27 28 29 30 31 32 33 34 35</betContent>
 		<mutiple>1</mutiple>
 		<amount>1</amount>
 	</order>
 	<order>
 		<betRange>不中</betRange>
 		<playType>八不中</playType>
-		<betContent>31 32 33 34 35 36 37 38 39 40</betContent>
+		<betContent>31 32 33 34 35 36 37 38 39 40 41 42 43 44 45</betContent>
 		<mutiple>1</mutiple>
 		<amount>2</amount>
 	</order>
 	<order>
 		<betRange>不中</betRange>
 		<playType>九不中</playType>
-		<betContent>40 41 42 43 44 45 46 47 48 49</betContent>
+		<betContent>40 41 42 43 44 45 46 47 48 49 03 14 16 27 28</betContent>
 		<mutiple>1</mutiple>
 		<amount>5</amount>
 	</order>
 	<order>
 		<betRange>不中</betRange>
 		<playType>十不中</playType>
-		<betContent>01 02 03 14 15 16 27 28 29 40 49</betContent>
+		<betContent>01 02 03 14 15 16 27 28 29 40 49 22 23 08 09</betContent>
 		<mutiple>1</mutiple>
 		<amount>4</amount>
 	</order>

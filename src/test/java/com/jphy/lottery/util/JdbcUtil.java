@@ -347,10 +347,10 @@ public class JdbcUtil {
         List<String> numbers = new ArrayList<>();
         try {
             statement = (Statement) connection.createStatement(); // 创建用于执行静态sql语句的Statement对象，st属局部变量
-            ResultSet rs = statement.executeQuery("SELECT number FROM basic_number WHERE LOTTERY_TYPE = " + lotteryType
-                    + " order by id asc"); // 执行sql查询语句，返回查询数据的结果集
-            //ResultSet rs = statement.executeQuery("SELECT NUMBER FROM basic_number WHERE LOTTERY_TYPE = "+lotteryType
-            //        +" and RESULT is NULL and NUMBER <= 30000 ORDER BY NUMBER ASC"); // 执行sql查询语句，返回查询数据的结果集
+            //ResultSet rs = statement.executeQuery("SELECT number FROM basic_number WHERE LOTTERY_TYPE = " + lotteryType
+            //        + " order by id asc"); // 执行sql查询语句，返回查询数据的结果集
+            ResultSet rs = statement.executeQuery("SELECT NUMBER FROM basic_number WHERE LOTTERY_TYPE = " + lotteryType
+                    + " and CREATE_TIME < SYSDATE() and MODIFY_TIME > SYSDATE() ORDER BY ID"); // 执行sql查询语句，返回查询数据的结果集
             while (rs.next()) { // 判断是否还有下一个数据
                 // 根据字段名获取相应的值
                 numbers.add(rs.getString("number"));

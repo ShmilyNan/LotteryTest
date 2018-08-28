@@ -15,9 +15,9 @@ import java.util.List;
 public class Bet_Syn_005_LHC_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_005_LHC_Test.class.getName());
 
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 100)
     public void orderBetting(ITestContext context) throws Exception {
-        int lotteryType = 7;
+        int lotteryType = 14;
         String filePath = "./src/test/resources/data/LHCBetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType));
