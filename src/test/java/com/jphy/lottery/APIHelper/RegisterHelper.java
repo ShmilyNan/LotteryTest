@@ -1,12 +1,9 @@
 package com.jphy.lottery.APIHelper;
 
-import com.jphy.lottery.plugins.ReadXml.ReadXMLByDom4j;
 import com.jphy.lottery.util.HttpUtils;
 import com.jphy.lottery.util.PropertiesDataProvider;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
-
-import java.io.File;
 
 public class RegisterHelper {
     public static Logger logger = Logger.getLogger(RegisterHelper.class.getName());

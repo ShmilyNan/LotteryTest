@@ -19,7 +19,7 @@ public class Bet_Syn_001_SSC_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_001_SSC_Test.class.getName());
 
     @Test(invocationCount = 1)
-    public void orderBetting(ITestContext context) throws Exception {
+    public void orderBetting(ITestContext context) {
         int lotteryType = 4;
         String filePath = "./src/test/resources/data/SSCBetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);

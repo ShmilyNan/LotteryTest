@@ -24,7 +24,7 @@ public class Bet_Asyn_005_LHC_Test {
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         BetAsynHelper betAsynHelper = new BetAsynHelper(context, filePath, String.valueOf(lotteryType));
         for (int j = 0; j < numbers.size(); j++) {
-            betAsynHelper.betLottery(BetOrderFather.httpClient,numbers.get(j));
+            betAsynHelper.betLottery(BetOrderFather.httpClient, numbers.get(j));
         }
     }
 }

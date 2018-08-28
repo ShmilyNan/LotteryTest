@@ -18,7 +18,7 @@ public class Bet_Syn_002_5Of11_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_002_5Of11_Test.class.getName());
 
     @Test(invocationCount = 1)
-    public void orderBetting(ITestContext context) throws Exception {
+    public void orderBetting(ITestContext context) {
         int lotteryType = 11;
         String filePath = "./src/test/resources/data/5Of11BetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);

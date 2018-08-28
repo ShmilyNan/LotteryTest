@@ -6,7 +6,6 @@ import com.jphy.lottery.util.JdbcUtil;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 /**
@@ -17,7 +16,7 @@ public class Bet_Asyn_002_5Of11_Test {
     public static Logger logger = Logger.getLogger(Bet_Asyn_002_5Of11_Test.class.getName());
 
     @Test(invocationCount = 1)
-    public void orderBetting(ITestContext context) throws Exception {
+    public void orderBetting(ITestContext context) {
         String filePath = "./src/test/resources/data/5Of11BetDatas.xml";
         final int lotteryType = 11;
         BetOrderFather.initHttpClient();

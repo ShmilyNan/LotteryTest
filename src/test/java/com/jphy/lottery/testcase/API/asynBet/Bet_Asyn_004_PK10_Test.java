@@ -17,7 +17,7 @@ public class Bet_Asyn_004_PK10_Test {
     public static Logger logger = Logger.getLogger(Bet_Asyn_004_PK10_Test.class.getName());
 
     @Test(invocationCount = 1)
-    public void orderBetting(ITestContext context) throws Exception {
+    public void orderBetting(ITestContext context) {
         String filePath = "./src/test/resources/data/PK10BetDatas.xml";
         final int lotteryType = 1;
         BetOrderFather.initHttpClient();

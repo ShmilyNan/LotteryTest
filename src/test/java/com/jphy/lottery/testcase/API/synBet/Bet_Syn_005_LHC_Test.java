@@ -15,8 +15,8 @@ import java.util.List;
 public class Bet_Syn_005_LHC_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_005_LHC_Test.class.getName());
 
-    @Test(invocationCount = 100)
-    public void orderBetting(ITestContext context) throws Exception {
+    @Test(invocationCount = 1)
+    public void orderBetting(ITestContext context) {
         int lotteryType = 14;
         String filePath = "./src/test/resources/data/LHCBetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);

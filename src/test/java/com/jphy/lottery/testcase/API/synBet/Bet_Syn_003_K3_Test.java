@@ -18,7 +18,7 @@ public class Bet_Syn_003_K3_Test {
     public static Logger logger = Logger.getLogger(Bet_Syn_003_K3_Test.class.getName());
 
     @Test(invocationCount = 1)
-    public void orderBetting(ITestContext context) throws Exception {
+    public void orderBetting(ITestContext context) {
         int lotteryType = 8;
         String filePath = "./src/test/resources/data/K3BetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);

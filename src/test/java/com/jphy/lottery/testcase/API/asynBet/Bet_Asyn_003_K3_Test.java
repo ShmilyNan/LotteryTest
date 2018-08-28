@@ -6,7 +6,6 @@ import com.jphy.lottery.util.JdbcUtil;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 /**

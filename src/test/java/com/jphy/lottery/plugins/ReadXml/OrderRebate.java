@@ -1,112 +1,112 @@
 package com.jphy.lottery.plugins.ReadXml;
 
 public class OrderRebate {
-	/**
-	 * @author Lance
-	 */
-	
-	private String rebateOne;
-	private String rebateTwo;
-	private String rebateThree;
-	private String rebateFour;
-	private String rebateFive;
-	private String rebateSix;
-	private String rebateSeven;
-	private String rebateEight;
-	private String rebateNine;
-	private String rebateTen;
-	private String rebateAll;
+    /**
+     * @author Lance
+     */
 
-	public String getRebateOne() {
-		return rebateOne;
-	}
+    private String rebateOne;
+    private String rebateTwo;
+    private String rebateThree;
+    private String rebateFour;
+    private String rebateFive;
+    private String rebateSix;
+    private String rebateSeven;
+    private String rebateEight;
+    private String rebateNine;
+    private String rebateTen;
+    private String rebateAll;
 
-	public void setRebateOne(String rebateOne) {
-		this.rebateOne = rebateOne;
-	}
+    public String getRebateOne() {
+        return rebateOne;
+    }
 
-	public String getRebateTwo() {
-		return rebateTwo;
-	}
+    public void setRebateOne(String rebateOne) {
+        this.rebateOne = rebateOne;
+    }
 
-	public void setRebateTwo(String rebateTwo) {
-		this.rebateTwo = rebateTwo;
-	}
+    public String getRebateTwo() {
+        return rebateTwo;
+    }
 
-	public String getRebateThree() {
-		return rebateThree;
-	}
+    public void setRebateTwo(String rebateTwo) {
+        this.rebateTwo = rebateTwo;
+    }
 
-	public void setRebateThree(String rebateThree) {
-		this.rebateThree = rebateThree;
-	}
+    public String getRebateThree() {
+        return rebateThree;
+    }
 
-	public String getRebateFour() {
-		return rebateFour;
-	}
+    public void setRebateThree(String rebateThree) {
+        this.rebateThree = rebateThree;
+    }
 
-	public void setRebateFour(String rebateFour) {
-		this.rebateFour = rebateFour;
-	}
+    public String getRebateFour() {
+        return rebateFour;
+    }
 
-	public String getRebateFive() {
-		return rebateFive;
-	}
+    public void setRebateFour(String rebateFour) {
+        this.rebateFour = rebateFour;
+    }
 
-	public void setRebateFive(String rebateFive) {
-		this.rebateFive = rebateFive;
-	}
+    public String getRebateFive() {
+        return rebateFive;
+    }
 
-	public String getRebateSix() {
-		return rebateSix;
-	}
+    public void setRebateFive(String rebateFive) {
+        this.rebateFive = rebateFive;
+    }
 
-	public void setRebateSix(String rebateSix) {
-		this.rebateSix = rebateSix;
-	}
+    public String getRebateSix() {
+        return rebateSix;
+    }
 
-	public String getRebateSeven() {
-		return rebateSeven;
-	}
+    public void setRebateSix(String rebateSix) {
+        this.rebateSix = rebateSix;
+    }
 
-	public void setRebateSeven(String rebateSeven) {
-		this.rebateSeven = rebateSeven;
-	}
+    public String getRebateSeven() {
+        return rebateSeven;
+    }
 
-	public String getRebateEight() {
-		return rebateEight;
-	}
+    public void setRebateSeven(String rebateSeven) {
+        this.rebateSeven = rebateSeven;
+    }
 
-	public void setRebateEight(String rebateEight) {
-		this.rebateEight = rebateEight;
-	}
+    public String getRebateEight() {
+        return rebateEight;
+    }
 
-	public String getRebateNine() {
-		return rebateNine;
-	}
+    public void setRebateEight(String rebateEight) {
+        this.rebateEight = rebateEight;
+    }
 
-	public void setRebateNine(String rebateNine) {
-		this.rebateNine = rebateNine;
-	}
+    public String getRebateNine() {
+        return rebateNine;
+    }
 
-	public String getRebateTen() {
-		return rebateTen;
-	}
+    public void setRebateNine(String rebateNine) {
+        this.rebateNine = rebateNine;
+    }
 
-	public void setRebateTen(String rebateTen) {
-		this.rebateTen = rebateTen;
-	}
+    public String getRebateTen() {
+        return rebateTen;
+    }
 
-	public String getRebateAll() {
-		return rebateAll;
-	}
+    public void setRebateTen(String rebateTen) {
+        this.rebateTen = rebateTen;
+    }
 
-	public void setRebateAll(String rebateAll) {
-		this.rebateAll = rebateAll;
-	}
+    public String getRebateAll() {
+        return rebateAll;
+    }
 
-	@Override
-	public String toString() {
-		return "OrderRebate [rebateOne=" + rebateOne + ", rebateTwo=" + rebateTwo + ", rebateThree=" + rebateThree + ", rebateFour=" + rebateFour + ", rebateFive=" + rebateFive +", rebateSix=" + rebateSix +", rebateSeven=" + rebateSeven +", rebateEight=" + rebateEight +", rebateNine=" + rebateNine+", rebateTen=" + rebateTen+", rebateAll=" + rebateAll+ "]";
-	}
+    public void setRebateAll(String rebateAll) {
+        this.rebateAll = rebateAll;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderRebate [rebateOne=" + rebateOne + ", rebateTwo=" + rebateTwo + ", rebateThree=" + rebateThree + ", rebateFour=" + rebateFour + ", rebateFive=" + rebateFive + ", rebateSix=" + rebateSix + ", rebateSeven=" + rebateSeven + ", rebateEight=" + rebateEight + ", rebateNine=" + rebateNine + ", rebateTen=" + rebateTen + ", rebateAll=" + rebateAll + "]";
+    }
 }

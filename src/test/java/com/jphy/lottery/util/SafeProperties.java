@@ -111,7 +111,7 @@ public class SafeProperties extends Properties {
         int len = theString.length();
         StringBuffer outBuffer = new StringBuffer(len);
 
-        for (int x = 0; x < len;) {
+        for (int x = 0; x < len; ) {
             aChar = theString.charAt(x++);
             if (aChar == '\\') {
                 aChar = theString.charAt(x++);
@@ -189,7 +189,7 @@ public class SafeProperties extends Properties {
         if (header != null)
             writeln(awriter, "#" + header);
         List entrys = context.getCommentOrEntrys();
-        for (Iterator iter = entrys.iterator(); iter.hasNext();) {
+        for (Iterator iter = entrys.iterator(); iter.hasNext(); ) {
             Object obj = iter.next();
             if (obj.toString() != null) {
                 writeln(awriter, obj.toString());
@@ -269,16 +269,17 @@ public class SafeProperties extends Properties {
     /**
      * Convert a nibble to a hex character
      *
-     * @param nibble
-     *            the nibble to convert.
+     * @param nibble the nibble to convert.
      */
     private static char toHex(int nibble) {
         return hexDigit[(nibble & 0xF)];
     }
 
-    /** A table of hex digits */
-    private static final char[] hexDigit = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E',
-            'F' };
+    /**
+     * A table of hex digits
+     */
+    private static final char[] hexDigit = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E',
+            'F'};
 
     public synchronized Object put(Object key, Object value) {
         context.putOrUpdate(key.toString(), value.toString());
@@ -321,7 +322,7 @@ public class SafeProperties extends Properties {
         public void putOrUpdate(String key, String value) {
             PropertyEntry pe = new PropertyEntry(key, value);
             int index = remove(key);
-            commentOrEntrys.add(index,pe);
+            commentOrEntrys.add(index, pe);
         }
 
         public int remove(String key) {

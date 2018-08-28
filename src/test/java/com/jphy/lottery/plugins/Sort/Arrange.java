@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Arrange {
     List<String> numberOfPK10 = new ArrayList<String>();
+
     /**
      * 计算A(n,k)
      *

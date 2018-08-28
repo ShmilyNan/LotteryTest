@@ -17,7 +17,6 @@ import org.apache.http.params.CoreConnectionPNames;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
-import org.testng.annotations.Parameters;
 
 @SuppressWarnings("deprecation")
 public class HttpUtils {

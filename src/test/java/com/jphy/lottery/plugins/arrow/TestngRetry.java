@@ -9,44 +9,44 @@ import org.testng.Reporter;
 
 /**
  * TestNG retry Analyzer.
- * 
+ *
  * @author Lance
- * 
  */
 public class TestngRetry implements IRetryAnalyzer {
-	static {
-		PropertyConfigurator.configure("./src/test/resources/config/log4j.properties");
-	}
-	private static Logger logger = Logger.getLogger(TestngRetry.class);
-	private int retryCount = 1;
-	private static int maxRetryCount;
+    static {
+        PropertyConfigurator.configure("./src/test/resources/config/log4j.properties");
+    }
 
-	static {
-		ConfigReader config = ConfigReader.getInstance();
-		maxRetryCount = config.getRetryCount();
-		logger.info("RetryCount=" + maxRetryCount);
-		logger.info("SourceDir=" + config.getSourceCodeDir());
-		logger.info("SourceEncoding=" + config.getSrouceCodeEncoding());
-	}
+    private static Logger logger = Logger.getLogger(TestngRetry.class);
+    private int retryCount = 1;
+    private static int maxRetryCount;
 
-	public boolean retry(ITestResult result) {
-		if (retryCount <= maxRetryCount) {
-			String message = "Retry for： [" + result.getName() + "] on class [" + result.getTestClass().getName() + "] retry " + retryCount + " times";
-			logger.info(message);
-			Reporter.setCurrentTestResult(result);
-			Reporter.log("RunCount=" + (retryCount + 1));
-			retryCount++;
-			return true;
-		}
-		return false;
-	}
+    static {
+        ConfigReader config = ConfigReader.getInstance();
+        maxRetryCount = config.getRetryCount();
+        logger.info("RetryCount=" + maxRetryCount);
+        logger.info("SourceDir=" + config.getSourceCodeDir());
+        logger.info("SourceEncoding=" + config.getSrouceCodeEncoding());
+    }
 
-	public static int getMaxRetryCount() {
-		return maxRetryCount;
-	}
+    public boolean retry(ITestResult result) {
+        if (retryCount <= maxRetryCount) {
+            String message = "Retry for： [" + result.getName() + "] on class [" + result.getTestClass().getName() + "] retry " + retryCount + " times";
+            logger.info(message);
+            Reporter.setCurrentTestResult(result);
+            Reporter.log("RunCount=" + (retryCount + 1));
+            retryCount++;
+            return true;
+        }
+        return false;
+    }
 
-	public int getRetryCount() {
-		return retryCount;
-	}
+    public static int getMaxRetryCount() {
+        return maxRetryCount;
+    }
+
+    public int getRetryCount() {
+        return retryCount;
+    }
 
 }

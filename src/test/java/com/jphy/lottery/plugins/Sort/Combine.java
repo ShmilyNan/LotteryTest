@@ -6,11 +6,10 @@ import java.util.List;
 /**
  * 求在M中找出N的排列数
  * 算法思想：递归
- *  eg:abcd的全排列结果分别为：a,b,c,d,ab,ac,ad,bc,bd,cd,abc,abd,acd,bcd,abcd
- *  可以看出，当求N位的组合数时，可以先固定前N-1位，然后在匹配最后一位可行值；以此类推可用递归的方法求出所有可能的值。
+ * eg:abcd的全排列结果分别为：a,b,c,d,ab,ac,ad,bc,bd,cd,abc,abd,acd,bcd,abcd
+ * 可以看出，当求N位的组合数时，可以先固定前N-1位，然后在匹配最后一位可行值；以此类推可用递归的方法求出所有可能的值。
  *
  * @author YHYR
- *
  */
 public class Combine {
     //public static void main(String[] args) {

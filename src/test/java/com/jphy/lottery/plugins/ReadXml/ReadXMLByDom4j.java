@@ -13,17 +13,17 @@ import org.dom4j.io.SAXReader;
 
 /**
  * 用DOM4J方法读取xml文件
- * 
+ *
  * @author Lance
  */
 public class ReadXMLByDom4j {
 
-	private List<BetOrder> betOrderList = null;
+    private List<BetOrder> betOrderList = null;
     private BetOrder betOrder = null;
     private List<Numbers> numbersList = null;
     private Numbers numbers = null;
 
-	public List<BetOrder> getBetOrders(File file){
+    public List<BetOrder> getBetOrders(File file) {
         // 解析TestDatas.xml文件
         //创建SAXReader的对象reader
         SAXReader reader = new SAXReader();
@@ -36,12 +36,12 @@ public class ReadXMLByDom4j {
             Iterator storeIt = betOrderStore.elementIterator();
 
             betOrderList = new ArrayList();
-            while(storeIt.hasNext()){
+            while (storeIt.hasNext()) {
                 betOrder = new BetOrder();
-                Element betOrderElement = (Element)storeIt.next();
+                Element betOrderElement = (Element) storeIt.next();
                 //遍历betOrderElement的属性名和属性值
                 List<Attribute> attributes = betOrderElement.attributes();
-                for(Attribute attribute : attributes){
+                for (Attribute attribute : attributes) {
                     //if(attribute.getName().equals("orderId")){
                     //    String orderId = attribute.getValue();//System.out.println(orderId);
                     //    betOrder.setOrderId(Integer.parseInt(orderId));
@@ -50,39 +50,39 @@ public class ReadXMLByDom4j {
                 }
 
                 Iterator betOrderIt = betOrderElement.elementIterator();
-                while(betOrderIt.hasNext()){
+                while (betOrderIt.hasNext()) {
                     Element child = (Element) betOrderIt.next();
                     String nodeName = child.getName();
-                    if (nodeName.equals("user_id")){
+                    if (nodeName.equals("user_id")) {
                         Integer user_id = Integer.valueOf(child.getStringValue());
                         betOrder.setUser_id(user_id);
-                    }else if(nodeName.equals("betRange")){
+                    } else if (nodeName.equals("betRange")) {
                         String name = child.getStringValue();
                         betOrder.setBetRange(name);
-                    }else if(nodeName.equals("playType")){
+                    } else if (nodeName.equals("playType")) {
                         String playType = child.getStringValue();
                         betOrder.setPlayType(playType);
-                    }else if(nodeName.equals("betContent")){
+                    } else if (nodeName.equals("betContent")) {
                         String betContent = child.getStringValue();
                         betOrder.setBetContent(betContent);
-                    }else if(nodeName.equals("mutiple")){
+                    } else if (nodeName.equals("mutiple")) {
                         Integer mutiple = Integer.valueOf(child.getStringValue());
                         betOrder.setMutiple(mutiple);
-                    }else if(nodeName.equals("amount")){
-                    	String amount = child.getStringValue();
-                    	betOrder.setAmount(amount);
-                    }else if(nodeName.equals("spend")){
-                    	String spend = child.getStringValue();
-                    	betOrder.setSpend(spend);
-                    }else if(nodeName.equals("drawnAmount")){
-                    	String drawnAmount = child.getStringValue();
-                    	betOrder.setDrawnAmount(drawnAmount);
-                    }else if(nodeName.equals("resultNum")){
-                    	String resultNum = child.getStringValue();
-                    	betOrder.setDrawnAmount(resultNum);
-                    }else if(nodeName.equals("balance")){
-                    	String balance = child.getStringValue();
-                    	betOrder.setBalance(balance);
+                    } else if (nodeName.equals("amount")) {
+                        String amount = child.getStringValue();
+                        betOrder.setAmount(amount);
+                    } else if (nodeName.equals("spend")) {
+                        String spend = child.getStringValue();
+                        betOrder.setSpend(spend);
+                    } else if (nodeName.equals("drawnAmount")) {
+                        String drawnAmount = child.getStringValue();
+                        betOrder.setDrawnAmount(drawnAmount);
+                    } else if (nodeName.equals("resultNum")) {
+                        String resultNum = child.getStringValue();
+                        betOrder.setDrawnAmount(resultNum);
+                    } else if (nodeName.equals("balance")) {
+                        String balance = child.getStringValue();
+                        betOrder.setBalance(balance);
                     }
                 }
                 betOrderList.add(betOrder);
@@ -94,7 +94,7 @@ public class ReadXMLByDom4j {
         return betOrderList;
     }
 
-    public List<Numbers> getNumbers(File file){
+    public List<Numbers> getNumbers(File file) {
         // 解析TestDatas.xml文件
         //创建SAXReader的对象reader
         SAXReader reader = new SAXReader();
@@ -107,12 +107,12 @@ public class ReadXMLByDom4j {
             Iterator storeIt = numberStore.elementIterator();
 
             numbersList = new ArrayList();
-            while(storeIt.hasNext()){
+            while (storeIt.hasNext()) {
                 numbers = new Numbers();
-                Element numberElement = (Element)storeIt.next();
+                Element numberElement = (Element) storeIt.next();
                 //遍历betOrderElement的属性名和属性值
                 List<Attribute> attributes = numberElement.attributes();
-                for(Attribute attribute : attributes){
+                for (Attribute attribute : attributes) {
                     //if(attribute.getName().equals("orderId")){
                     //    String orderId = attribute.getValue();//System.out.println(orderId);
                     //    betOrder.setOrderId(Integer.parseInt(orderId));
@@ -121,13 +121,13 @@ public class ReadXMLByDom4j {
                 }
 
                 Iterator numberIt = numberElement.elementIterator();
-                while(numberIt.hasNext()){
+                while (numberIt.hasNext()) {
                     Element child = (Element) numberIt.next();
                     String nodeName = child.getName();
-                    if(nodeName.equals("number")){
+                    if (nodeName.equals("number")) {
                         String number = child.getStringValue();
                         numbers.setNumber(number);
-                    }else if(nodeName.equals("resultNum")){
+                    } else if (nodeName.equals("resultNum")) {
                         String resultNum = child.getStringValue();
                         numbers.setResultNum(resultNum);
                     }

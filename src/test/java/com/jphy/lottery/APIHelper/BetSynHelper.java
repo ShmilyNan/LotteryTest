@@ -3,23 +3,13 @@ package com.jphy.lottery.APIHelper;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.jphy.lottery.plugins.ReadXml.BetOrder;
-import com.jphy.lottery.plugins.ReadXml.OrderRebate;
 import com.jphy.lottery.plugins.ReadXml.ReadXMLByDom4j;
 import com.jphy.lottery.util.*;
-import org.apache.http.NameValuePair;
-import org.apache.http.impl.nio.client.CloseableHttpAsyncClient;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.CountDownLatch;
 
 /**
  * 投注接口测试

@@ -1,135 +1,145 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <betorder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<order>
-		<betRange>定位胆</betRange>
-		<playType>定位胆</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10</betContent>
-		<mutiple>2</mutiple>
-		<amount>1</amount>
-		<spend>400</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>399.6</drawnAmount>
-		<balance>99999999.6</balance>
-	</order>
-	<order>
-		<betRange>猜前五</betRange>
-		<playType>复式</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10</betContent>
-		<mutiple>1</mutiple>
-		<amount>1</amount>
-		<spend>60480</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>60419.52</drawnAmount>
-		<balance>99999939.12</balance>
-	</order>
-	<order>
-		<betRange>猜前五</betRange>
-		<playType>单式</playType>
-		<betContent>01 02 03 04 05,06 07 08 09 10</betContent>
-		<mutiple>3</mutiple>
-		<amount>1</amount>
-		<spend>12</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>0</drawnAmount>
-		<balance>99999927.12</balance>
-	</order>
-	<order>
-		<betRange>猜前四</betRange>
-		<playType>复式</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10</betContent>
-		<mutiple>1</mutiple>
-		<amount>1</amount>
-		<spend>10080</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>10069.92</drawnAmount>
-		<balance>99999917.04</balance>
-	</order>
-	<order>
-		<betRange>猜前四</betRange>
-		<playType>单式</playType>
-		<betContent>01 02 03 04,05 06 07 08,09 10 01 02</betContent>
-		<mutiple>2</mutiple>
-		<amount>1</amount>
-		<spend>12</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>0</drawnAmount>
-		<balance>99999905.04</balance>
-	</order>
-	<order>
-		<betRange>猜前三</betRange>
-		<playType>复式</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10</betContent>
-		<mutiple>4</mutiple>
-		<amount>1</amount>
-		<spend>5760</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>5754.24</drawnAmount>
-		<balance>99999899.28</balance>
-	</order>
-	<order>
-		<betRange>猜前三</betRange>
-		<playType>单式</playType>
-		<betContent>09 08 01</betContent>
-		<mutiple>5</mutiple>
-		<amount>1</amount>
-		<spend>10</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>0</drawnAmount>
-		<balance>99999889.28</balance>
-	</order>
-	<order>
-		<betRange>猜前二</betRange>
-		<playType>复式</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10</betContent>
-		<mutiple>1</mutiple>
-		<amount>1</amount>
-		<spend>180</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>179.82</drawnAmount>
-		<balance>99999889.1</balance>
-	</order>
-	<order>
-		<betRange>猜前二</betRange>
-		<playType>单式</playType>
-		<betContent>02 03,08 09,09 04,05 09</betContent>
-		<mutiple>2</mutiple>
-		<amount>1</amount>
-		<spend>16</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>0</drawnAmount>
-		<balance>99999873.1</balance>
-	</order>
-	<order>
-		<betRange>猜冠军</betRange>
-		<playType>复式</playType>
-		<betContent>01 02 03 04 05 06 07 08 09 10 </betContent>
-		<mutiple>3</mutiple>
-		<amount>1</amount>
-		<spend>60</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>59.94</drawnAmount>
-		<balance>99999873.04</balance>
-	</order>
-	<order>
-		<betRange>冠亚军</betRange>
-		<playType>冠亚和</playType>
-		<betContent>和大 和小 和单 和双,03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19</betContent>
-		<mutiple>1</mutiple>
-		<amount>3</amount>
-		<spend>63</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>45.468</drawnAmount>
-		<balance>99999855.508</balance>
-	</order>
-	<order>
-		<betRange>双面盘</betRange>
-		<playType>双面盘</playType>
-		<betContent>大 小 单 双 龙 虎,大 小 单 双 龙 虎,大 小 单 双 龙 虎,大 小 单 双 龙 虎,大 小 单 双 龙 虎,大 小 单 双,大 小 单 双,大 小 单 双,大 小 单 双,大 小 单 双</betContent>
-		<mutiple>1</mutiple>
-		<amount>4</amount>
-		<spend>200</spend>
-		<RebateAll>0</RebateAll>
-		<drawnAmount>199.8</drawnAmount>
-		<balance>99999855.308</balance>
-	</order>
+    <order>
+        <betRange>定位胆</betRange>
+        <playType>定位胆</playType>
+        <betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03
+            04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09
+            10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10
+        </betContent>
+        <mutiple>2</mutiple>
+        <amount>1</amount>
+        <spend>400</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>399.6</drawnAmount>
+        <balance>99999999.6</balance>
+    </order>
+    <order>
+        <betRange>猜前五</betRange>
+        <playType>复式</playType>
+        <betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03
+            04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10
+        </betContent>
+        <mutiple>1</mutiple>
+        <amount>1</amount>
+        <spend>60480</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>60419.52</drawnAmount>
+        <balance>99999939.12</balance>
+    </order>
+    <order>
+        <betRange>猜前五</betRange>
+        <playType>单式</playType>
+        <betContent>01 02 03 04 05,06 07 08 09 10</betContent>
+        <mutiple>3</mutiple>
+        <amount>1</amount>
+        <spend>12</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>0</drawnAmount>
+        <balance>99999927.12</balance>
+    </order>
+    <order>
+        <betRange>猜前四</betRange>
+        <playType>复式</playType>
+        <betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03
+            04 05 06 07 08 09 10
+        </betContent>
+        <mutiple>1</mutiple>
+        <amount>1</amount>
+        <spend>10080</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>10069.92</drawnAmount>
+        <balance>99999917.04</balance>
+    </order>
+    <order>
+        <betRange>猜前四</betRange>
+        <playType>单式</playType>
+        <betContent>01 02 03 04,05 06 07 08,09 10 01 02</betContent>
+        <mutiple>2</mutiple>
+        <amount>1</amount>
+        <spend>12</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>0</drawnAmount>
+        <balance>99999905.04</balance>
+    </order>
+    <order>
+        <betRange>猜前三</betRange>
+        <playType>复式</playType>
+        <betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10
+        </betContent>
+        <mutiple>4</mutiple>
+        <amount>1</amount>
+        <spend>5760</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>5754.24</drawnAmount>
+        <balance>99999899.28</balance>
+    </order>
+    <order>
+        <betRange>猜前三</betRange>
+        <playType>单式</playType>
+        <betContent>09 08 01</betContent>
+        <mutiple>5</mutiple>
+        <amount>1</amount>
+        <spend>10</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>0</drawnAmount>
+        <balance>99999889.28</balance>
+    </order>
+    <order>
+        <betRange>猜前二</betRange>
+        <playType>复式</playType>
+        <betContent>01 02 03 04 05 06 07 08 09 10,01 02 03 04 05 06 07 08 09 10</betContent>
+        <mutiple>1</mutiple>
+        <amount>1</amount>
+        <spend>180</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>179.82</drawnAmount>
+        <balance>99999889.1</balance>
+    </order>
+    <order>
+        <betRange>猜前二</betRange>
+        <playType>单式</playType>
+        <betContent>02 03,08 09,09 04,05 09</betContent>
+        <mutiple>2</mutiple>
+        <amount>1</amount>
+        <spend>16</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>0</drawnAmount>
+        <balance>99999873.1</balance>
+    </order>
+    <order>
+        <betRange>猜冠军</betRange>
+        <playType>复式</playType>
+        <betContent>01 02 03 04 05 06 07 08 09 10</betContent>
+        <mutiple>3</mutiple>
+        <amount>1</amount>
+        <spend>60</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>59.94</drawnAmount>
+        <balance>99999873.04</balance>
+    </order>
+    <order>
+        <betRange>冠亚军</betRange>
+        <playType>冠亚和</playType>
+        <betContent>和大 和小 和单 和双,03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19</betContent>
+        <mutiple>1</mutiple>
+        <amount>3</amount>
+        <spend>63</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>45.468</drawnAmount>
+        <balance>99999855.508</balance>
+    </order>
+    <order>
+        <betRange>双面盘</betRange>
+        <playType>双面盘</playType>
+        <betContent>大 小 单 双 龙 虎,大 小 单 双 龙 虎,大 小 单 双 龙 虎,大 小 单 双 龙 虎,大 小 单 双 龙 虎,大 小 单 双,大 小 单 双,大 小 单 双,大 小 单 双,大 小 单
+            双
+        </betContent>
+        <mutiple>1</mutiple>
+        <amount>4</amount>
+        <spend>200</spend>
+        <RebateAll>0</RebateAll>
+        <drawnAmount>199.8</drawnAmount>
+        <balance>99999855.308</balance>
+    </order>
 </betorder>

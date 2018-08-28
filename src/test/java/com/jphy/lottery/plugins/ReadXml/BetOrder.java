@@ -1,173 +1,163 @@
 package com.jphy.lottery.plugins.ReadXml;
 
 public class BetOrder {
-	/**
-	 * @author Lance
-	 */
-	private Integer user_id;
-	private String betRange;
-	private String playType;
-	private String betContent;
-	private Integer mutiple;
-	private String amount;
-	private String spend;
-	private String resultNum;
-	private String drawnAmount;
-	private String balance;
+    /**
+     * @author Lance
+     */
+    private Integer user_id;
+    private String betRange;
+    private String playType;
+    private String betContent;
+    private Integer mutiple;
+    private String amount;
+    private String spend;
+    private String resultNum;
+    private String drawnAmount;
+    private String balance;
 
-	/**
-	 * @return
-	 */
-	public Integer getUser_id() {
-		return user_id;
-	}
+    /**
+     * @return
+     */
+    public Integer getUser_id() {
+        return user_id;
+    }
 
-	/**
-	 * @param user_id
-	 */
-	public void setUser_id(Integer user_id) {
-		this.user_id = user_id;
-	}
+    /**
+     * @param user_id
+     */
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
+    }
 
 
-	/**
-	 * @return the betRange
-	 */
-	public String getBetRange() {
-		return betRange;
-	}
+    /**
+     * @return the betRange
+     */
+    public String getBetRange() {
+        return betRange;
+    }
 
-	/**
-	 * @param betRange
-	 *            the betRange to set
-	 */
-	public void setBetRange(String betRange) {
-		this.betRange = betRange;
-	}
+    /**
+     * @param betRange the betRange to set
+     */
+    public void setBetRange(String betRange) {
+        this.betRange = betRange;
+    }
 
-	/**
-	 * @return the PlayType
-	 */
-	public String getPlayType() {
-		return playType;
-	}
+    /**
+     * @return the PlayType
+     */
+    public String getPlayType() {
+        return playType;
+    }
 
-	/**
-	 * @param playType
-	 *            the playType to set
-	 */
-	public void setPlayType(String playType) {
-		this.playType = playType;
-	}
+    /**
+     * @param playType the playType to set
+     */
+    public void setPlayType(String playType) {
+        this.playType = playType;
+    }
 
-	/**
-	 * @return the betContent
-	 */
-	public String getBetContent() {
-		return betContent;
-	}
+    /**
+     * @return the betContent
+     */
+    public String getBetContent() {
+        return betContent;
+    }
 
-	/**
-	 * @param betContent
-	 *            the betContent to set
-	 */
-	public void setBetContent(String betContent) {
-		this.betContent = betContent;
-	}
+    /**
+     * @param betContent the betContent to set
+     */
+    public void setBetContent(String betContent) {
+        this.betContent = betContent;
+    }
 
-	/**
-	 * @return the mutiple
-	 */
-	public Integer getMutiple() {
-		return mutiple;
-	}
+    /**
+     * @return the mutiple
+     */
+    public Integer getMutiple() {
+        return mutiple;
+    }
 
-	/**
-	 * @param mutiple
-	 *            the mutiple to set
-	 */
-	public void setMutiple(Integer mutiple) {
-		this.mutiple = mutiple;
-	}
+    /**
+     * @param mutiple the mutiple to set
+     */
+    public void setMutiple(Integer mutiple) {
+        this.mutiple = mutiple;
+    }
 
-	/**
-	 * @return the amount
-	 */
-	public String getAmount() {
-		return amount;
-	}
+    /**
+     * @return the amount
+     */
+    public String getAmount() {
+        return amount;
+    }
 
-	/**
-	 * @param amount
-	 *            the amount to set
-	 */
-	public void setAmount(String amount) {
-		this.amount = amount;
-	}
-	
-	/**
-	 * @return the spend
-	 */
-	public String getSpend() {
-		return spend;
-	}
-	
-	/**
-	 * @param spend
-	 * 			the spend to set
-	 */
-	public void setSpend(String spend) {
-		this.spend = spend;
-	}
+    /**
+     * @param amount the amount to set
+     */
+    public void setAmount(String amount) {
+        this.amount = amount;
+    }
 
-	/**
-	 * @return
-	 */
-	public String getDrawnAmount() {
-		return drawnAmount;
-	}
+    /**
+     * @return the spend
+     */
+    public String getSpend() {
+        return spend;
+    }
 
-	/**
-	 * @param drawnAmount
-	 */
-	public void setDrawnAmount(String drawnAmount) {
-		this.drawnAmount = drawnAmount;
-	}
+    /**
+     * @param spend the spend to set
+     */
+    public void setSpend(String spend) {
+        this.spend = spend;
+    }
 
-	/**
-	 * @return balance
-	 */
-	public String getBalance() {
-		return balance;
-	}
+    /**
+     * @return
+     */
+    public String getDrawnAmount() {
+        return drawnAmount;
+    }
 
-	/**
-	 * @param balance
-	 * 			th balance to set
-	 */
-	public void setBalance(String balance) {
-		this.balance = balance;
-	}
+    /**
+     * @param drawnAmount
+     */
+    public void setDrawnAmount(String drawnAmount) {
+        this.drawnAmount = drawnAmount;
+    }
 
-	/**
-	 *
-	 * @return resultNum
-	 */
-	public String getResultNum() {
-		return resultNum;
-	}
+    /**
+     * @return balance
+     */
+    public String getBalance() {
+        return balance;
+    }
 
-	/**
-	 *
-	 * @param resultNum
-	 * 			the resultNum to set
-	 */
-	public void setResultNum(String resultNum) {
-		this.resultNum = resultNum;
-	}
+    /**
+     * @param balance th balance to set
+     */
+    public void setBalance(String balance) {
+        this.balance = balance;
+    }
 
-	//@Override
-	//public String toString() {
-	//	return "BetOrder [betRange=" + betRange + ", playType=" + playType + ", betContent=" + betContent + ", mutiple=" + mutiple + ", amount=" + amount +", spend=" + spend +", drawnAmount=" + drawnAmount +", balance=" + balance + "]";
-	//}
+    /**
+     * @return resultNum
+     */
+    public String getResultNum() {
+        return resultNum;
+    }
+
+    /**
+     * @param resultNum the resultNum to set
+     */
+    public void setResultNum(String resultNum) {
+        this.resultNum = resultNum;
+    }
+
+    //@Override
+    //public String toString() {
+    //	return "BetOrder [betRange=" + betRange + ", playType=" + playType + ", betContent=" + betContent + ", mutiple=" + mutiple + ", amount=" + amount +", spend=" + spend +", drawnAmount=" + drawnAmount +", balance=" + balance + "]";
+    //}
 }
