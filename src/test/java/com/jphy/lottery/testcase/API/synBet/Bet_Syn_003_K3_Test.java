@@ -19,11 +19,11 @@ public class Bet_Syn_003_K3_Test {
 
     @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) {
-        int lotteryType = 8;
+        int lotteryType = 10;
         String filePath = "./src/test/resources/data/K3BetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType));
-        for (int i = 0; i < numbers.size(); i++) {
+        for (int i = 0; i < 1; i++) {
             betSynHelper.betLottery(numbers.get(i));
         }
     }

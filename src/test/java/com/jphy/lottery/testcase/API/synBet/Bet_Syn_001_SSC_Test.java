@@ -1,6 +1,5 @@
 package com.jphy.lottery.testcase.API.synBet;
 
-import com.jphy.lottery.APIHelper.BetAsynHelper;
 import com.jphy.lottery.APIHelper.BetSynHelper;
 import com.jphy.lottery.util.JdbcUtil;
 import org.apache.log4j.Logger;
@@ -9,7 +8,6 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static java.lang.Thread.sleep;
 
 /**
  * @author Lance
@@ -20,11 +18,11 @@ public class Bet_Syn_001_SSC_Test {
 
     @Test(invocationCount = 1)
     public void orderBetting(ITestContext context) {
-        int lotteryType = 4;
+        int lotteryType = 5;
         String filePath = "./src/test/resources/data/SSCBetDatas.xml";
         List<String> numbers = JdbcUtil.queryNumbers(lotteryType);
         BetSynHelper betSynHelper = new BetSynHelper(context, filePath, String.valueOf(lotteryType));
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 1; i++) {
             betSynHelper.betLottery(numbers.get(i));
         }
     }

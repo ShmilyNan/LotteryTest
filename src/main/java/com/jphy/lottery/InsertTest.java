@@ -76,8 +76,8 @@ public class InsertTest {
                         }
                     }
                 } else if (lottery_type == 11) {
-                    for (int j = 0; j <numbersList.size(); j++) {
-                        number1 = numbersList.get(j).getNumber().replace(",","");
+                    for (int j = 0; j < numbersList.size(); j++) {
+                        number1 = numbersList.get(j).getNumber().replace(",", "");
                         // 构建SQL后缀
                         suffix.append("('" + lottery_type + "','" + number1 + "'),");
                         System.out.println(numbersList.get(j).getNumber());

@@ -3,8 +3,7 @@
     <order>
         <betRange>三码</betRange>
         <playType>前三直选复式</playType>
-        <betContent>01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11
-        </betContent>
+        <betContent>01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11</betContent>
         <mutiple>2</mutiple>
         <amount>1</amount>
         <spend>3960</spend>
@@ -136,8 +135,7 @@
     <order>
         <betRange>定位胆</betRange>
         <playType>复式</playType>
-        <betContent>01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11
-        </betContent>
+        <betContent>01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11,01 02 03 04 05 06 07 08 09 10 11</betContent>
         <mutiple>2</mutiple>
         <amount>1</amount>
         <spend>132</spend>

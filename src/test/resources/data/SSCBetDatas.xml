@@ -3,9 +3,7 @@
     <order>
         <betRange>一星</betRange>
         <playType>复式</playType>
-        <betContent>0 1 2 3 4 5 6 7 8 9,0 1 2 3 4 5 6 7 8 9,0 1 2 3 4 5 6 7 8 9,0 1 2 3 4 5 6 7 8 9,0 1 2 3 4 5 6 7 8
-            9
-        </betContent>
+        <betContent>0 1 2 3 4 5 6 7 8 9,0 1 2 3 4 5 6 7 8 9,0 1 2 3 4 5 6 7 8 9,0 1 2 3 4 5 6 7 8 9,0 1 2 3 4 5 6 7 8 9</betContent>
         <mutiple>2</mutiple>
         <amount>1</amount>
         <spend>200</spend>

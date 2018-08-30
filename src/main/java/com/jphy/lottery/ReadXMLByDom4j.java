@@ -13,15 +13,15 @@ import org.dom4j.io.SAXReader;
 
 /**
  * 用DOM4J方法读取xml文件
- * 
+ *
  * @author Lance
  */
 public class ReadXMLByDom4j {
 
-	private List<Numbers> numbersList = null;
-	private Numbers numbers = null;
+    private List<Numbers> numbersList = null;
+    private Numbers numbers = null;
 
-	public List<Numbers> getNumbers(File file){
+    public List<Numbers> getNumbers(File file) {
         // 解析TestDatas.xml文件
         //创建SAXReader的对象reader
         SAXReader reader = new SAXReader();
@@ -34,12 +34,12 @@ public class ReadXMLByDom4j {
             Iterator storeIt = numberStore.elementIterator();
 
             numbersList = new ArrayList();
-            while(storeIt.hasNext()){
+            while (storeIt.hasNext()) {
                 numbers = new Numbers();
-                Element numberElement = (Element)storeIt.next();
+                Element numberElement = (Element) storeIt.next();
                 //遍历numberElement的属性名和属性值
                 List<Attribute> attributes = numberElement.attributes();
-                for(Attribute attribute : attributes){
+                for (Attribute attribute : attributes) {
                     //if(attribute.getName().equals("orderId")){
                     //    String orderId = attribute.getValue();//System.out.println(orderId);
                     //    betOrder.setOrderId(Integer.parseInt(orderId));
@@ -48,13 +48,13 @@ public class ReadXMLByDom4j {
                 }
 
                 Iterator numberIt = numberElement.elementIterator();
-                while(numberIt.hasNext()){
+                while (numberIt.hasNext()) {
                     Element child = (Element) numberIt.next();
                     String nodeName = child.getName();
-                    if (nodeName.equals("Result")){
+                    if (nodeName.equals("Result")) {
                         String number = child.getStringValue();
                         numbers.setNumber(number);
-                    }else if(nodeName.equals("SumOfWinNum")){
+                    } else if (nodeName.equals("SumOfWinNum")) {
                         String sumOfWinNum = child.getStringValue();
                         numbers.setSumOfWinNum(sumOfWinNum);
                     }
